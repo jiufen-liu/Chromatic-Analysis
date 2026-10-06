@@ -1,0 +1,17 @@
+Hotfix77 Validation
+===================
+
+范围：仅增加 Visual Palette V2 离线诊断；正式 Palette Studio 不接入 V2。
+
+验证：
+1. python -m py_compile qtx_core/palette_arrangement.py tools/visual_palette_v2_audit.py tools/diagnostics_center.py qtx_app/build_info.py
+2. Visual Palette V2 纯函数完整性：305 个旧审计样本 -> 305 个唯一输出；无丢样、无重复。
+3. V2 使用二维结构：12 个 30° CIELCh 色相区；10 L* 明度切片；6 列；近中性色独立区；色相区允许分隔行。
+4. qtx_app/main_window.py 未为 V2 修改；HF76 Shutdown Lifecycle 修复保持不变。
+5. 原有 Munsell / Spectral RMS / Hybrid / Visual V1 算法均未替换。
+
+现场验证：
+- RUN_DIAGNOSTICS.bat -> [7]
+- 拖入 adidas.qtx
+- 预期输入/输出均为 309
+- 将 VPA_V2_PREVIEW PNG 与 VPA_V2_AUDIT Excel 发回分析。

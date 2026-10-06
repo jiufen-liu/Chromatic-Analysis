@@ -1,0 +1,14 @@
+Hotfix59 validation
+===================
+1. py_compile: PASS
+   - qtx_app/auth_store.py
+   - qtx_app/main_window.py
+   - qtx_app/build_info.py
+2. Source assertions: PASS
+   - library toolbar Find -> start_find_from_library_selection
+   - selected library keys hydrated on demand and inserted as find standards
+   - permission tree clears Python refs before Qt item destruction
+   - tree rebuild blocks signals
+   - summary refresh ignores rebuild phase and stale wrappers
+3. qtx_core unchanged from Hotfix58: verified by hash comparison.
+4. GUI runtime must be verified on the user's Windows/PySide6 environment.

@@ -1,0 +1,52 @@
+Chromatic Analysis v0.14.6.4 - Performance P3-2 Hotfix28
+
+Baseline:
+- Chromatic_Analysis_v0.14.6.4_Performance_P3_1_Hotfix27.zip
+- Hotfix27 was user-validated with no issues.
+
+Scope: SQLite lightweight sample index only. No colour-science, parser, UI-layout, RBAC or workflow changes.
+
+P3-2 goal:
+Remove JSON scalar extraction from the normal formal-library paging/search/sort path while keeping the complete saved_samples.payload untouched as the full source of truth.
+
+Changes:
+1) saved_samples receives rebuildable lightweight scalar index columns:
+   - sample_id_idx
+   - display_name_idx
+   - name_lower_idx / name_sort_idx
+   - kind_idx
+   - lab_l_idx / lab_a_idx / lab_b_idx
+   - chroma_sort_idx
+   - family_idx
+   - has_spectrum_idx
+   - index_version
+2) Old Hotfix27 databases are migrated automatically on first launch.
+   - The migration runs inside SQLite and does not instantiate every Sample object.
+   - Full payload text is not rewritten or deleted.
+   - schema_meta records the index version, so later launches do not rescan the whole library.
+3) New saves and snapshot edits maintain the lightweight index in the same database transaction as payload updates.
+4) P3-1 normal paging/search/filter/sort now reads scalar index columns only before LIMIT/OFFSET.
+   - No json_extract(payload, ...) is needed in the normal paging WHERE / ORDER BY path.
+5) Find Color's lightweight library picker now reads the dedicated scalar index instead of json.loads on every saved payload.
+6) Public rebuild_sample_index() remains available as a repair hook. The derived index can be regenerated from payload at any time.
+7) Malformed legacy JSON remains skipped by full Sample loading/picker behavior, matching the existing defensive behavior.
+
+Compatibility fallbacks retained from P3-1:
+- Munsell hue sorting still uses the legacy spectral path.
+- Non-D65/10 Lab-derived filters/sorts still use the legacy spectral path.
+
+Untouched:
+- qtx_core/*
+- QTX / CPX / Excel parsers and exports
+- Delta-E / CMC / MI / 555
+- Comparison Workbench science logic
+- Color-card business behavior
+- RBAC / permissions
+- Drag/drop / cross-window transfer
+- Existing payload schema/content
+
+Expected user-visible behavior:
+- No visual or workflow change.
+- First launch after Hotfix27 may take a short one-time index migration step depending on library size.
+- Subsequent launches do not rescan payloads for migration.
+- Search/filter/sort should remain identical to Hotfix27 while scaling better with large libraries.

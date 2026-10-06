@@ -1,0 +1,261 @@
+F............................................................F.......... [ 55%]
+.......FFFFFFF..........................F.......F.....FFFF               [100%]
+=================================== FAILURES ===================================
+___________________ test_required_illuminants_are_available ____________________
+tests/test_core_rules.py:12: in test_required_illuminants_are_available
+    assert {"A", "D65", "F01", "F02", "F11"}.issubset(SUPPORTED_ILLUMINANTS)
+E   AssertionError: assert False
+E    +  where False = <built-in method issubset of set object at 0x7f1a605e17e0>(('A', 'C', 'D50', 'D55', 'D60', 'D65', ...))
+E    +    where <built-in method issubset of set object at 0x7f1a605e17e0> = {'A', 'D65', 'F01', 'F02', 'F11'}.issubset
+_________________ test_mpc_excel_import_and_safe_client_export _________________
+tests/test_excel_exchange.py:36: in test_mpc_excel_import_and_safe_client_export
+    values = [str(cell.value or "") for row in exported["Color Card"].iter_rows() for cell in row]
+                                               ^^^^^^^^^^^^^^^^^^^^^^
+../../../chromatic-venv/lib/python3.12/site-packages/openpyxl/workbook/workbook.py:287: in __getitem__
+    raise KeyError("Worksheet {0} does not exist.".format(key))
+E   KeyError: 'Worksheet Color Card does not exist.'
+_________________ test_p3_2_library_page_uses_indexed_filters __________________
+tests/test_library_index_p3_2.py:71: in test_p3_2_library_page_uses_indexed_filters
+    total, samples = store.library_page('客户A', search_text='蓝', kind='STD', limit=48)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+qtx_app/perf_monitor.py:147: in wrapped
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+qtx_app/library_store.py:997: in library_page
+    where,params,name_expr,lab_l,lab_a,lab_b=self._library_page_query_parts(
+qtx_app/library_store.py:824: in _library_page_query_parts
+    access,ap=self._access_condition('q')
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+qtx_app/library_store.py:126: in _access_condition
+    if self._access_exact_paths is not None:
+       ^^^^^^^^^^^^^^^^^^^^^^^^
+E   AttributeError: 'LibraryStore' object has no attribute '_access_exact_paths'
+___________ test_p3_2_corrupt_payload_is_not_exposed_by_picker_index ___________
+tests/test_library_index_p3_2.py:96: in test_p3_2_corrupt_payload_is_not_exposed_by_picker_index
+    assert all(row['sample_key'] != 'bad' for row in store.sample_index())
+                                                     ^^^^^^^^^^^^^^^^^^^^
+qtx_app/perf_monitor.py:147: in wrapped
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+qtx_app/library_store.py:1174: in sample_index
+    access,ap=self._access_condition('q')
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+qtx_app/library_store.py:126: in _access_condition
+    if self._access_exact_paths is not None:
+       ^^^^^^^^^^^^^^^^^^^^^^^^
+E   AttributeError: 'LibraryStore' object has no attribute '_access_exact_paths'
+____________ test_library_page_default_does_not_deserialize_payload ____________
+tests/test_library_lazy_spectrum_p3_3.py:34: in test_library_page_default_does_not_deserialize_payload
+    total,samples=store.library_page('客户X',limit=48)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+qtx_app/perf_monitor.py:147: in wrapped
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+qtx_app/library_store.py:997: in library_page
+    where,params,name_expr,lab_l,lab_a,lab_b=self._library_page_query_parts(
+qtx_app/library_store.py:824: in _library_page_query_parts
+    access,ap=self._access_condition('q')
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+qtx_app/library_store.py:126: in _access_condition
+    if self._access_exact_paths is not None:
+       ^^^^^^^^^^^^^^^^^^^^^^^^
+E   AttributeError: 'LibraryStore' object has no attribute '_access_exact_paths'
+______________ test_full_page_path_still_hydrates_visible_payload ______________
+tests/test_library_lazy_spectrum_p3_3.py:44: in test_full_page_path_still_hydrates_visible_payload
+    total,samples=store.library_page('客户X',limit=1,lightweight=False)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+qtx_app/perf_monitor.py:147: in wrapped
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+qtx_app/library_store.py:997: in library_page
+    where,params,name_expr,lab_l,lab_a,lab_b=self._library_page_query_parts(
+qtx_app/library_store.py:824: in _library_page_query_parts
+    access,ap=self._access_condition('q')
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+qtx_app/library_store.py:126: in _access_condition
+    if self._access_exact_paths is not None:
+       ^^^^^^^^^^^^^^^^^^^^^^^^
+E   AttributeError: 'LibraryStore' object has no attribute '_access_exact_paths'
+________________ test_selected_keys_hydrate_only_requested_rows ________________
+tests/test_library_lazy_spectrum_p3_3.py:52: in test_selected_keys_hydrate_only_requested_rows
+    light=store.load_index_samples_by_keys(['x.qtx|2'])
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+qtx_app/perf_monitor.py:147: in wrapped
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+qtx_app/library_store.py:1090: in load_index_samples_by_keys
+    access,ap=self._access_condition('q')
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+qtx_app/library_store.py:126: in _access_condition
+    if self._access_exact_paths is not None:
+       ^^^^^^^^^^^^^^^^^^^^^^^^
+E   AttributeError: 'LibraryStore' object has no attribute '_access_exact_paths'
+____________ test_recovery_by_sample_id_only_hydrates_matching_rows ____________
+tests/test_library_lazy_spectrum_p3_3.py:60: in test_recovery_by_sample_id_only_hydrates_matching_rows
+    rows=store.load_samples_by_sample_ids({'2'})
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+qtx_app/library_store.py:1241: in load_samples_by_sample_ids
+    access,ap=self._access_condition('q'); extra=(' AND '+access) if access else ''
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+qtx_app/library_store.py:126: in _access_condition
+    if self._access_exact_paths is not None:
+       ^^^^^^^^^^^^^^^^^^^^^^^^
+E   AttributeError: 'LibraryStore' object has no attribute '_access_exact_paths'
+_______________________ test_has_samples_is_payload_free _______________________
+tests/test_library_lazy_spectrum_p3_3.py:69: in test_has_samples_is_payload_free
+    assert store.has_samples() is True
+           ^^^^^^^^^^^^^^^^^^^
+qtx_app/library_store.py:1257: in has_samples
+    access,ap=self._access_condition('q'); where=(' WHERE '+access) if access else ''
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+qtx_app/library_store.py:126: in _access_condition
+    if self._access_exact_paths is not None:
+       ^^^^^^^^^^^^^^^^^^^^^^^^
+E   AttributeError: 'LibraryStore' object has no attribute '_access_exact_paths'
+________ test_sun_way_standard_prefers_datacolor_transformed_target_xyz ________
+tests/test_qtx_sun_way_datacolor_d65.py:18: in test_sun_way_standard_prefers_datacolor_transformed_target_xyz
+    assert standard.lab_d65_10 == pytest.approx((16.75714, 0.60723, -0.87820), abs=0.0002)
+E   assert (16.757138263...9941908267808) == approx((16.75...82 ± 2.0e-04))
+E     
+E     comparison failed. Mismatched elements: 2 / 3:
+E     Max absolute difference: 0.0006645977461835484
+E     Max relative difference: 0.0010932779278638042
+E     Index | Obtained            | Expected         
+E     1     | 0.6078945977461836  | 0.60723 ± 2.0e-04
+E     2     | -0.8779941908267808 | -0.8782 ± 2.0e-04
+_________ test_sun_way_d65_deltas_reproduce_datacolor_embedded_results _________
+tests/test_qtx_sun_way_datacolor_d65.py:60: in test_sun_way_d65_deltas_reproduce_datacolor_embedded_results
+    assert da == pytest.approx(float(sample.raw["CIE_Da"]), abs=2e-5)
+E   assert -0.41299959774618356 == -0.412342 ± 2.0e-05
+E     
+E     comparison failed
+E     Obtained: -0.41299959774618356
+E     Expected: -0.412342 ± 2.0e-05
+______ test_palette_select_all_with_persistent_selection_and_ctrl_toggle _______
+tests/test_ui_selection_scope.py:23: in test_palette_select_all_with_persistent_selection_and_ctrl_toggle
+    plan = ColorCardPlanWindow(main,card)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+qtx_app/main_window.py:4379: in __init__
+    self.load_layout(); self._capture_original_order(); QTimer.singleShot(0,self.update_grid_size)
+    ^^^^^^^^^^^^^^^^^^
+qtx_app/main_window.py:4981: in load_layout
+    samples=self._all_samples(); slots=[]; meta=[]
+            ^^^^^^^^^^^^^^^^^^^
+qtx_app/perf_monitor.py:147: in wrapped
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+qtx_app/main_window.py:4945: in _all_samples
+    for sm in self.main._samples_by_keys_on_demand(needed,full=True):out[sample_key(sm)]=sm
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   AttributeError: 'types.SimpleNamespace' object has no attribute '_samples_by_keys_on_demand'
+----------------------------- Captured stderr call -----------------------------
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+____________ test_palette_shortcuts_target_only_the_focused_scheme _____________
+tests/test_ui_selection_scope.py:46: in test_palette_shortcuts_target_only_the_focused_scheme
+    one=ColorCardPlanWindow(main,{'card_id':'one','name':'方案一',
+qtx_app/main_window.py:4379: in __init__
+    self.load_layout(); self._capture_original_order(); QTimer.singleShot(0,self.update_grid_size)
+    ^^^^^^^^^^^^^^^^^^
+qtx_app/main_window.py:4981: in load_layout
+    samples=self._all_samples(); slots=[]; meta=[]
+            ^^^^^^^^^^^^^^^^^^^
+qtx_app/perf_monitor.py:147: in wrapped
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+qtx_app/main_window.py:4945: in _all_samples
+    for sm in self.main._samples_by_keys_on_demand(needed,full=True):out[sample_key(sm)]=sm
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   AttributeError: 'types.SimpleNamespace' object has no attribute '_samples_by_keys_on_demand'
+____________ test_switch_library_scope_removes_old_qtabbar_entries _____________
+tests/test_ui_selection_scope.py:83: in test_switch_library_scope_removes_old_qtabbar_entries
+    assert tabs.count()==1 and tabs.tabText(0)=='全部客户'
+E   assert (0 == 1)
+E    +  where 0 = <built-in method count of PySide6.QtWidgets.QTabBar object at 0x7f1a5645d400>()
+E    +    where <built-in method count of PySide6.QtWidgets.QTabBar object at 0x7f1a5645d400> = <PySide6.QtWidgets.QTabBar(0x10a78e00) at 0x7f1a5645d400>.count
+________________ test_formal_and_official_sql_scopes_do_not_mix ________________
+tests/test_ui_selection_scope.py:99: in test_formal_and_official_sql_scopes_do_not_mix
+    formal=[row.customer for row,_ in store.library_contents(scope='正式色库')]
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+qtx_app/perf_monitor.py:147: in wrapped
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+qtx_app/library_store.py:755: in library_contents
+    access,ap=self._access_condition('q')
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+qtx_app/library_store.py:126: in _access_condition
+    if self._access_exact_paths is not None:
+       ^^^^^^^^^^^^^^^^^^^^^^^^
+E   AttributeError: 'LibraryStore' object has no attribute '_access_exact_paths'
+=============================== warnings summary ===============================
+../../../chromatic-venv/lib/python3.12/site-packages/colour/utilities/verbose.py:340
+  /workspace/chromatic-venv/lib/python3.12/site-packages/colour/utilities/verbose.py:340: ColourUsageWarning: "SciPy" related API features are not available: "No module named 'scipy'".
+  See the installation guide for more information: https://www.colour-science.org/installation-guide/
+    warn(*args, **kwargs)
+
+../../../chromatic-venv/lib/python3.12/site-packages/colour/utilities/verbose.py:340
+  /workspace/chromatic-venv/lib/python3.12/site-packages/colour/utilities/verbose.py:340: ColourUsageWarning: "Matplotlib" related API features are not available: "No module named 'matplotlib'".
+  See the installation guide for more information: https://www.colour-science.org/installation-guide/
+    warn(*args, **kwargs)
+
+tests/test_core_rules.py::test_every_advertised_illuminant_can_be_calculated[U30]
+  /workspace/chromatic-venv/lib/python3.12/site-packages/colour/utilities/verbose.py:340: ColourRuntimeWarning: Aligning "F32T8/TL830 (Triphosphor)" spectral data shape to "(360.0, 830.0, 1.0)".
+    warn(*args, **kwargs)
+
+tests/test_core_rules.py::test_every_advertised_illuminant_can_be_calculated[U35]
+  /workspace/chromatic-venv/lib/python3.12/site-packages/colour/utilities/verbose.py:340: ColourRuntimeWarning: Aligning "F32T8/TL835 (Triphosphor)" spectral data shape to "(360.0, 830.0, 1.0)".
+    warn(*args, **kwargs)
+
+tests/test_core_rules.py::test_every_advertised_illuminant_can_be_calculated[Horizon]
+  /workspace/chromatic-venv/lib/python3.12/site-packages/colour/utilities/verbose.py:340: ColourRuntimeWarning: Aligning "2300K Blackbody" spectral data shape to "(360.0, 830.0, 1.0)".
+    warn(*args, **kwargs)
+
+tests/test_core_rules.py::test_every_advertised_illuminant_can_be_calculated[LEDT8G]
+  /workspace/chromatic-venv/lib/python3.12/site-packages/colour/utilities/verbose.py:340: ColourRuntimeWarning: Aligning "LED-B3" spectral data shape to "(360.0, 830.0, 1.0)".
+    warn(*args, **kwargs)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+FAILED tests/test_core_rules.py::test_required_illuminants_are_available - As...
+FAILED tests/test_excel_exchange.py::test_mpc_excel_import_and_safe_client_export
+FAILED tests/test_library_index_p3_2.py::test_p3_2_library_page_uses_indexed_filters
+FAILED tests/test_library_index_p3_2.py::test_p3_2_corrupt_payload_is_not_exposed_by_picker_index
+FAILED tests/test_library_lazy_spectrum_p3_3.py::test_library_page_default_does_not_deserialize_payload
+FAILED tests/test_library_lazy_spectrum_p3_3.py::test_full_page_path_still_hydrates_visible_payload
+FAILED tests/test_library_lazy_spectrum_p3_3.py::test_selected_keys_hydrate_only_requested_rows
+FAILED tests/test_library_lazy_spectrum_p3_3.py::test_recovery_by_sample_id_only_hydrates_matching_rows
+FAILED tests/test_library_lazy_spectrum_p3_3.py::test_has_samples_is_payload_free
+FAILED tests/test_qtx_sun_way_datacolor_d65.py::test_sun_way_standard_prefers_datacolor_transformed_target_xyz
+FAILED tests/test_qtx_sun_way_datacolor_d65.py::test_sun_way_d65_deltas_reproduce_datacolor_embedded_results
+FAILED tests/test_ui_selection_scope.py::test_palette_select_all_with_persistent_selection_and_ctrl_toggle
+FAILED tests/test_ui_selection_scope.py::test_palette_shortcuts_target_only_the_focused_scheme
+FAILED tests/test_ui_selection_scope.py::test_switch_library_scope_removes_old_qtabbar_entries
+FAILED tests/test_ui_selection_scope.py::test_formal_and_official_sql_scopes_do_not_mix
+15 failed, 115 passed, 6 warnings in 6.49s

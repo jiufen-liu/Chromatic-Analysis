@@ -1,0 +1,9 @@
+Hotfix74 validation targets
+===========================
+1. Import adidas.qtx under HF73/HF74 integrity rules: expected 309 occupied swatches.
+2. Run 实验性 · 视觉色貌编排 V1: occupied count must remain 309.
+3. Confirm broad visual hue progression is coherent and low-chroma white/grey/black samples are not scattered by unstable hue angle.
+4. Ctrl+Z restores the prior layout.
+5. Start Munsell, then choose Visual V1 before Munsell finishes: late Munsell result must not overwrite Visual V1.
+6. RUN_DIAGNOSTICS.bat → sort science audit: workbook contains 视觉色貌编排_V1.
+7. Existing Munsell / spectral RMS / experimental spectral+perceptual remain available and unchanged.

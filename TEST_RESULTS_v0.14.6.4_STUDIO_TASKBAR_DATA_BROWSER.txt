@@ -1,0 +1,17 @@
+Chromatic Analysis v0.14.6.4 - Studio Taskbar & Data Browser 验证结果
+
+已完成：
+- Python compileall：通过。
+- VERIFY_SCOPED_UPDATE.py：通过。
+- 受保护业务文件：11 个哈希与 v0.14.6.3 完全一致。
+- AST 兼容检查：未删除任何原类或原方法；保留 _hide_minimized 兼容入口。
+- 最小化结构检查：MDI 工具窗和临时数据浏览窗都接入主程序底部任务栏；单击任务按钮恢复原窗口和状态。
+- 导入结构检查：QTX / CPX / Excel 都写入临时样本注册表并打开独立 MDI 色卡浏览窗，不再生成顶部“文件标签页”。
+- 拖放结构检查：临时浏览窗、比色工作台、正式色库统一使用 CARD_MIME；跨窗口操作为复制，原色样不删除。
+- 权限结构检查：拖入正式色库先执行 require_admin，并且每次都调用客户 / 分类选择对话框。
+- 原功能入口检查：测色明细、2D、3D、555、排序、编排、导出、保存到正式色库仍保留。
+
+受环境限制：
+- 当前容器没有 PySide6、pytest 和 colour-science，无法启动真实 Qt GUI 或重新执行 pytest。
+- 已执行依赖无关的 compileall、AST、方法兼容和 SHA-256 保护检查。
+- 请在安装 requirements.txt 的 Windows 目标环境完成 TEST_CHECKLIST_v0.14.6.4.md 中的最终人工验收。

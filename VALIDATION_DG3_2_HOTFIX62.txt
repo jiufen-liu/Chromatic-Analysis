@@ -1,0 +1,19 @@
+Hotfix62 · DG-3.2 · Local Data Console / Audit Excel
+
+Validation performed in build environment:
+- Python compile / compileall: PASS for qtx_app, qtx_core, main.py, tools and tests.
+- Frozen file SHA-256 comparison against Hotfix61: PASS for main_window.py, lab3d_quick.py,
+  Lab3DView.qml, qtx_parser.py, colorimetry.py, library_store.py and excel_exchange.py.
+- Scope review: only data-management UI, audit query API, audit Excel exporter, build info and docs changed.
+
+Runtime note:
+- Build container does not include PySide6, therefore the Windows Qt dialog could not be launched here.
+- The project already declares openpyxl>=3.1,<4, which is used by the new runtime audit exporter.
+
+User validation focus:
+1. Open Administrator > 本地数据管理 on the smaller notebook screen and confirm the dialog fits and scrolls.
+2. Filter audit rows by period, user, action and keyword.
+3. Export current filtered rows to Excel.
+4. Confirm workbook contains 审计记录 and 导出说明 sheets.
+5. Confirm a successful export adds an EXPORT_AUDIT_EXCEL record.
+6. Confirm the main Studio window is visually unchanged.

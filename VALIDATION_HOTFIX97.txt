@@ -1,0 +1,29 @@
+Chromatic Analysis v0.14.6.4 Hotfix97
+Simple Color Family Sort
+
+目标：
+- 蓝色归蓝色
+- 深蓝/藏青归深蓝
+- 灰色归灰色
+- 黑色归黑色
+- 绿色归绿色
+- 卡其/米色/黄色归同一暖色组
+- 每组内部主要深→浅
+
+验证：
+- palette_family_sort.py / main_window.py py_compile: PASS
+- 8 个边界色分类 smoke checks: PASS
+- determinism smoke check: PASS
+- customer lab dips.zip 全量 208 QTX: 208/208 PASS
+- 全量样本：35,796
+- 13,188 色压力文件：PASS
+- 无客户/品牌名称规则
+- 不做全局 Delta-E 路径
+
+保留：
+- 色貌连续排序（实验）
+- 经典连续排序（历史光谱+感知）
+- Munsell H 色相排序
+
+新增推荐入口：
+- 色类分组排序（推荐）

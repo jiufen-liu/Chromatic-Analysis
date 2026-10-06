@@ -1,0 +1,24 @@
+Hotfix54 validation summary
+===========================
+
+Static validation in build environment
+- All Python sources compile successfully with py_compile.
+- Parser batch scheduling smoke test: PASS (24 spectra -> 1 batch call).
+- Parser safe fallback smoke test: PASS (verification failure -> 20 scalar calls).
+- Synthetic 3500-record / ~1.54 MiB QTX parser overhead with science function
+  stubbed: ~0.20 s total in this container; this is NOT a colour-science timing.
+- Frozen-file SHA-256 comparison vs Hotfix53: MainWindow, LibraryStore, Auth,
+  Excel, Quick3D/QML, analysis.py, metamerism.py, shade_sort.py, cpx_io.py and
+  models.py are unchanged.
+
+Environment limitation
+- This container does not contain colour-science 0.4.7, so the real vectorized
+  ASTM E308 numeric/performance test cannot be executed here.
+- Hotfix54 includes runtime first/middle/last scalar-reference verification and
+  automatic scalar fallback, plus tests that should run in the user's existing
+  Python environment where colour-science is installed.
+
+Required Windows acceptance
+- Run tools/performance_baseline.py against the same Coloro 3500.qtx.
+- Confirm batch_samples=3500 (or nearly all spectrum-only samples), fallback=0.
+- Compare parse time to Hotfix53 baseline: 12668.68 ms.

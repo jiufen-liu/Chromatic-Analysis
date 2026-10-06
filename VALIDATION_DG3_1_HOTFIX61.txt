@@ -1,0 +1,34 @@
+Hotfix61 validation
+===================
+
+Static validation
+- python -m compileall: PASS for main.py, qtx_app, qtx_core, tools, tests
+
+Container smoke tests (Qt/core stubs because build container lacks PySide6/colour-science)
+1. Portable package:
+   - creates installation UUID
+   - exports auth/library SQLite + managed mirror + user workfile
+   - validates manifest
+   - imports package
+   - preserves payload and target installation identity
+   - creates full pre-import safety .cadata package
+   RESULT: PASS
+2. Private ownership:
+   - admin creates private card/workbench
+   - operator creates different private card/workbench
+   - operator cannot list admin private data
+   - admin cannot list operator private data
+   - aggregate owner counts remain available
+   - explicit ownership transfer moves DB ownership without reading payload
+   RESULT: PASS
+3. Organisation recovery:
+   - organisation profile create/update
+   - recovery key generation + verification
+   - wrong key rejected
+   - recovery key resets admin password
+   RESULT: PASS
+
+Frozen core scope
+- qtx_core: no intended changes from Hotfix60
+- QTX batch parser/color science/MI/555: no intended changes
+- Quick3D/QML: no intended changes

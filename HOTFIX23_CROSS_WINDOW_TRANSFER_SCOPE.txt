@@ -1,0 +1,20 @@
+Chromatic Analysis v0.14.6.4 - Hotfix 23
+
+Scope: cross-window colour-card transfer only.
+
+Fixed:
+1. Palette scheme -> new/personal data window drag now carries the complete Sample snapshot, so unsaved/embedded palette cards can be resolved by the target window.
+2. New/personal data window -> another new/personal data window drag now works across MDI subwindows.
+   - Drag = move between personal/new data windows.
+   - Ctrl + drag = copy.
+   - Library/palette -> personal/new window remains copy-only.
+3. Ctrl+C / Ctrl+X / Ctrl+V in personal/new data windows now uses the application clipboard with complete Sample data, so copy/cut/paste works across different windows and also into palette schemes.
+4. Added compatibility lookup for open personal/new documents and open palette schemes when an older drag contains only a sample key.
+
+Not changed:
+- QTX/CPX parsing
+- colourimetry / Delta E
+- library RBAC
+- palette layout/save/export
+- UI styling
+- 555 shade-sort algorithm (reviewed separately; see assistant analysis/recommendation)

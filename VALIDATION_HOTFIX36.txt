@@ -1,0 +1,38 @@
+Chromatic Analysis v0.14.6.4 — Hotfix36 validation
+
+Scope
+-----
+Changed/new Python files relative to Hotfix35:
+  qtx_app/main_window.py
+  qtx_app/lab3d_quick.py (new)
+New QML:
+  qtx_app/qml/Lab3DView.qml
+
+Static validation completed
+---------------------------
+[PASS] python -m compileall for full project
+[PASS] qtx_core/*.py SHA256 identical to Hotfix35
+[PASS] qtx_app/library_store.py identical to Hotfix35
+[PASS] qtx_app/auth_store.py identical to Hotfix35
+[PASS] qtx_app/excel_exchange.py identical to Hotfix35
+[PASS] main_window no longer references OpenGLLab3DDialog
+[PASS] main_window opens the unified QuickLab3DDialog only
+[PASS] QML uses FileInstancing for real colour samples
+[PASS] QQuickView is embedded with QWidget.createWindowContainer
+[PASS] old black 3D is not used as the automatic graphics fallback
+
+Architecture checks
+-------------------
+- RHI backend is not forced. Windows can use Qt's normal D3D11 path.
+- 3D sample coordinates are uploaded once through FileInstancing.
+- Camera rotation is handled in QML/Qt Quick rather than a Python per-sample paint loop.
+- Same-window CPU projection is retained only as an emergency compatibility path.
+- Derived gamut surface is presentation-only and does not modify sample Lab values.
+
+Runtime validation limitation
+-----------------------------
+The build environment used to prepare this hotfix does not contain PySide6 and
+has no Windows D3D11 desktop. Therefore a real Qt Quick 3D/RHI frame cannot be
+executed here. The first full runtime validation must be performed on Windows.
+The project includes RUN_3D_SOFTWARE_FALLBACK.bat for machines where hardware
+RHI initialization is unavailable.

@@ -1,0 +1,29 @@
+Hotfix60 DG-3 validation
+========================
+
+Static validation
+- py_compile: PASS (main.py, main_window.py, library_store.py, auth_store.py, data_protection.py, data_management.py)
+- qtx_core integrity: PASS (8 Python files SHA-256 identical to Hotfix59)
+
+DG-3 ownership smoke
+- owner_user_id migration columns created for color_cards/workbenches: PASS
+- new user-owned card/workbench visible to owner: PASS
+- another operator cannot list that owned card/workbench: PASS
+- legacy owner_user_id=0 data remains visible for upgrade compatibility: PASS
+- administrator can list all records: PASS
+
+Backup/recovery smoke
+- consistent SQLite backup created: PASS
+- restore from selected backup: PASS
+- pre-restore safety backup uses a unique timestamped folder: PASS
+
+Runtime GUI note
+- The build environment does not contain PySide6, so Windows GUI behavior must be verified in the user's existing Python/PySide6 environment.
+
+Focused Windows checks
+1. Official-only user: library header/source must say 官方色库, not 正式色库.
+2. Create a workbench as test1, log in as test: new test1 workbench should not appear (legacy shared workbenches may remain visible).
+3. Create a color-card scheme as test1, log in as test: new test1 scheme should not appear (legacy shared schemes may remain visible).
+4. Save a .chromatic file: save dialog should start in the signed-in user's managed workfile directory.
+5. Administrator account menu -> 本地数据管理… -> manual backup / audit / restore controls.
+6. Existing app-generated Documents mirror QTX files may be migrated into managed AppData; original imported source QTX files must remain untouched.

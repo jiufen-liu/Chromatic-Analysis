@@ -1,0 +1,19 @@
+Hotfix123 validation prepared 2026-09-30
+
+Static checks performed in build environment:
+- Python files compiled: 88
+- Syntax errors: 0
+- Palette backend: PaletteSlotModel(QAbstractTableModel)
+- Palette view: ColorCardPlanGrid(QTableView)
+- Palette renderer: PaletteCardDelegate(QStyledItemDelegate/QPainter)
+- Per-card QListWidgetItem creation removed from bulk palette rebuild
+- Per-card QWidget materialisation removed from palette display path
+- Heavy tool pages lazy-built on first open
+- saved-state restore deferred until after first paint opportunity
+
+Runtime verification required on Windows/PySide6:
+1. Start application: home shell should appear before heavy tools are built.
+2. Open Palette Studio and import Coloro 3500 once.
+3. Confirm cards appear and scrolling remains responsive.
+4. Status bar should show: 色卡模型 3500 位：... ms · 首屏 ... ms
+5. Check %APPDATA%/ChromaticAnalysis/ChromaticAnalysis/logs/ui_performance.jsonl if detailed timings are needed.

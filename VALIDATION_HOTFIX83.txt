@@ -1,0 +1,9 @@
+Hotfix83 / Visual Palette V2.4.2 targeted validation
+
+1. Formal application code remains frozen; V2.4.2 is offline audit only.
+2. V2.4.1 direct bridge absorption is unchanged.
+3. Adds exactly one bounded second-hop continuity bridge.
+4. No recursive/iterative propagation is allowed.
+5. Run RUN_DIAGNOSTICS.bat -> [13] on the same batch.
+6. Expected Chongming target: CTS-007 WHITE joins the same near-white cluster as CTS-007 WHITE swatch; semantic conflict should disappear.
+7. Check that Stage-2 count remains small across unrelated QTX files.

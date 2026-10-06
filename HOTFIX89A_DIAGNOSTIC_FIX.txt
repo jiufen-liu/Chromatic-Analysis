@@ -1,0 +1,6 @@
+Hotfix89A · Diagnostics Import Fix
+
+仅修复 tools/munsell_production_benchmark.py 的类名引用：
+PalettePlanWindow -> ColorCardPlanWindow
+
+正式应用 main_window.py、排序算法、色卡功能均未修改。

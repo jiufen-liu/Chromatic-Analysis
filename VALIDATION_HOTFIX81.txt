@@ -1,0 +1,19 @@
+Chromatic Analysis v0.14.6.4 - Hotfix81
+Visual Palette Arrangement V2.4 Offline Audit
+
+Scope:
+- V2.3 remains untouched as baseline.
+- V2.4 is OFFLINE AUDIT ONLY; not connected to the formal Palette Studio sorting menu.
+- Smooth high-L* tinted-white neutral envelope replaces the narrow C*=12 cliff.
+- Neutral Field uses broad tint lanes (core / warm-red / yellow-green / green-cyan / blue-violet) inside each L* shelf.
+- 12 hue-family skeleton, adaptive L* shelves, chromatic C* rows, shutdown fixes, data integrity, QTX/CPX/555/3D/RBAC remain unchanged.
+
+Targeted regression evidence used before packaging:
+- adidas V2.3 audit reconstruction: semantic-conflict pattern was entirely Blue-Violet blue-white vs Neutral Field; V2.4 routes the five high-L* C*~12 blue-whites into Neutral Field.
+- adidas reconstructed row metrics: mean DeltaE00 1.940 -> 1.907; p95 4.587 -> 4.416; max unchanged 6.442.
+- FIGS reconstructed row metrics: mean 2.805 -> 2.253; p95 7.959 -> 4.740; max 11.918 -> 6.944.
+- Reconstructed cross-family DeltaE00<3 semantic conflicts: adidas 56 pairs/18 samples -> 0; FIGS remains 0.
+
+User validation:
+RUN_DIAGNOSTICS.bat -> [11] -> drag the same multi-QTX validation folder.
+Send VPA_V24_BATCH_SUMMARY_*.xlsx first.

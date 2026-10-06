@@ -1,0 +1,50 @@
+Hotfix104 validation
+====================
+
+Scope
+-----
+1. LABCH grouped sort: L*, a*, b*, C*, h°.
+2. Color Difference as a separate reference-colour sort.
+3. Running ΔE as a separate continuous nearest-neighbour sort.
+4. LABC Atlas retained as the independent professional atlas / colour-card organisation tool.
+5. Existing palette import/export/layout/undo/drag/drop functions not deliberately changed.
+
+Static validation
+-----------------
+PASS: qtx_app/main_window.py compiles.
+PASS: qtx_app/labc_atlas_window.py compiles.
+PASS: qtx_core/labc_atlas.py compiles.
+PASS: full qtx_app/qtx_core/tests compileall.
+PASS: tests/test_palette_sort_contract_hf104.py -> 4/4 passed.
+PASS: toolbar exposes LABCH with L/a/b/C/h.
+PASS: Color Difference is a separate command and requires one selected reference sample.
+PASS: Running ΔE is a separate command and requires one selected start sample.
+PASS: Running ΔE executes on the existing card-sort background executor and uses stable tie-breaks.
+PASS: right-click Arrange menu mirrors the same sorting entry points and opens LABC Atlas.
+PASS: LABC Atlas remains separate and read-only with respect to palette slots.
+
+Runtime limitation in this build environment
+--------------------------------------------
+PySide6 and colour-science are not installed in the current build container, so the full GUI and numerical colour-difference runtime were not launched here. The project already depends on those packages in the user's Windows environment. No claim is made that GUI interaction was exercised in this container.
+
+Behaviour contract
+------------------
+LABCH:
+- L*/a*/b*/C*: keep the established first-click descending behaviour, repeat click reverses.
+- h°: first click sorts 0° -> 360°, repeat click reverses.
+
+Color Difference:
+- exactly one selected colour is required;
+- follows MainWindow.active_formula (CIEDE2000 / CIE94 / ΔE*ab / CMC 2:1);
+- sorts all occupied palette samples from nearest to farthest from the selected reference.
+
+Running ΔE:
+- exactly one selected colour is required as start;
+- greedily chooses the minimum ΔE remaining sample under the current formula;
+- deterministic tie-break = original palette order, then stable sample key;
+- runs in background;
+- >1500 samples are blocked with an explanatory message to avoid O(N^2) GUI/performance risk.
+
+LABC Atlas:
+- remains the ongoing professional atlas inspired by the Munsell-style organisation approach;
+- no separate Munsell sorter has been added.

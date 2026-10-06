@@ -1,0 +1,26 @@
+Chromatic Analysis v0.14.6.1 UI Studio MDI Hotfix 1
+
+Scope: UI-container regression hotfix only.
+
+Fixed:
+- Formal Library MDI window blank white content.
+- Compare Workbench MDI window blank white content.
+- Find / Palette / Spectrum use the same corrected MDI embedding path.
+
+Root cause:
+- Mature tool pages were first inserted into a hidden QStackedWidget. On Windows the hidden state could remain after reparenting into QMdiSubWindow, leaving the subwindow shell visible but its original content hidden.
+
+Change:
+- Mature pages are built once and are no longer placed inside the hidden stack.
+- Existing page widgets are explicitly made visible when attached/reopened in a QMdiSubWindow.
+
+Not changed:
+- qtx_core algorithms/parsers
+- library_store.py
+- excel_exchange.py
+- auth_store.py
+- QTX/CPX parsing and CPX slot/order semantics
+- colour difference calculations, 555, 3D, spectrum logic
+- database schemas/data
+- import/export logic
+- RBAC business rules

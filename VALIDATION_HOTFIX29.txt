@@ -1,0 +1,14 @@
+Hotfix29 validation
+
+Static validation:
+- main_window.py AST/py_compile: PASS
+- Ctrl+A implementation contains bulk select + signal/repaint suppression: PASS
+- hard-coded official-library sidebar loop removed: PASS
+- dynamic official-library helpers present: PASS
+- official customer creation flow present: PASS
+- qtx_app/library_store.py SHA-256 unchanged vs Hotfix28: PASS
+- all qtx_core algorithm files SHA-256 unchanged vs Hotfix28: PASS
+
+Environment note:
+- Full Qt runtime tests were not executable in the build container because PySide6 and colour-science are not installed there.
+- The package itself retains its existing requirements and should be exercised on the user's normal Windows environment.

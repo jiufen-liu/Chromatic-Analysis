@@ -1,0 +1,14 @@
+Hotfix103 validation
+
+[PASS] qtx_core/labc_atlas.py py_compile
+[PASS] qtx_app/labc_atlas_window.py py_compile
+[PASS] Hotfix100 opponent-slice regression tests
+[PASS] Hotfix101 validation-mode regression tests
+[PASS] Hotfix103 exact hue-angle core tests
+[PASS] Old build_opponent_cells(records, family_key) API remains compatible
+[PASS] Exact hue angle can change slice membership without reclassifying samples
+[STATIC] 72 x 5-degree sectors wired to hueAngleSelected signal
+[STATIC] User-circled English UI strings replaced by Chinese copy
+[STATIC] Grid counts displayed as dot/×N with Chinese tooltip
+
+Runtime note: PySide6 is not installed in this sandbox, so full GUI launch is not executed here.

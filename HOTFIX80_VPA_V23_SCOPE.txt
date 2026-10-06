@@ -1,0 +1,12 @@
+Hotfix80 · Visual Palette Arrangement V2.3 Offline Audit
+
+Scope:
+- Adds audit-only Visual Palette V2.3.
+- Keeps V2.2 as baseline and does NOT replace production Palette Studio ordering.
+- Evidence-driven changes from 7 HF79 data sets:
+  1) Replace hard Neutral Axis wall with Neutral Field (true + weakly tinted whites/greys/blacks).
+  2) Tighten adaptive L* shelves from 7.5 to 6.0 for audit layout.
+  3) Split C* rows by both adaptive total span and local C* step.
+  4) Distinguish Hue-family boundary bridges, Neutral-field transition bridges, and true semantic conflicts.
+  5) Replace misleading row-end -> next-row-start metric with vertical nearest-C* adjacency metric for 2-D atlas review.
+- Production QTX/CPX/555/library/3D/RBAC and main_window behavior are unchanged from HF79/HF76 lineage.

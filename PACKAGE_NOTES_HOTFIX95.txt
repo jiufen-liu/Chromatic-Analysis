@@ -1,0 +1,11 @@
+Hotfix95 — Release Readiness R1
+Science-Guided Appearance Continuity
+
+主要变化：
+1. 软件主“色貌连续排序”改用 PAC V24.1 Science 核心。
+2. 色相拓扑优先；CIEDE2000 + 光谱仅在合理色貌邻域内优化。
+3. 增加低彩度跨家族保护、CIELAB b* 暖/冷 opponent veto。
+4. Neutral 判定收窄，保护 Pale Blue / Deep Navy；近白/近黑仍可稳定中性化。
+5. 诊断中心新增 [20] PAC V24.1 Science A/B；输出 V23 与 SCIENCE 对照。
+6. 保留“经典连续排序（历史光谱+感知）”回退路径，不删除旧功能。
+7. 增加科学设计说明、真实 QTX 验收清单和结构回归测试。

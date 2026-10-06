@@ -1,0 +1,25 @@
+Hotfix57 DG-2.1 validation
+========================
+
+Static validation
+- Python syntax compile: PASS (36 project Python files before cache cleanup)
+- qtx_core compared to Hotfix56: unchanged
+- qtx_app/lab3d_quick.py: unchanged
+- qtx_app/qml/Lab3DView.qml: unchanged
+- qtx_app/excel_exchange.py: unchanged
+
+RBAC smoke validation (stubbed Qt / temporary SQLite)
+- Feature deny + data allow: feature remains denied: PASS
+- Official Coloro allow + Pantone deny: PASS
+- Formal parent allow + child deny: PASS
+- More-specific child allow below denied parent: PASS
+- Global export feature deny overrides per-resource export allow: PASS
+- Re-enabling global export restores only resource-level allowed exports: PASS
+
+Important Windows GUI tests
+1. User & Permissions now has one “权限设置…” button.
+2. Disable 色库浏览, keep Coloro/Nike data access: full library browser must be blocked; Find/Compare may still use authorised data if those feature switches are enabled.
+3. Enable 色库浏览, deny Pantone: Pantone must not appear or be queryable from library browse; Coloro remains available if allowed.
+4. Enable 文件导出 but deny Nike export: viewing/using Nike works, export is blocked.
+5. Disable 文件导出 while Nike export stays checked: all export is blocked; resource setting remains saved.
+6. Parent official/formal grants cascade to children; individual child overrides remain effective.

@@ -1,0 +1,9 @@
+Hotfix94 package notes
+======================
+
+- Flattened to ONE project-folder level to reduce Windows path length.
+- Removed .idea/.pytest_cache/__pycache__ and historical generated diagnostics; PyCharm recreates its own project metadata.
+- Formal Palette Studio behaviour remains based on the existing production path.
+- Diagnostics menu [18] = fixed PAC V23.1 infrastructure.
+- Diagnostics menu [19] = PAC V24 Neutral/Hue Confidence A/B candidate.
+- Read HOTFIX94_PAC_VALIDATOR_NEUTRAL_CONFIDENCE.md and VALIDATION_HOTFIX94.txt.

@@ -1,0 +1,29 @@
+Performance P3-2 Hotfix28 validation
+
+Baseline equivalence:
+- 2,880 combinations compared against pristine P3-1 Hotfix27.
+- Covered customer/sub-customer scope, formal/official scope, search text, STD/BAT, color family, hidden keys, manual/name/L/a/b/C sorting, ascending/descending, offset/limit.
+- Result totals and page ordering matched in all tested cases.
+- Ordered sample_key queries also matched.
+
+Index/migration checks:
+- Legacy saved_samples(sample_key,qtx_path,payload) database auto-adds lightweight columns.
+- Valid payload rows are populated with scalar metadata and index_version=1.
+- Invalid JSON is marked with negative index version and remains skipped by picker/full loading behavior.
+- schema_meta prevents repeated full migration scans after successful migration.
+- 10,000-row synthetic first migration: ~150 ms in the validation environment.
+- Re-running schema initialization after migration: <1 ms in the validation environment.
+
+Synthetic 10,000-sample query benchmark (35-point spectra; same result set):
+- Search + STD + name sort: P3-1 ~51 ms, P3-2 ~7 ms (~6.9x faster).
+- Blue-family + L sort: P3-1 ~69 ms, P3-2 ~5 ms (~13.9x faster).
+- BAT + purple-family + C sort: P3-1 ~56 ms, P3-2 ~5 ms (~11.7x faster).
+
+Static scope checks:
+- qtx_core files unchanged from Hotfix27.
+- main_window.py unchanged from Hotfix27.
+- Core implementation change is isolated to qtx_app/library_store.py plus validation/test/release-note files.
+
+Notes:
+- Timing values are synthetic engineering measurements, not guarantees for every Windows PC/database.
+- P3-3 will address full spectral payload lazy loading in detail/analysis workflows.

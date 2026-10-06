@@ -1,0 +1,21 @@
+Hotfix87 · Palette Slot Windows Selection & Delete
+
+Scope (functionality only; performance/sort tuning intentionally deferred):
+1. Blank palette slots are explicit selectable/enabled items.
+2. Blank selected state is clearly visible with blue selection styling.
+3. Standard Windows selection semantics in the palette canvas:
+   - click: single-select
+   - Ctrl+click: toggle/add selection
+   - Shift+click / Shift+Arrow: contiguous range selection
+   - Ctrl+A: select all layout slots, including blanks
+   - Esc: clear selection
+   - Delete/Backspace: delete selected layout objects
+   - Ctrl+Z / Ctrl+Y: undo/redo
+4. Alt+Arrow is the optional keyboard move gesture; Shift+Arrow no longer moves cards.
+5. Right-click includes "仅选择全部空位" for layout cleanup.
+6. Deleting occupied samples asks for confirmation; deleting blanks does not.
+7. No change to spectral+perceptual sorting, Munsell algorithms/cache, QTX/CPX/Excel data semantics, 3D or colour science.
+
+Known follow-up (not changed in this hotfix):
+- Investigate khaki-family separation in spectral+perceptual continuous sort using the user's 色卡方案003.xlsx.
+- Performance work is deliberately postponed until slot editing is verified.

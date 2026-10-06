@@ -1,0 +1,28 @@
+Hotfix48 validation summary
+===========================
+Base: Hotfix47 / Performance P3-3
+
+Static validation
+- qtx_app/main_window.py: py_compile PASS
+- qtx_app/library_store.py: py_compile PASS
+- AST parse PASS
+
+Scope protection
+- qtx_core: SHA-identical to Hotfix47
+- qtx_app/lab3d_quick.py: identical
+- qtx_app/qml/Lab3DView.qml: identical
+- qtx_app/auth_store.py: identical
+- qtx_app/excel_exchange.py: identical
+
+Hotfix48 changes
+1) Munsell sort no longer materialises/deserialises the whole formal library.
+   First use builds persisted Munsell sort keys on a maintenance worker in small DB batches.
+   Subsequent Munsell sorts use SQLite ORDER BY + LIMIT/OFFSET.
+2) Added a* low/high and b* low/high sort options. These use scalar P3 indexes.
+3) Adding samples from the library to a comparison workbench now activates the comparison page and exact workbench tab.
+
+SQL sanity check
+- chromatic Munsell keys sort before neutral keys; hue order and neutral-last semantics PASS.
+
+Runtime note
+- Exact Munsell renotation requires the installed colour-science runtime; first use is intentionally one-time and may take time on large libraries, but it no longer runs on the Qt GUI thread.

@@ -1,0 +1,23 @@
+Hotfix79 Validation
+===================
+
+范围：仅增加 Visual Palette V2.2 离线验证；正式 Palette Studio 不接入 V2.2。
+
+V2.2目标：
+1. 保持 12 个 Hue Family 作为大骨架。
+2. L* 使用自适应明度层。
+3. C* 成为同一明度层内的主要横向坐标，低彩度 -> 高彩度。
+4. 相邻 Hue Family 的近似色标记为“软边界桥接”，不再一律计为冲突。
+5. White / Grey / Black 合并为连续 Neutral Axis，仅保留语义标签，不再作为硬墙。
+6. C*<10 的彩色样保留在 Hue Family，但标记低 Hue 置信度。
+7. 支持单个 QTX 或文件夹批量验证。
+
+冻结：
+- qtx_app/main_window.py 不为 V2.2 修改。
+- HF76 Shutdown Lifecycle 修复保持。
+- 原有 Munsell / Spectral RMS / Hybrid / Visual V1 / V2 / V2.1 均未替换。
+
+现场验证：
+- RUN_DIAGNOSTICS.bat -> [9]
+- 单文件：拖入 QTX，生成 VPA_V22_*_PREVIEW.png + *_AUDIT.xlsx。
+- 多数据：直接拖入包含 QTX 的文件夹，生成批量汇总 Excel/JSON + 每个 QTX 的预览与审计。

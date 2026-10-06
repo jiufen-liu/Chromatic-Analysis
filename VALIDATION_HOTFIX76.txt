@@ -1,0 +1,13 @@
+Hotfix76 validation scope
+========================
+Purpose: application shutdown lifecycle only.
+Expected: closing the main window never raises PySide6/Shiboken deleted-object errors.
+No intended change to color science, sorting math, parsers, library data, RBAC, 3D, or Excel business logic.
+
+Manual checks:
+1) Start -> close immediately.
+2) Open library + compare + palette -> close main X directly.
+3) Open QTX workspace -> close main X directly.
+4) Start Munsell sort -> close main X before it finishes.
+5) Repeat test 2 five times.
+Pass = no error dialog / traceback / new crash_*.log.

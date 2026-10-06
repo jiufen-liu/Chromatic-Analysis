@@ -1,0 +1,18 @@
+Hotfix88 validation checklist
+
+A. 色貌连续排序
+1. 用“色卡方案 003 / adidas.qtx”执行“色貌连续排序”。
+2. 检查 4PMBR216 / PMBR216R / 4PMBR215 / Light Brown / Simple Brown 等暖土色不再被蓝色段拆开。
+3. 检查红、蓝、绿大色系没有因为本补丁发生整体重排异常。
+
+B. Munsell H
+1. 第一次打开未缓存 QTX，执行 Munsell H；界面必须可继续操作。
+2. 记录首次完成时间，应较 HF87 的逐条单线程路径缩短（具体幅度取决于 CPU / colour-science）。
+3. 完成后立即再次执行：应显示“已复用计算缓存”并接近瞬时。
+4. 关闭软件重开相同 QTX，再执行 Munsell H：持久缓存应继续命中。
+5. Munsell 排序过程中切换到色貌连续排序：旧 Munsell 完成后不得覆盖最新结果。
+
+C. 回归
+1. 空位 Ctrl/Shift/Ctrl+A/Delete/Ctrl+Z/Ctrl+Y。
+2. 程序直接关闭无异常。
+3. 色样数量保持不变。

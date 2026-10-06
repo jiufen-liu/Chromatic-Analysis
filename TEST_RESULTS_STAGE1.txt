@@ -1,0 +1,13 @@
+v0.14.0 Stage 1 static validation
+AST parse: PASS 21 python files
+Changed from v0.13.1:
+ - README.md changed
+ - VERSION changed
+ - qtx_app/main_window.py changed
+ - qtx_app/auth_store.py changed
+Scope audit: PASS
+qtx_core unchanged: PASS
+library/excel persistence modules unchanged: PASS
+Stage 1 UI hooks: PASS
+Account dropdown hooks: PASS
+NOTE: PySide6/colour-science are unavailable in this build environment, so final Windows GUI runtime regression must be performed by the user using TEST_CHECKLIST_STAGE1.md.

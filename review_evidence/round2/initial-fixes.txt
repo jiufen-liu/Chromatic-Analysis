@@ -1,0 +1,9 @@
+.....                                                                    [100%]
+=============================== warnings summary ===============================
+../../../chromatic-venv/lib/python3.12/site-packages/colour/utilities/verbose.py:340
+  /workspace/chromatic-venv/lib/python3.12/site-packages/colour/utilities/verbose.py:340: ColourUsageWarning: "Matplotlib" related API features are not available: "No module named 'matplotlib'".
+  See the installation guide for more information: https://www.colour-science.org/installation-guide/
+    warn(*args, **kwargs)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+5 passed, 1 warning in 1.02s

@@ -1,0 +1,11 @@
+Hotfix94 validation checklist
+=============================
+
+1. 解压后只保留一层 Hotfix94 项目目录（本压缩包已处理）。
+2. 运行 RUN_DIAGNOSTICS.bat。
+3. 选择 [18]，拖入含 91 个 QTX 的文件夹。
+4. 目标：Total=91 / PASS=91 / FAIL=0 / PREVIEW=91/91 / AUDIT TXT=91/91 / AUDIT JSON=91/91。
+5. 检查 P23_1_*/MANIFEST.csv、SUMMARY.csv、PAC_V23_BATCH_SUMMARY.csv。
+6. 再选择 [19] 跑同一批数据，逐个比较 xxx_V23.png 与 xxx_V24.png。
+7. 重点看：近白/浅灰、天蓝/浅蓝、深蓝/Navy、黑灰、粉色、卡其/米色。
+8. V24 当前仅诊断候选，不修改正式 Palette Studio 行为。

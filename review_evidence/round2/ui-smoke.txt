@@ -1,0 +1,5 @@
+/workspace/chromatic-venv/lib/python3.12/site-packages/colour/utilities/verbose.py:340: ColourUsageWarning: "Matplotlib" related API features are not available: "No module named 'matplotlib'".
+See the installation guide for more information: https://www.colour-science.org/installation-guide/
+  warn(*args, **kwargs)
+This plugin does not support propagateSizeHints()
+PASS: main window, QTX parse, SQLite save/load, scope switch, condition banner, commercial SPD warning, three database integrity checks

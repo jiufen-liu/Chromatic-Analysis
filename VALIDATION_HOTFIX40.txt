@@ -1,0 +1,31 @@
+Chromatic Analysis Hotfix40 validation
+
+Static/compile checks: PASS
+Protected business/core SHA: PASS
+
+- minimize: PASS
+- maximize: PASS
+- clear selection slot: PASS
+- blank 3D clears selection: PASS
+- blank 2D clears selection: PASS
+- adaptive point size: PASS
+- large dataset AO guard: PASS
+- premium light viewport: PASS
+- HF40 badge: PASS
+
+Protected files unchanged from Hotfix39:
+- qtx_core/qtx_parser.py
+- qtx_core/models.py
+- qtx_core/__init__.py
+- qtx_core/analysis.py
+- qtx_core/cpx_io.py
+- qtx_core/metamerism.py
+- qtx_core/colorimetry.py
+- qtx_core/shade_sort.py
+- qtx_app/library_store.py
+- qtx_app/auth_store.py
+- qtx_app/excel_exchange.py
+
+Environment note:
+- This build environment does not provide PySide6/colour-science GUI/runtime dependencies, so Qt Quick 3D first-frame rendering must be verified on the target Windows environment.
+- All Python files compile successfully without import execution.

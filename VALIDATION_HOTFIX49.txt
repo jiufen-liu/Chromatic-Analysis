@@ -1,0 +1,7 @@
+Hotfix49 validation summary
+- all Python source files compile successfully
+- qtx_core unchanged vs Hotfix48
+- lab3d_quick.py / Lab3DView.qml unchanged vs Hotfix48
+- auth_store.py / excel_exchange.py unchanged vs Hotfix48
+- main_window.py changes limited to sort UI + workbench target workflow
+- library_store.py adds only lightweight hue-order SQL helper for browse sorting

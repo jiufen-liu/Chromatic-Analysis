@@ -1,0 +1,22 @@
+Hotfix88 · Release Readiness R1
+Earth-Tone Continuity & Munsell First-Use Acceleration
+
+目标：今晚打包前一次处理两个剩余问题，不扩大改动范围。
+
+1) 色貌连续排序：卡其 / 米色 / 棕黄色被拆散
+- 保留 HF67/HF86 原“光谱 + CIEDE2000 感知”基线分数：spectral RMS + 0.18*ΔE00。
+- 只增加一个窄范围暖土色连续保护：L*=30~85、C*=3.5~30、h°=45~105°。
+- 当同一方案至少存在 3 张此类颜色时，把它们按旧算法原相对顺序收拢为连续块。
+- 不改变红/蓝/绿等其它色系的科学数据，也不引入 V2.4.2 分区算法。
+
+2) Munsell H 首次排序性能
+- 保留 C/2° 精确 Munsell renotation，科学定义不变。
+- 继续复用 HF86/HF87 AppData 持久缓存；相同光谱跨重启复用。
+- 新增同一次排序内重复光谱去重：相同反射率只做一次 renotation。
+- C/2° 光谱→XYZ 改为按共同波长网格批量 ASTM E308；失败自动回退原逐条算法。
+- 未缓存的精确 renotation 使用最多 4 个线程并行；保持 Windows/PyInstaller 安全，不启用子进程。
+- UI 仍为后台任务，Latest Request Wins 逻辑不变。
+
+冻结范围：
+- HF87 空位 Windows 多选/Delete/Undo/Redo 保持不变。
+- QTX/CPX Parser、555、比色、色库、3D、RBAC、Excel/PDF/图片导出逻辑不改。

@@ -1,0 +1,32 @@
+Chromatic Analysis v0.14.6.4 Performance P1 Hotfix25 - Static Validation
+
+PASS: python -m compileall completed for all Python sources.
+PASS: qtx_core color science / parser files are byte-for-byte unchanged from Hotfix24:
+  PASS qtx_core/qtx_parser.py  sha256=00a961a5980b63052ecdf51b04208afaac079d7970533e1cc313e68f41cf377d
+  PASS qtx_core/colorimetry.py  sha256=62dc09af1807315717ddbfafaf98976ff06e07883ec64073f3fd6a528781380d
+  PASS qtx_core/analysis.py  sha256=b7666543645c0f4f5a97f9cece60556a3e1ab3b095166acdf764805b8f35f16f
+  PASS qtx_core/shade_sort.py  sha256=35691a8c53c18f93c8173401441ed23b7c78caa8dcc7d5c9162590132597845c
+  PASS qtx_core/metamerism.py  sha256=fab72879eaaeeb951288a0a20a2417b87a3a14b6daec69ecd014094a70de7a75
+  PASS qtx_core/cpx_io.py  sha256=e649151df5c7eb963102a771f378422f02c7d1988c040fabd943fb4d8c8fb4e0
+
+Implemented performance scope:
+  - performance.log timings for selected hot paths (>5 ms by default)
+  - no-op rebuild_samples() no longer invalidates expensive caches
+  - one confirmed duplicate formal-library tree refresh removed
+  - customer counts/groups/QTX rows retrieved in one SQLite connection
+  - palette _all_samples() revision-aware cache
+  - 200 ms debounce for formal-library and palette search
+  - safe SQLite browse indexes: customer+position and position
+
+Runtime limitation in this build environment:
+  - PySide6 is not installed, so Windows GUI runtime/interaction was not executed here.
+  - colour-science is not installed, so the full color-science pytest suite was not rerun.
+  - Color-science/parser sources were intentionally untouched; Hotfix24 validation assets remain included.
+
+Local acceptance focus:
+  1) startup / formal-library first open
+  2) customer switch and customer tree counts
+  3) fast typing in formal-library search
+  4) palette search, Ctrl+A, copy/paste/drag
+  5) palette open/refresh with many cards
+  6) Sun Way.qtx D65/10 values unchanged

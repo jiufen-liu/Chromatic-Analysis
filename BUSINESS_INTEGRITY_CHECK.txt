@@ -1,0 +1,14 @@
+qtx_app/library_store.py: UNCHANGED
+  baseline 0261ed784ad22753ab61c2cab91a8c6c1213e072935237e82b4454d4da7bb4f9
+  output   0261ed784ad22753ab61c2cab91a8c6c1213e072935237e82b4454d4da7bb4f9
+qtx_app/excel_exchange.py: UNCHANGED
+  baseline 2bf13cdc4a896ed459c08432bda1b865cb8ec549c8a77eddff819f76170bfdc1
+  output   2bf13cdc4a896ed459c08432bda1b865cb8ec549c8a77eddff819f76170bfdc1
+qtx_app/auth_store.py: UNCHANGED
+  baseline 7f951fec12a09497948e32f8a979a0581f39a39b656a4fd1b4137d2f80ec3cf1
+  output   7f951fec12a09497948e32f8a979a0581f39a39b656a4fd1b4137d2f80ec3cf1
+
+AST interface inventory:
+Missing classes: NONE
+Missing top-level functions: NONE
+Missing class methods: NONE

@@ -1,0 +1,17 @@
+PyCharm usage (recommended for this project)
+============================================
+Normal program:
+  Run main.py
+
+P3-6 benchmark:
+  Run tools/performance_baseline.py
+
+In Run/Debug Configurations -> performance_baseline -> Script parameters, keep:
+  "D:\色彩软件研发\部分QTX文件\digital STD\新建文件夹\Coloro 3500.qtx"
+
+Hotfix53 comparison baseline:
+  Samples: 3500
+  QTX parse: 12668.68 ms
+  Parse / 1000 samples: 3619.62 ms
+
+Hotfix54 additionally prints the QTX parser fast-path counters.

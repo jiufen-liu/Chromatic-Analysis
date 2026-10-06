@@ -1,0 +1,14 @@
+Hotfix129 validation
+====================
+Scope: responsive MDI window sizing + compact presentation only.
+
+Static checks:
+- qtx_app/qtx_core/tests compileall: PASS
+- Main tool mapping unchanged: 0 Formal Library, 1 Find, 2 Palette, 3 Compare, 4 Spectrum
+- Existing business actions/handlers are reused; no parser/database/sort/export formula changes in this hotfix.
+- Small-workspace rule: MDI width <1450 OR height <820 => auto-maximize visible primary tool windows.
+- Large-workspace rule: primary tool first-open target about 94% width / 92% height, centered.
+- Compact mode affects only margins, helper-label visibility, navigation width and drop-zone presentation.
+
+Runtime note:
+This environment does not include PySide6, so Windows/Qt visual behavior must be confirmed on the user's machine.

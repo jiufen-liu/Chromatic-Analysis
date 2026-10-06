@@ -1,0 +1,26 @@
+Performance P3-4 / Hotfix50 - Large QTX/CPX Workspace Virtualization
+
+Goal
+- Keep all parsed Sample measurement data intact.
+- Stop creating one QListWidgetItem and one enormous paint viewport per sample.
+- Make unsaved/local 3,500-10,000 sample documents behave like a virtualized data browser.
+
+Changes
+1. WorkspaceCardList now uses QListView + WorkspaceVirtualModel (QAbstractListModel).
+2. The model stores references to complete Sample objects; QListView paints only visible model indexes.
+3. Removed the outer QScrollArea + giant fixed-height QListWidget path for auto-layout documents.
+4. Search is model-filtered and debounced by 180 ms.
+5. Ctrl/Shift selection, Ctrl+A, drag/copy/move, details, 2D/3D, workbench, 555 and save/export keep using the same Sample objects.
+6. Fixed-layout mode still uses the requested card grid width, but scrolling is handled by the virtual QListView.
+
+Not changed
+- qtx_core parsers / colorimetry / CMC / DE2000 / MI / 555
+- library_store P3-1/P3-2/P3-3
+- Quick3D / QML
+- RBAC / Excel exchange
+- QTX/CPX data content
+
+Expected effect
+- Opening a large local file no longer allocates thousands of QListWidgetItem objects.
+- Window resize/scroll only repaints visible cards.
+- Typing in search no longer performs a full scan on every keystroke.

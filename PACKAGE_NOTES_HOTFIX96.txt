@@ -1,0 +1,13 @@
+Chromatic Analysis 0.14.6.4 · Release Readiness R1 · Hotfix96
+Build: HF96-RR1-PAC-V25-HVC-SURFACE-NEUTRAL-AXIS-20260928
+
+本包重点：PAC V25 HVC Surface Path / Neutral Axis
+- 软件“色貌连续排序”主按钮已切换到 V25。
+- 修正低彩度浅灰首尾分裂：使用 Neutral Axis distance，不再靠不稳定 h° 强行分 Hue。
+- 延续卡其/蓝色暖冷与 Hue Family 拓扑保护。
+- 新增 Near-White 边界小岛处理，避免浅色边界样本与同 Hue 深色主体产生巨大跳跃。
+- 新增 Hue Family endpoint-aware 路径和 boundary regret，全局减少“家族端点选错”造成的可避免断裂。
+- V23 / V24.1 保留为诊断对照，没有删除原功能。
+- RUN_DIAGNOSTICS.bat 新增 [21] PAC V25 批量 A/B。
+
+建议下一轮：把多种颜色/QTX文件夹跑 [21]，再把 P25_HVC_... 整包 + 对应 Excel 发回进行多数据集验收。

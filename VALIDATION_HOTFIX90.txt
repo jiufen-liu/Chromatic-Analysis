@@ -1,0 +1,10 @@
+Hotfix90 static validation
+============================================================
+historical_score_present: PASS
+warm_earth_guard_removed: PASS
+vectorized_de_present: PASS
+munsell_fixed_direction: PASS
+persistent_munsell_cache_retained: PASS
+background_sort_retained: PASS
+
+NOTE: Runtime colour-science benchmark must be executed in the user Python environment because the build container does not include the project colour-science dependency.

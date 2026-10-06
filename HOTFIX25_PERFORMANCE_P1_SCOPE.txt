@@ -1,0 +1,21 @@
+Chromatic Analysis v0.14.6.4 Performance P1 Hotfix25
+
+Scope: performance-only. No UI redesign, no QTX/CPX/colorimetry/DE/MI/555 changes.
+
+Implemented:
+1. Lightweight performance.log timing for hot paths (rotates at ~1 MB).
+2. Removed one confirmed duplicate formal-library tree refresh and stopped no-op refresh() calls from invalidating all sample caches.
+3. Formal-library navigation now obtains customer counts, empty groups and QTX rows in one SQLite connection; counts remain SQL COUNT and never materialize spectra.
+4. Color-card-plan _all_samples() now uses a revision-aware cache with legacy source-file mtime invalidation.
+5. Formal-library and color-card search debounce are 200 ms.
+6. Added safe SQLite indexes for customer+position and position browsing.
+
+Explicitly untouched:
+- qtx_core/qtx_parser.py (Hotfix24 Datacolor D65 behavior preserved)
+- qtx_core/colorimetry.py
+- qtx_core/analysis.py
+- RBAC behavior
+- drag/copy/move semantics
+- palette geometry/save format
+
+Runtime GUI validation still requires a local environment with PySide6.

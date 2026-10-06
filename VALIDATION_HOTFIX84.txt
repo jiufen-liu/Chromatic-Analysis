@@ -1,0 +1,37 @@
+Hotfix84 / Palette Workspace UX P1 targeted validation
+
+A. Startup / regression
+1. Start with START_RELEASE_R1_HF84.bat or main.py.
+2. Open colour library, comparison workbench and palette workspace together.
+3. Close application normally; no new crash log / traceback.
+
+B. New palette command bar
+1. Create/open a palette scheme.
+2. Confirm visible buttons: 导入颜色 / 智能色貌编排 / 排序 / 恢复原序 / 撤销 / 重做 / 保存 / 导出.
+3. With an empty scheme, arrangement/sort/restore are disabled; after import they enable.
+
+C. V2.4.2 product integration
+1. Import the same QTX used during V2.4.2 validation.
+2. Record sample count.
+3. Click 智能色貌编排.
+4. Count must remain identical; no missing/duplicate samples.
+5. Layout should become 2-D Hue-Lightness-Chroma/Neutral Field arrangement.
+6. Drag several cards manually; manual edits must remain possible.
+7. Ctrl+Z / 重做 must revert/reapply the layout/edit.
+8. 恢复原序 must restore the exact pre-arrangement slot order, not merely reorder colours inside V2.4.2 blank positions.
+
+D. Save / reopen
+1. Apply 智能色貌编排, manually move 2-3 cards, then save.
+2. Close only that palette window, reopen the saved scheme.
+3. Reopened slots must be exactly the saved layout; V2.4.2 must NOT auto-run again.
+
+E. Menu simplification
+1. Normal palette UI shows Name/L*/C* as primary sorts.
+2. a*/b*/Munsell are under advanced colour-data sorts.
+3. Spectral RMS / Spectral+Perceptual / Visual V1 are not shown in normal Palette Workspace menus.
+4. Diagnostics tools remain available for research validation.
+
+F. Export integrity
+1. Export QTX / CPX / Excel after smart arrangement.
+2. Occupied sample count must match the editor.
+3. No measured Lab, reflectance, sample ID or export business semantics may be altered by arrangement.

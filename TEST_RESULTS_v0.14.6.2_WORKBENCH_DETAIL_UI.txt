@@ -1,0 +1,16 @@
+Chromatic Analysis v0.14.6.2 - Workbench Drag & Detail UI 验证结果
+
+通过
+- Python compileall：通过。
+- 原 v0.14.6.1 Preview 2 的 39 个类、513 个方法删除 0。
+- qtx_core、library_store.py、excel_exchange.py、auth_store.py 哈希全部未变化。
+- 原测试套件：67 项通过；保留 1 项基线光源显示名断言问题（F02 / CWF、F11 / TL84），本次未修改核心层。
+- GUI 启动：通过。
+- Ctrl+Shift+N / 新建工作台窗口：只保留“首页”外层标签，内部打开比色工作台，不再创建“窗口 1”。
+- 色块按 CARD_MIME 复制加入工作台：通过；正式色库源样未变化。
+- 工作台虚线拖入区与数据表拖放入口：通过。
+- 色样详情四页签：基本信息、色彩数据、光谱数据、备注 / Attributes，渲染通过。
+- 详情中的 Attributes 编辑保存、QTX 导出、加入工作台、2D/3D/查色入口保留。
+
+离屏说明
+- Qt offscreen 平台可能输出 propagateSizeHints 或 QMdiArea 重复注册提示；Windows 桌面显示与业务数据不受影响。

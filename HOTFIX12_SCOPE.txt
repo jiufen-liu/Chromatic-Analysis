@@ -1,0 +1,14 @@
+Chromatic Analysis v0.14.6.4 - ColorCardPlan Selection + Fluorescent Preview Hotfix 12
+
+Only two requested areas were changed in qtx_app/main_window.py:
+1) Color-card plan selection
+   - Ctrl+A is handled at the application event-filter level for the active palette window.
+   - Select-all explicitly selects every non-empty card slot and refreshes custom card borders once.
+   - Shift-click selects a continuous range.
+   - Ctrl+Shift-click appends a continuous range.
+   - Existing native Ctrl-click and Ctrl-drag behaviour remains in QListWidget.
+2) Fluorescent colour-card screen preview
+   - Only fluorescent cards inside ColorCardPlanWindow use a vivid clipped-sRGB preview.
+   - Fluorescence detection, reflectance, measured Lab, delta-E, CPX slot/fold-corner logic and saved data are unchanged.
+
+No other source file was edited.

@@ -1,0 +1,10 @@
+Hotfix89 · Diagnostic Gate
+
+Purpose:
+- NO production sorting algorithm change from HF88.
+- NO UI/business behavior change from HF88 except build label.
+- Adds two diagnostics-center tests before further modification:
+  [14] Palette continuity audit: historical spectral+perceptual baseline vs HF88 current, warm-earth break detection.
+  [15] Production Munsell/persistent-cache benchmark: cache hit/miss, real production core elapsed, 100% cache elapsed, fingerprint stability.
+
+Use these reports to decide the final corrective patch before packaging.

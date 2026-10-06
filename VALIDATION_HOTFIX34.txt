@@ -1,0 +1,12 @@
+Hotfix34 validation performed in this build environment
+
+PASS - Python AST / py_compile for qtx_app/main_window.py
+PASS - Python AST / py_compile for qtx_app/lab3d_gl.py
+PASS - compileall for the project tree
+PASS - qtx_core Python SHA-256 identical to Hotfix33 baseline
+PASS - library_store.py unchanged from Hotfix33 baseline
+PASS - main_window.py diff is limited to importing the new OpenGL dialog and routing open_lab3d_window() to it with fallback
+
+Environment limitation
+- The build container does not contain PySide6/OpenGL GUI runtime, therefore the Windows GUI/OpenGL context cannot be executed here.
+- Please validate on the target Windows machine: open 1950/3500 samples -> 3D -> rotate/zoom -> switch Surface / Points / Both.

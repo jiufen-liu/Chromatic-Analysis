@@ -1,0 +1,1 @@
+PASS: shared preview preserves original Qt colours for 242 representative cases.

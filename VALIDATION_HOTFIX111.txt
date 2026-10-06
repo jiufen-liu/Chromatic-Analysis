@@ -1,0 +1,18 @@
+Hotfix111 CPX validation
+
+Source test file: 2025 Smart Color Yarn 排版 MPC.cpx
+- Source fixed layout: 14 x 67
+- Source slots: 938
+- Occupied samples: 80
+- Blank slots: 858
+
+Checks:
+1. Python compileall: PASS
+2. Unchanged CPX round-trip SHA256 identical: PASS
+3. Compact edited CPX retains 14 x 67 layout: PASS
+4. Compact edited CPX retains all 80 sample names: PASS
+5. Compact edited CPX puts occupied samples in slots 0..79 and blanks after: PASS
+6. Rank attributes in moved samples match new slot positions: PASS
+7. HF110 hue / Color Difference / Running ΔE source code intentionally left unchanged: PASS
+
+Note: full Windows GUI launch still requires the user's PySide6/colour-science environment.

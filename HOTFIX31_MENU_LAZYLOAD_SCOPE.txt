@@ -1,0 +1,16 @@
+Hotfix31 - Menu deduplication + lazy selection payload loading
+
+1. Workspace document blank-area context menu:
+   - Removes duplicate "保存到色库..." / "存入色库..." entries.
+   - Unsaved admin document now shows one "存入色库... Ctrl+S" action.
+   - Existing library record shows one "更新当前色库文件 Ctrl+S" action.
+   - Personal workfile keeps "保存个人工作文件" plus an explicit "存入色库..." promotion action.
+
+2. Large multi-selection context menus:
+   - Official/formal library menu no longer calls load_samples_by_keys() before QMenu.exec().
+   - Menu labels use lightweight selected key count.
+   - Full Sample payloads/spectra load only after choosing 2D/3D/add-to-workbench/add-to-card actions.
+   - Copy/favorite/hide/delete/select-all remain key-only operations.
+   - Workspace document menus use cached selection count; full selected Samples are fetched only by chosen actions.
+
+No qtx_core color algorithms changed. No SQLite schema/index migration changed.

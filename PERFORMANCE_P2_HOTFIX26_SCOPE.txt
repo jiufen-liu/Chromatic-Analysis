@@ -1,0 +1,33 @@
+Chromatic Analysis v0.14.6.4 - Performance P2 Hotfix26
+
+Scope: performance / responsiveness only. No colour-science formula or parser changes.
+
+Targeted bottlenecks from user report:
+1) Formal-library page switching stutters.
+2) Opening Comparison Workbench is very slow and can crash.
+
+Changes:
+- Formal library now virtualises colour-card widgets: only one page-sized pool of ColorTile widgets is kept and recycled across pages.
+- ColorTile signal handlers now reference the current recycled sample safely.
+- Avoid repeated fixed-size layout invalidation when card width is unchanged.
+- Comparison workbench tabs are preserved across navigation instead of destroyed/recreated every visit.
+- Removed premature/duplicate workbench refreshes.
+- Only the active workbench is calculated immediately; inactive tabs calculate lazily when selected.
+- Workbench pages are explicitly deleted when structural rebuild is truly necessary, preventing detached-widget accumulation.
+- Workbench XYZ/Lab and pair-analysis results are runtime-cached using immutable measurement-data fingerprints.
+- Workbench model reload and refresh paths are profiled in performance.log.
+- UI painting is temporarily suppressed during a workbench model refresh to avoid intermediate redraw storms.
+
+Untouched science core (SHA-identical to Hotfix25):
+qtx_core/qtx_parser.py
+qtx_core/colorimetry.py
+qtx_core/analysis.py
+qtx_core/shade_sort.py
+qtx_core/metamerism.py
+qtx_core/cpx_io.py
+
+Validation performed in build environment:
+- python -m py_compile: PASS
+- python -m compileall for qtx_app, qtx_core, tests: PASS
+- Source-scope hash check: only qtx_app/main_window.py changed among Python files.
+- Full Windows GUI runtime test not available in build container (PySide6/colour-science runtime unavailable here).

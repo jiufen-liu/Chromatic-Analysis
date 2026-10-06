@@ -1,0 +1,23 @@
+Hotfix30 validation summary
+
+Static validation
+- python -m compileall: PASS
+- qtx_core/*.py SHA-256 vs Hotfix29: IDENTICAL
+- qtx_app/library_store.py SHA-256 vs Hotfix29: IDENTICAL
+- Changed production source file: qtx_app/main_window.py only
+
+Behavioural invariants checked in source
+- Official root item carries no count and is marked navigation-only.
+- open_library_customer rejects official root / all-customer pseudo roots in official scope.
+- Official customer paging still passes the real stored path (官方色库/...) to the unchanged LibraryStore.
+- Formal library still keeps its existing 全部客户 behaviour.
+- Save destination still writes the same customer path strings as before.
+- Large-file worker performs parsing only; all Qt widget/window mutations are committed on the GUI thread.
+- Cancellation never deletes or mutates the external source file.
+
+Recommended Windows acceptance checks
+1. Official Library: root has no count and cannot open a tab.
+2. Coloro/Pantone children show counts and open normally.
+3. Save to Formal / Official Library dialogs match the approved two-section design.
+4. Drag Coloro 3500: progress dialog appears immediately and main window remains responsive.
+5. After load, scrolling/searching/Ctrl+A still work and card colours/Lab values match Hotfix29.

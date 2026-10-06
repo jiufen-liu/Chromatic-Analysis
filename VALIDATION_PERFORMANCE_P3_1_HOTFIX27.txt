@@ -1,0 +1,41 @@
+Chromatic Analysis v0.14.6.4 - Performance P3-1 Hotfix27 validation
+
+Build/static checks:
+- python -m py_compile qtx_app/library_store.py qtx_app/main_window.py: PASS
+- python -m compileall -q qtx_app qtx_core tests: PASS
+
+SQLite paging functional checks (headless stub harness):
+- customer + child-customer scope: PASS
+- formal vs official library scope: PASS
+- search: PASS
+- STD/BAT filter: PASS
+- D65/10 colour-family filter: PASS
+- name ascending/descending: PASS
+- L* ascending/descending: PASS
+- hidden sample exclusion: PASS
+- ordered query keys / cross-page selection support: PASS
+- selected-key batch loading preserves requested order: PASS
+
+Legacy equivalence harness:
+- 10 supported filter/sort combinations compared against legacy library_contents + Python filtering.
+- Result count and ordered sample keys: PASS
+
+Synthetic 10,000-sample benchmark (35-point spectra, 48-card page):
+- P3-1 current page payload deserialisations: 48
+- legacy whole-customer payload deserialisations: 10,000
+- reduction: ~208.3x for Python Sample JSON materialisation on that page
+- observed headless harness timing: P3 page ~0.0115 s vs legacy materialisation ~0.1630 s
+  (These timings are environment-specific; the deserialisation-count reduction is the architectural check.)
+
+Safety:
+- qtx_core is SHA-identical to Hotfix26 baseline: checked during packaging.
+- Full Windows PySide6 GUI runtime is not available in this Linux build environment.
+
+Recommended user smoke test:
+1) Open a large formal-library customer.
+2) Page 1 -> 2 -> 3 -> previous page repeatedly.
+3) Search a colour name, then page results.
+4) Switch STD/BAT filter and page.
+5) Under D65/10, switch a colour-family filter and L* sort.
+6) Ctrl+A across multiple pages, then Copy; verify selected count/result.
+7) Switch to Munsell hue sort and confirm results remain correct (legacy compatibility path).

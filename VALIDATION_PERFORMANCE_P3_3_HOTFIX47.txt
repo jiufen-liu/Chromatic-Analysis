@@ -1,0 +1,26 @@
+Hotfix47 / Performance P3-3 validation
+
+Static:
+- qtx_app/main_window.py py_compile: PASS
+- qtx_app/library_store.py py_compile: PASS
+- qtx_app/lab3d_quick.py py_compile: PASS
+- main.py py_compile: PASS
+
+P3-3 lazy-payload smoke test (stubbed Qt path): PASS
+- legacy DB migrates sample_index_version -> 2
+- fluorescent_idx rebuilt from reflectance > 100%
+- library_page(lightweight=True) works while _sample_from_payload is forced to raise
+- lightweight rows have empty reflectance/wavelength arrays
+- load_samples_by_keys hydrates only requested full rows
+- legacy palette recovery can hydrate only requested sample_id rows
+- has_samples() checks library existence without reading payload
+
+Synthetic 10,000-sample benchmark, 48 rows/page, indexed search + L* sort:
+- Hotfix46 page average: ~33.4 ms
+- Hotfix47 light page average: ~13.1 ms
+- measured speedup: ~2.55x in this container benchmark
+- ~45.9 KB of full JSON payload avoided for each 48-row page in this dataset
+- one-time index v2 migration: ~0.22 s on the synthetic 10k DB
+
+
+Note: final Windows/PySide6 GUI verification remains required on the user environment.

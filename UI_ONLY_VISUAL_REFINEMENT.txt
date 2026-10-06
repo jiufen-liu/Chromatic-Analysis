@@ -1,0 +1,24 @@
+Chromatic Analysis v0.14.6.1 - UI Studio Visual Refine Preview 2
+
+Baseline:
+- Exact user-uploaded Chromatic_Analysis_v0.14.6.1_UI_Studio_MDI_Hotfix1(2).zip
+
+Scope of this preview:
+- Visual layer only.
+- No feature removal.
+- No parser/database/algorithm/import/export/RBAC changes.
+- No QAction shortcut changes.
+- No signal/slot behavior changes.
+- No MDI/workspace behavior changes.
+
+Visual refinements:
+- Approved Light Studio cold-gray/blue design tokens.
+- Top brand/navigation spacing and typography.
+- Secondary workspace tab strip.
+- Left navigation hierarchy and selected states.
+- MDI desktop cold-blue-gray surface.
+- Floating tool surfaces, cards and tables.
+- Unified inputs/buttons/menus/dialogs/status bar.
+- Removed residual warm beige/gold legacy styling from palette/drop zones.
+
+Core business files are intentionally untouched.

@@ -1,0 +1,10 @@
+Hotfix86 · Palette Workspace Correction P3
+
+1. 日常主排序回归原 HF67 光谱 + 感知路径，正式命名“色貌连续排序”。
+2. V2.4.2 从正式色卡编排 UI 移除，保留在 diagnostics / research 代码中。
+3. Munsell H 保留为第二种专业排序，并新增跨重启持久缓存（C/2° renotation 公式不变）。
+4. 批量加入 QTX/CPX/Excel 改为一次模型更新 + 一次 Qt 重绘，消除逐卡全画布刷新。
+5. 空位成为可选择版位：Ctrl/Shift 多选、Ctrl+A 全选版位、Delete 删除空位；真实色样仍从方案移除而不删除源数据。
+6. 修复 PNG/JPG/PDF 导出把 Sample 当 key 再查一次导致颜色回退/缺失的问题；15列等宽布局不再右侧裁切。
+7. Excel 使用当前画布槽位顺序作为唯一数据源；新增“色卡布局 / 颜色数据 / 导出说明”，并使用与屏幕一致的预览色。
+8. 不修改 QTX/CPX parser、555、3D、比色、色库/RBAC 与原始颜色科学公式。

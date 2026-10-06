@@ -1,0 +1,30 @@
+Chromatic Analysis · Hotfix100 validation
+=========================================
+Scope: LABC Atlas V2 · Opponent Hue Slice
+
+Static compilation:
+- qtx_core/labc_atlas.py: PASS
+- qtx_app/labc_atlas_window.py: PASS
+- qtx_app/main_window.py: PASS
+
+Focused tests:
+- tests/test_labc_atlas_hotfix100.py: 3 passed
+
+Verified core behavior:
+- Blue opposite family = Yellow
+- Red opposite family = Green
+- Opponent slice places selected Hue on left, Neutral in center, opposite Hue on right
+- unrelated Red is excluded from Blue↔Yellow slice in the regression fixture
+- opponent display geometry does not alter family classification
+
+Compatibility:
+- No existing file was removed from Hotfix99.
+- Existing business modules outside VERSION, qtx_core/labc_atlas.py,
+  qtx_app/labc_atlas_window.py and the LABC Atlas tooltip in main_window.py
+  remained byte-identical at the pre-package diff check.
+- Existing QTX/CPX/Excel, library, compare/find, 555, 3D, spectrum, RBAC,
+  save/export, palette slot and L*/a*/b*/C* sort behavior is not intentionally modified.
+
+Runtime note:
+- The current sandbox does not provide the full Windows/PySide6 production runtime,
+  so full interactive GUI launch is to be verified on the user's normal Windows environment.

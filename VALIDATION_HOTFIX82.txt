@@ -1,0 +1,47 @@
+Hotfix82 / Visual Palette V2.4.1 targeted validation
+===================================================
+Scope: offline audit only. Formal Palette Studio remains unchanged.
+
+Reason for V2.4.1
+-----------------
+HF81 V2.4 multi-file audit exposed one recurring boundary case:
+very high-L* blue-/violet-tinted whites can sit just outside the fixed
+Tinted White envelope while being visually almost identical (CIEDE2000
+< 3) to Tinted White samples in the same QTX.
+
+V2.4.1 rule
+------------
+Keep all V2.4 rules unchanged. After the initial V2.4 classification,
+perform ONE non-recursive bridge pass:
+- candidate L* >= 90
+- candidate C* <= 18
+- candidate is not already Neutral Field
+- the same dataset contains an INITIAL Tinted White with CIEDE2000 < 3
+If all are true, promote the candidate to Neutral Field as
+"Tinted White Bridge". Promoted samples cannot recruit more samples.
+
+Reconstruction check using the uploaded HF81 V2.4 audit workbooks
+-----------------------------------------------------------------
+YKK (173 samples):
+- V2.4 semantic conflicts: 101 pairs / 31 unique samples
+- all 101 pairs were Blue-Violet <-> Neutral Field
+- only 7 Blue-Violet samples generated the strong-family side
+- their ranges: L*=90.80..95.99, C*=14.65..15.87, h°=274.83..283.37
+- V2.4.1 bridge promotions: 7
+- reconstructed semantic conflicts after V2.4.1: 0
+- row ΔE00 mean: 1.433 -> 1.415
+- row ΔE00 p95: 3.152 -> 3.141
+- row ΔE00 max: 4.783 -> 4.783
+- vertical nearest-C ΔE00 mean: 4.267 -> 2.768
+
+Walmart (350 samples):
+- V2.4 semantic conflicts: 4 pairs / 4 unique samples
+- all 4 pairs were the same high-L* Blue-Violet <-> Tinted White boundary
+- V2.4.1 bridge promotions: 2
+- reconstructed semantic conflicts after V2.4.1: 0
+- row ΔE00 metrics unchanged
+- vertical nearest-C ΔE00 mean: 5.636 -> 5.383
+
+These checks reconstruct layout from the audit workbook Lab values and are
+not a substitute for rerunning the original QTX files. Use diagnostics option
+[12] on the same QTX batch for release evidence.

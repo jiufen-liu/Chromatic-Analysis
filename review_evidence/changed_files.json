@@ -1,0 +1,20 @@
+[
+  "PROJECT_REVIEW_ZH.md",
+  "pyproject.toml",
+  "qtx_app/access_policy.py",
+  "qtx_app/excel_exchange.py",
+  "qtx_app/main_window.py",
+  "qtx_core/colorimetry.py",
+  "qtx_core/cpx_io.py",
+  "qtx_core/qtx_parser.py",
+  "requirements-review-lock.txt",
+  "requirements.txt",
+  "tests/test_access_policy_review.py",
+  "tests/test_core_rules.py",
+  "tests/test_excel_exchange.py",
+  "tests/test_library_index_p3_2.py",
+  "tests/test_library_lazy_spectrum_p3_3.py",
+  "tests/test_science_integrity_review.py",
+  "tests/test_ui_selection_scope.py",
+  "tools/review_smoke.py"
+]

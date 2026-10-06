@@ -1,0 +1,42 @@
+Chromatic Analysis · Performance P3-6 · Hotfix54
+QTX Batch Parser Fast Path
+
+Baseline supplied by Windows/Python 3.14.5 on 2026-09-26:
+- Coloro 3500.qtx: 1638.9 KiB / 3500 samples
+- Hotfix53 QTX parse: 12668.68 ms
+- Normalized: 3619.62 ms / 1000 samples
+
+Hotfix54 scope
+1. Keep Datacolor QTX parsing grammar and field precedence unchanged.
+2. Keep embedded Datacolor XYZ/Lab authoritative exactly as before.
+3. For spectrum-only samples sharing one wavelength grid, group them and use
+   colour-science MultiSpectralDistributions + ASTM E308 once per group instead
+   of constructing/calculating one SpectralDistribution per sample.
+4. Batch Lab conversion is vectorized after batch XYZ conversion.
+5. Before accepting a batch group, first/middle/last spectra are compared with
+   the pre-existing scalar reference path at very tight numerical tolerance.
+6. If batch construction, colour-science API, wavelength grid, or numerical
+   verification fails, automatically fall back to the old scalar algorithm.
+7. CHROMATIC_DISABLE_QTX_BATCH=1 can force the old scalar path for diagnostics.
+8. Performance baseline output now shows batch/scalar counts, fallback groups,
+   block parsing time, sample preparation time, and colour-science time.
+
+Intentionally unchanged
+- QTX/CPX source data and stored reflectance curves
+- CMC / DE2000 / MI / 555 algorithms
+- analysis.py / metamerism.py / shade_sort.py / cpx_io.py
+- formal library pagination / P3-3 lazy spectrum / P3-4 workspace virtualization
+- MainWindow UI, RBAC, Excel exchange
+- Quick3D and Lab3DView.qml
+
+Acceptance test on the user's Windows baseline machine
+- Same Python: D:\Python314\python.exe (Python 3.14.5)
+- Same Coloro 3500.qtx
+- Run tools/performance_baseline.py with Coloro 3500.qtx as Script parameters.
+- Verify Samples: 3500.
+- Verify QTX parser fast path shows approximately:
+    batch: 3500 samples / 1 group
+    scalar: 0 samples
+    fallback groups: 0
+    verification failures: 0
+- Compare QTX parse time directly with Hotfix53 baseline 12668.68 ms.

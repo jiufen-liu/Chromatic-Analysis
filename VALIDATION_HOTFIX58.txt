@@ -1,0 +1,19 @@
+Hotfix58 validation
+===================
+
+Static validation completed in build environment:
+- python -m compileall: PASS for qtx_app, qtx_core and main.py
+- qtx_core is unchanged from Hotfix57
+- Quick3D/QML files are unchanged from Hotfix57
+- Excel exchange is unchanged from Hotfix57
+- No PySide6/colour-science runtime is installed in this build container, so Windows GUI interaction is to be verified in the user's existing PyCharm environment.
+
+Windows focus tests:
+1. Admin -> 用户与权限 opens the integrated left-user/right-permission view.
+2. No permission-template UI is present.
+3. Copy permissions from one operator to another, then confirm only permissions change.
+4. Official and formal library rows are both shown in one consistent data tree.
+5. Find -> 查色范围 supports single selection, multi-selection, all, and clear.
+6. A denied library never appears in Find scope.
+7. Query two or more selected libraries and verify candidates come only from them.
+8. Change Find scope after querying; previous cached results must be invalidated.

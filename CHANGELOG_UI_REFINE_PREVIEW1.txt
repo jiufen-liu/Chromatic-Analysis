@@ -1,0 +1,32 @@
+Chromatic Analysis v0.14.4 UI Refine Preview 1
+
+基线
+- 直接从用户已验证的 v0.14.0 Stage 1 Hotfix 1 功能版本重新制作。
+- 不以 v0.14.3 的功能改动作为基线，避免继续叠加 CPX / 工作区回归。
+
+本次允许的改动范围（UI / 入口 / 可视化）
+1. UI 外观：参考确认过的浅蓝灰 + 白色卡片 + 深蓝文字 + 克制蓝色强调设计。
+2. 新建窗口入口：新增 Ctrl+Shift+N / 空白右键“新建窗口”；底层复用原 WorkspaceFolderDocument，不修改文件解析与存储行为。
+3. 正式色库反射率：保留原始反射率数值表，同时加入和测色明细相同的反射率曲线组件。
+4. 正式色库卡片：仅缩小卡片并根据可用宽度自适应列数，所有选择、右键、查色、排序、导出操作保持原处理函数。
+5. 正式色库入口：打开“正式色库”时默认选择已有“全部客户”视图，避免进入后空白；不改数据库内容。
+6. 荧光色折角：Workspace/色库卡片增加视觉折角提示，依据原程序已有 fluorescence_assessment；不改 CPX/QTX 数据。
+
+明确未改动
+- qtx_core 全部核心解析/色彩/色差/555/CPX/QTX 代码
+- qtx_app/library_store.py
+- qtx_app/excel_exchange.py
+- qtx_app/auth_store.py
+- MainWindow.open_workspace_paths
+- MainWindow.open_cpx_files
+- MainWindow.import_cpx_project
+- ColorCardPlanWindow 整个类（CPX 色卡方案布局、空位、排列、导出、荧光手动覆盖保持原版）
+
+保护检查
+- 原 main_window.py 类删除：0
+- 原 main_window.py 方法删除：0
+- 项目 Python 文件语法编译：21 / 21 通过
+
+注意
+- 当前构建环境没有 PySide6，因此不能在此环境完成真实 Windows GUI 启动回归。
+- 建议优先回归：CPX 固定排列/空位、荧光折角、比色工作台、正式色库、QTX 明细、555、导入导出、RBAC。

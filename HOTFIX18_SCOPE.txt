@@ -1,0 +1,16 @@
+Chromatic Analysis · Hotfix 18
+
+问题定位
+1. 主程序强制最小尺寸 1120×700；Windows 缩放后可用的逻辑分辨率可能低于这个值，导致 MDI 下沿和表格横向滚动条超出屏幕。
+2. 比色上方按钮已可横向滚动，但下面的数据表所在页面没有纵向滚动容器；查色查询条件与结果表也会被低高度窗口截断。
+3. 色卡编排先前叠加了一份自行维护的选择行集合，与 Qt QListWidget 的真正 selectionModel 可以不同步。之前启用 drag/accept drops，但未把该列表切换到 DragDrop 模式。
+
+本次修改
+- 主窗口初始尺寸和最小尺寸按当前屏幕的 availableGeometry（Qt 逻辑像素）限制。
+- 比色页和查色页加可滚动的页面容器，垂直空间不足时可向下滚动；比色表与查色多标准结果表始终显示自身横向滚动条。查询的 20 列数据、色差计算和原功能保持不变。
+- 色卡编排删除重复的逻辑选择集，使用 QListWidget 的原生 ExtendedSelection、selectionModel、selectedItems 统一驱动高亮、计数与 Ctrl+A/C/X/V/Delete；空槽不可选。打开/切换方案后将焦点交给色卡网格；启用真正的 DragDrop 模式，让同方案及跨方案拖动可以启动。
+
+验证
+- compileall 语法检查和包内 CRC 检查通过；无 Qt 运行环境时已抽取真实 select_all_cards 方法做非空 79/80 条目逻辑检查。
+- tests/test_ui_selection_scope.py 覆盖 Qt 原生模型全选 79/80、复制 79 条、Ctrl 单击取消选中以及 DragDrop 模式。运行方式：QT_QPA_PLATFORM=offscreen pytest -q tests/test_ui_selection_scope.py。
+- 当前执行环境缺少 PySide6，无法模拟 Windows 缩放或实际点击桌面窗口。Windows 实机界面效果需要以用户本机运行结果为准。

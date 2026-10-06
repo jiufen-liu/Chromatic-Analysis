@@ -1,0 +1,38 @@
+Chromatic Analysis Hotfix95 · Science-Guided Appearance Continuity
+==================================================================
+
+目标：不再通过品牌/单文件特例修排序；把已知失败变成结构约束和回归测试。
+
+A. 静态/自动测试
+1. 全部 Python 文件 py_compile 通过。
+2. tests/test_palette_continuity_v241_science.py：
+   - khaki / olive-khaki 不得进入 Blue；
+   - blue-gray 保持 Blue；
+   - pale-blue 保持 Blue；
+   - near-white / near-black 可进入 Neutral；
+   - deep navy 保持 Blue；
+   - 每个 Sample 恰好出现一次；
+   - CROSS_FAMILY_ANCHOR_RISK == 0；
+   - WARM_COOL_INVERSION_RISK == 0。
+
+B. 用户 Windows 环境真实 QTX 批量验证
+运行 RUN_DIAGNOSTICS.bat -> 选择 20 -> 拖入 91-QTX 文件夹。
+
+必须满足：
+- Total = 91
+- PASS = 91
+- FAIL = 0
+- 所有 case: CROSS_FAMILY_ANCHOR_RISK = 0
+- 所有 case: WARM_COOL_INVERSION_RISK = 0
+
+C. 视觉验收（大样本 QTX）
+- adidas：卡其/米色/橄榄/黄褐不得进入 Blue 区；
+- adidas：天蓝/中蓝/深蓝/Navy 形成合理连续序列；
+- FIGS/Nike：深蓝、蓝灰、紫灰不能像 PAC V24 一样被大面积 Neutral 化；
+- Apple：近白/浅灰应保持中性，同时不得明显增大局部断裂；
+- Smart Color：不出现新的跨色相混排。
+
+D. 回退
+排序菜单保留“经典连续排序（历史光谱+感知）”。如果 Science 在真实业务数据上出现未覆盖边界，可立即回退，不影响已有功能。
+
+说明：本包不承诺未经真实 QTX 验证即可称为最终算法；但与前几轮不同，这次已将三类已知错误（卡其->蓝、深蓝->Neutral、近白错误着色）写成结构规则和回归条件，而不是继续微调单一阈值。

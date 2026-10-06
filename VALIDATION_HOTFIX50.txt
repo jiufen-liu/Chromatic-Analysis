@@ -1,0 +1,22 @@
+Hotfix50 / Performance P3-4 validation
+
+Static / compile checks
+- main_window.py AST parse: PASS
+- py_compile main_window.py/library_store.py/lab3d_quick.py/main.py: PASS
+- WorkspaceDocument contains no per-sample QListWidgetItem population path: PASS
+- WorkspaceCardList uses QListView: PASS
+- WorkspaceVirtualModel uses QAbstractListModel: PASS
+- 180 ms workspace search debounce present: PASS
+
+Protected file SHA comparison vs Hotfix49
+- qtx_core/*.py: unchanged
+- qtx_app/library_store.py: unchanged
+- qtx_app/lab3d_quick.py: unchanged
+- qtx_app/qml/Lab3DView.qml: unchanged
+- qtx_app/auth_store.py: unchanged
+- qtx_app/excel_exchange.py: unchanged
+
+Runtime GUI tests
+- Not executable in the build container because PySide6 is not installed.
+- Existing colour-core pytest collection is also unavailable because colour-science is not installed in the build container.
+- Windows/PySide6 runtime regression should therefore be verified with the checklist in the release response.

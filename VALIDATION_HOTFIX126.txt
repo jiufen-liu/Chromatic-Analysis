@@ -1,0 +1,17 @@
+Hotfix126 validation
+====================
+
+Static validation in build environment:
+- Python compileall: PASS
+- large-QTX virtual model has a dedicated swatch column: PASS
+- large-QTX swatches are lazy BackgroundRole values (no 3500-pixmap prebuild): PASS
+- Find result renderer reads active session/per-standard result keys: PASS
+- Find tab switching no longer calls formal-library build_tiles(): PASS
+- D65/10 Find candidate path uses LibraryStore.sample_index(): PASS
+- D65/10 ranking uses vectorised delta_e_many(): PASS
+- query rendering does not use the formal-library search box: PASS
+- current standard without a cache clears the task projection instead of inheriting old keys: PASS
+
+Runtime limitation:
+This build environment does not contain PySide6/colour-science, so Windows GUI timing
+and numerical execution must be verified in the user's Python 3.14 environment.

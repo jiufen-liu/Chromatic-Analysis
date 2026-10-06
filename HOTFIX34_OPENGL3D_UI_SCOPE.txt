@@ -1,0 +1,25 @@
+Chromatic Analysis v0.14.6.4 · Hotfix34 OpenGL 3D + Professional Light UI
+
+Baseline
+- Based on Hotfix33.
+
+Changed
+1. Added qtx_app/lab3d_gl.py.
+2. main_window.py now prefers the new OpenGL CIELAB viewer and falls back to the retained Hotfix33 painter viewer if construction fails.
+3. GPU point rendering uses one instanced draw call (glDrawArraysInstanced) with one billboard quad per sample instance.
+4. Default 3D mode is a light professional data-envelope surface derived from the current real Lab samples.
+5. Optional modes: 色域表面 / 色彩点云 / 表面+点.
+6. Added light professional controls for surface alpha, edge density presentation, point size, axes/grid and view presets.
+7. Sample coordinates and Lab values are not modified.
+
+Not changed
+- qtx_core/*
+- library_store.py
+- QTX/CPX/Excel I/O
+- CMC / CIEDE2000 / MI / 555
+- SQLite P3-1/P3-2
+- library selection, drag/drop, RBAC
+
+Runtime requirement
+- PySide6 >= 6.7 as already declared by the project.
+- OpenGL 3.3 capable driver is preferred for GPU instancing.

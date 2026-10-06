@@ -1,0 +1,25 @@
+Chromatic Analysis v0.14.5 UI Studio Preview 1
+
+Scope: UI/layout-only refinement on top of the validated v0.14.x codebase.
+
+This preview intentionally does NOT modify:
+- qtx_core colour science / QTX / CPX / 555 calculations
+- library_store.py database/storage logic
+- excel_exchange.py import/export logic
+- auth_store.py RBAC/auth logic
+- existing signal handlers, shortcuts, menus, CPX ordering, fluorescence data logic
+
+UI changes:
+1. Light Studio design tokens: #F3F4F6 background, #FFFFFF surfaces, #3B82F6 primary blue.
+2. 56px brand/navigation bar, compact typography, modern input/button/table/tab styling.
+3. Formal library left panel standardized to 220px and given a visual Open File shortcut that calls existing actions.
+4. Formal library cards are fixed and uniform at 136x134 px; fluorescent folded-corner indicator remains.
+5. Formal library is paged instead of endlessly expanding the card grid. Default 24/page; optional 36/48. Pagination only limits rendered cards and does not alter stored data, sorting, selection, or business operations.
+6. Formal library page title/subtitle and result count added for visual hierarchy.
+7. Existing reflectance graph, CPX layout/order handling, new-window workflow, compare workbench, 3D, 555, export, and RBAC remain present.
+
+Validation performed in build environment:
+- Python syntax compilation passed.
+- AST comparison against v0.14.4 UI Refine Preview 1: 0 classes removed, 0 methods removed.
+- SHA-256 comparison to original v0.14.0 core: qtx_core/*, library_store.py, excel_exchange.py, auth_store.py unchanged.
+- GUI runtime smoke test cannot be executed here because PySide6 and colour-science are not installed in this build container. Please run the existing Windows startup method in the project environment.

@@ -1,0 +1,35 @@
+Hotfix114 Validation
+
+Baseline: Hotfix113a_LIBRARY_CONTEXT_ONLY
+
+1. Python compileall: PASS
+2. AST parse all 84 Python files: PASS
+3. 3D compact navigator contract: PASS
+   - 16 samples/page
+   - 128x100 preview cards
+   - 294px left panel
+4. Find UI contract: PASS
+   - 28-column overview table
+   - Best Match preserved
+   - Current View candidate added
+   - result-card repaint/geometry refresh present
+5. Workbench analysis contract: PASS
+   - Standard / Current compare panel present
+   - current row selection feeds analysis focus
+   - draggable horizontal/vertical splitters present
+6. Workbench table UI contract: PASS
+   - fit / standard / compact modes present
+7. Illuminant UI contract: PASS
+   - grouped searchable dialog present
+   - observer 10/2 supported
+8. Regression scope check: PASS
+   Unchanged SHA-256 versus baseline for:
+   - qtx_app/library_store.py
+   - qtx_core/cpx_layout.py
+   - qtx_core/palette_labch_sort.py
+   - qtx_core/palette_global_delta.py
+   - qtx_app/excel_exchange.py
+   - qtx_core/qtx_parser.py
+
+Environment limitation:
+The build container does not provide PySide6, so a full Windows GUI launch is not available here. Source compilation and structural regression checks passed; final visual/runtime confirmation should be done in the user's normal Windows/PySide6 environment.

@@ -1,0 +1,29 @@
+Chromatic Analysis v0.14.6.4 · Hotfix53 · Performance P3-5
+
+Static validation completed in build container:
+- Full Python compileall: PASS
+- Changed-file AST/py_compile: PASS
+- qtx_core/qtx_parser.py: unchanged vs Hotfix52
+- qtx_core/analysis.py: unchanged vs Hotfix52
+- qtx_core/metamerism.py: unchanged vs Hotfix52
+- qtx_core/shade_sort.py: unchanged vs Hotfix52
+- qtx_app/lab3d_quick.py: unchanged vs Hotfix52
+- qtx_app/qml/Lab3DView.qml: unchanged vs Hotfix52
+- qtx_app/auth_store.py: unchanged vs Hotfix52
+- qtx_app/excel_exchange.py: unchanged vs Hotfix52
+
+Intentional changed runtime files:
+- qtx_core/colorimetry.py: bounded shared spectral XYZ/Lab compute cache only; authoritative ASTM E308 calculation remains the cache-miss implementation.
+- qtx_app/perf_monitor.py: aggregate performance summary.
+- qtx_app/library_store.py: configure performance-summary output path.
+- qtx_app/main_window.py: cancel queued executor jobs and flush summary on close.
+- qtx_app/build_info.py / VERSION: build identification.
+
+Added:
+- tools/performance_baseline.py
+- RUN_P3_5_BENCHMARK.bat
+- PERFORMANCE_P3_5_BASELINE.md
+- tests/test_p3_5_science_cache.py
+
+Runtime limitation of build container:
+The build container does not have PySide6 or colour-science installed, so numerical pytest/GUI execution was not possible here. Run the bundled benchmark/test in the project .venv on Windows for machine-specific baseline values.

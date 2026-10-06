@@ -1,0 +1,10 @@
+Hotfix107 Validation
+
+- compileall: PASS
+- LABCH h° contract: chromatic h° monotonic 0..360 + neutral tail
+- Neutral h° instability: excluded from chromatic hue order
+- Color Difference contract: unchanged strict reference ΔE monotonic sort
+- Running ΔE: unchanged from HF106
+- LABC Atlas Hue/Lightness/Chroma: retained
+
+Important: full Windows GUI runtime still requires the user's PySide6/colour-science environment.

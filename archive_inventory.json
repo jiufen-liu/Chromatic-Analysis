@@ -1,0 +1,2531 @@
+{
+  "archive": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics.zip",
+  "sha256": "7609e9114f62358e621ed4feba58006f8bfee3613a1a9e4e596930930303e5aa",
+  "files": [
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/VALIDATION_HOTFIX29.txt",
+      "bytes": 709,
+      "compressed_bytes": 403
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/HOTFIX133_COMBINED_DISPLAY_FIT.md",
+      "bytes": 625,
+      "compressed_bytes": 498
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/VALIDATION_HOTFIX98.txt",
+      "bytes": 446,
+      "compressed_bytes": 252
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/README_HF141.txt",
+      "bytes": 247,
+      "compressed_bytes": 242
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/VALIDATION_HOTFIX103.txt",
+      "bytes": 701,
+      "compressed_bytes": 399
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/HOTFIX48_P3_3_MUNSELL_AB_WORKBENCH.md",
+      "bytes": 1165,
+      "compressed_bytes": 797
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/HOTFIX52_IMPORT_FIRST_PAINT.md",
+      "bytes": 652,
+      "compressed_bytes": 420
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/HOTFIX120_PALETTE_VIRTUALIZATION_VISIBILITY.md",
+      "bytes": 1247,
+      "compressed_bytes": 694
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/HOTFIX103_LABC_ATLAS_CN_FINE_HUE.md",
+      "bytes": 1179,
+      "compressed_bytes": 760
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/HOTFIX41_AXIS_ORBIT_RENDER_POLISH.md",
+      "bytes": 505,
+      "compressed_bytes": 341
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/VALIDATION_HOTFIX49.txt",
+      "bytes": 374,
+      "compressed_bytes": 232
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/RUN_FULL_PERFORMANCE_TEST.bat",
+      "bytes": 366,
+      "compressed_bytes": 213
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/HOTFIX99_LABC_ATLAS_V1.md",
+      "bytes": 1671,
+      "compressed_bytes": 1088
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/RELEASE_NOTES_v0.13.1.txt",
+      "bytes": 1387,
+      "compressed_bytes": 917
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/RELEASE_READINESS_R1.md",
+      "bytes": 1105,
+      "compressed_bytes": 804
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/START_RELEASE_R1_HF79.bat",
+      "bytes": 132,
+      "compressed_bytes": 97
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/START_HF46.bat",
+      "bytes": 601,
+      "compressed_bytes": 268
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/START_HF42.bat",
+      "bytes": 781,
+      "compressed_bytes": 333
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/VALIDATION_HOTFIX83.txt",
+      "bytes": 547,
+      "compressed_bytes": 374
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/HOTFIX66_RR1_PALETTE_DIRECT_DROP.md",
+      "bytes": 756,
+      "compressed_bytes": 493
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/HOTFIX17_SCOPE.txt",
+      "bytes": 1522,
+      "compressed_bytes": 1015
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/START_RELEASE_R1_HF96.bat",
+      "bytes": 221,
+      "compressed_bytes": 112
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/DATA_GOVERNANCE_DG3_2_SCOPE.md",
+      "bytes": 1503,
+      "compressed_bytes": 846
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/CLEAN_MACHINE_TEST_R1.md",
+      "bytes": 1213,
+      "compressed_bytes": 880
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/README_v0.11.0.md",
+      "bytes": 1366,
+      "compressed_bytes": 929
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/VALIDATION_HOTFIX99.txt",
+      "bytes": 998,
+      "compressed_bytes": 549
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/DG4_VALIDATION.md",
+      "bytes": 1563,
+      "compressed_bytes": 769
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/HOTFIX131_TRUE_ADAPTIVE_MDI_FIT.md",
+      "bytes": 694,
+      "compressed_bytes": 442
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/VALIDATION_HOTFIX82.txt",
+      "bytes": 2010,
+      "compressed_bytes": 945
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/HOTFIX106_HUE_FAMILY_FIX.md",
+      "bytes": 941,
+      "compressed_bytes": 647
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/UI_ONLY_VISUAL_REFINEMENT.txt",
+      "bytes": 847,
+      "compressed_bytes": 502
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/HOTFIX79_VPA_V22_SCOPE.md",
+      "bytes": 1251,
+      "compressed_bytes": 911
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/HOTFIX100_LABC_ATLAS_OPPONENT_SLICE.md",
+      "bytes": 1526,
+      "compressed_bytes": 944
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/VALIDATION_DATA_GOVERNANCE_DG2_HOTFIX56.txt",
+      "bytes": 1481,
+      "compressed_bytes": 782
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/INSTALL_DEPENDENCIES.bat",
+      "bytes": 124,
+      "compressed_bytes": 99
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/HOTFIX75_RR1_SORT_BASELINE_RESET.md",
+      "bytes": 1484,
+      "compressed_bytes": 891
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/VALIDATION_HOTFIX30.txt",
+      "bytes": 1304,
+      "compressed_bytes": 730
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/START_P3_4_HF51.bat",
+      "bytes": 296,
+      "compressed_bytes": 205
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/HOTFIX113_CPX_VIEW_EXPORT_FIX.md",
+      "bytes": 1287,
+      "compressed_bytes": 835
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/RUN_P3_5_BENCHMARK.bat",
+      "bytes": 304,
+      "compressed_bytes": 185
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/DATA_GOVERNANCE_DG1_SCOPE.md",
+      "bytes": 663,
+      "compressed_bytes": 420
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/pyproject.toml",
+      "bytes": 477,
+      "compressed_bytes": 295
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/START_RELEASE_R1_HF67.bat",
+      "bytes": 49,
+      "compressed_bytes": 49
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/HOTFIX110_CIRCULAR_HUE_GLOBAL_DELTA.md",
+      "bytes": 2011,
+      "compressed_bytes": 1262
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/HOTFIX24_QTX_D65_DATACOLOR_SCOPE.txt",
+      "bytes": 1039,
+      "compressed_bytes": 630
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/VALIDATION_HOTFIX77.txt",
+      "bytes": 864,
+      "compressed_bytes": 663
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/HOTFIX85_PALETTE_WORKSPACE_UX_P2_SCOPE.txt",
+      "bytes": 589,
+      "compressed_bytes": 479
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/HOTFIX90_SORT_DETERMINISM_SCOPE.txt",
+      "bytes": 669,
+      "compressed_bytes": 512
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/HOTFIX98_LABC_RESET_AND_ATLAS_RESEARCH.md",
+      "bytes": 1794,
+      "compressed_bytes": 1198
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/VERSION",
+      "bytes": 37,
+      "compressed_bytes": 37
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/VALIDATION_HOTFIX48.txt",
+      "bytes": 1188,
+      "compressed_bytes": 621
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/START_RELEASE_R1_HF95.bat",
+      "bytes": 221,
+      "compressed_bytes": 112
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/HOTFIX76_RR1_SHUTDOWN_LIFECYCLE.md",
+      "bytes": 2041,
+      "compressed_bytes": 1018
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/PERFORMANCE_P3_4_HOTFIX50_SCOPE.txt",
+      "bytes": 1284,
+      "compressed_bytes": 753
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/START_RELEASE_R1_HF85.bat",
+      "bytes": 122,
+      "compressed_bytes": 94
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/VALIDATION_HOTFIX81.txt",
+      "bytes": 1236,
+      "compressed_bytes": 743
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/RUN_3D_SOFTWARE_FALLBACK.bat",
+      "bytes": 253,
+      "compressed_bytes": 208
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/PERFORMANCE_P3_6_HOTFIX54_SCOPE.txt",
+      "bytes": 2026,
+      "compressed_bytes": 1092
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/HOTFIX34_OPENGL3D_UI_SCOPE.txt",
+      "bytes": 1035,
+      "compressed_bytes": 670
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/tests/data/Sun Way.qtx",
+      "bytes": 16626,
+      "compressed_bytes": 3059
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/tests/data/Col.9 FH0092.qtx",
+      "bytes": 9771,
+      "compressed_bytes": 2529
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/tests/test_datacolor_reference.py",
+      "bytes": 3726,
+      "compressed_bytes": 1104
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/tests/test_palette_continuity_v241_science.py",
+      "bytes": 3035,
+      "compressed_bytes": 982
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/tests/test_library_lazy_spectrum_p3_3.py",
+      "bytes": 3168,
+      "compressed_bytes": 1178
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/tests/test_p3_5_science_cache.py",
+      "bytes": 572,
+      "compressed_bytes": 277
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/tests/test_qtx_sun_way_datacolor_d65.py",
+      "bytes": 2777,
+      "compressed_bytes": 1091
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/tests/test_qtx_batch_parser_p3_6.py",
+      "bytes": 4937,
+      "compressed_bytes": 1505
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/tests/test_library_index_p3_2.py",
+      "bytes": 3422,
+      "compressed_bytes": 1275
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/tests/test_cpx_structure.py",
+      "bytes": 1330,
+      "compressed_bytes": 649
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/tests/test_ui_selection_scope.py",
+      "bytes": 4842,
+      "compressed_bytes": 1674
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/tests/test_core_rules.py",
+      "bytes": 1808,
+      "compressed_bytes": 823
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/tests/test_palette_continuity_v25.py",
+      "bytes": 3611,
+      "compressed_bytes": 1320
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/tests/test_palette_hue_hotfix106.py",
+      "bytes": 1636,
+      "compressed_bytes": 678
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/tests/test_excel_exchange.py",
+      "bytes": 1736,
+      "compressed_bytes": 716
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/tests/test_delta_h_datacolor.py",
+      "bytes": 546,
+      "compressed_bytes": 300
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/tests/test_hf122_spectral_order_fastpath.py",
+      "bytes": 2118,
+      "compressed_bytes": 914
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/tests/test_palette_sort_contract_hf104.py",
+      "bytes": 1130,
+      "compressed_bytes": 561
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/tests/test_shade555.py",
+      "bytes": 1528,
+      "compressed_bytes": 573
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/tests/test_labc_atlas_hotfix100.py",
+      "bytes": 1856,
+      "compressed_bytes": 711
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/tests/test_palette_family_sort.py",
+      "bytes": 1119,
+      "compressed_bytes": 441
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/tests/test_hf110_circular_hue_global_delta.py",
+      "bytes": 2086,
+      "compressed_bytes": 858
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/tests/test_qtx_production_variants.py",
+      "bytes": 739,
+      "compressed_bytes": 410
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/tests/test_labc_atlas_hotfix101.py",
+      "bytes": 2363,
+      "compressed_bytes": 827
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/tests/__pycache__/test_labc_atlas_hotfix103.cpython-313.pyc",
+      "bytes": 3209,
+      "compressed_bytes": 1837
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/tests/__pycache__/test_excel_exchange.cpython-313.pyc",
+      "bytes": 3439,
+      "compressed_bytes": 1903
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/tests/__pycache__/test_core_rules.cpython-313.pyc",
+      "bytes": 2954,
+      "compressed_bytes": 1640
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/tests/__pycache__/test_labc_atlas_hotfix100.cpython-313.pyc",
+      "bytes": 3331,
+      "compressed_bytes": 1778
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/tests/__pycache__/test_hf110_circular_hue_global_delta.cpython-313.pyc",
+      "bytes": 4595,
+      "compressed_bytes": 2395
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/tests/__pycache__/test_palette_sort_contract_hf104.cpython-313.pyc",
+      "bytes": 2216,
+      "compressed_bytes": 1205
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/tests/__pycache__/test_hf122_spectral_order_fastpath.cpython-313.pyc",
+      "bytes": 4615,
+      "compressed_bytes": 2600
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/tests/__pycache__/test_shade555.cpython-313.pyc",
+      "bytes": 2475,
+      "compressed_bytes": 1402
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/tests/__pycache__/test_library_lazy_spectrum_p3_3.cpython-313.pyc",
+      "bytes": 6841,
+      "compressed_bytes": 3183
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/tests/__pycache__/test_palette_continuity_v241_science.cpython-313.pyc",
+      "bytes": 4420,
+      "compressed_bytes": 2233
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/tests/__pycache__/test_qtx_production_variants.cpython-313.pyc",
+      "bytes": 1629,
+      "compressed_bytes": 1072
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/tests/__pycache__/test_palette_hue_hotfix106.cpython-313.pyc",
+      "bytes": 3361,
+      "compressed_bytes": 1812
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/tests/__pycache__/test_delta_h_datacolor.cpython-313.pyc",
+      "bytes": 884,
+      "compressed_bytes": 664
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/tests/__pycache__/test_ui_selection_scope.cpython-313.pyc",
+      "bytes": 9926,
+      "compressed_bytes": 4374
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/tests/__pycache__/test_palette_family_sort.cpython-313.pyc",
+      "bytes": 2114,
+      "compressed_bytes": 1210
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/tests/__pycache__/test_p3_5_science_cache.cpython-313.pyc",
+      "bytes": 1335,
+      "compressed_bytes": 882
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/tests/__pycache__/test_datacolor_reference.cpython-313.pyc",
+      "bytes": 5761,
+      "compressed_bytes": 2813
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/tests/__pycache__/test_labc_atlas_hotfix101.cpython-313.pyc",
+      "bytes": 4013,
+      "compressed_bytes": 2211
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/tests/__pycache__/test_qtx_batch_parser_p3_6.cpython-313.pyc",
+      "bytes": 8697,
+      "compressed_bytes": 4237
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/tests/__pycache__/test_library_index_p3_2.cpython-313.pyc",
+      "bytes": 5646,
+      "compressed_bytes": 2881
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/tests/__pycache__/test_qtx_sun_way_datacolor_d65.cpython-313.pyc",
+      "bytes": 4308,
+      "compressed_bytes": 2270
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/tests/__pycache__/test_palette_continuity_v25.cpython-313.pyc",
+      "bytes": 6884,
+      "compressed_bytes": 3468
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/tests/__pycache__/test_cpx_structure.cpython-313.pyc",
+      "bytes": 2133,
+      "compressed_bytes": 1238
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/tests/test_labc_atlas_hotfix103.py",
+      "bytes": 1614,
+      "compressed_bytes": 664
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/TEST_CHECKLIST_v0.14.6.4.md",
+      "bytes": 1016,
+      "compressed_bytes": 642
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/START_RELEASE_R1_HF90.bat",
+      "bytes": 221,
+      "compressed_bytes": 112
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/UI_STUDIO_MDI_NOTES_v0.14.6.txt",
+      "bytes": 2367,
+      "compressed_bytes": 1441
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/VALIDATION_PERFORMANCE_P3_2_HOTFIX28.txt",
+      "bytes": 1648,
+      "compressed_bytes": 877
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/HOTFIX125_TARGETED_REGRESSION_FIXES.md",
+      "bytes": 1154,
+      "compressed_bytes": 870
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/HOTFIX115_QUERY_ANALYSIS_UI.md",
+      "bytes": 685,
+      "compressed_bytes": 487
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/V1_RELEASE_READINESS_ROADMAP.md",
+      "bytes": 1676,
+      "compressed_bytes": 1036
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/HOTFIX_STAGE1_1.md",
+      "bytes": 1359,
+      "compressed_bytes": 924
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/PACKAGE_NOTES_HOTFIX94.txt",
+      "bytes": 534,
+      "compressed_bytes": 351
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/VALIDATION.md",
+      "bytes": 2969,
+      "compressed_bytes": 1822
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/HOTFIX136_UI_FINAL_CONSOLIDATION.md",
+      "bytes": 2747,
+      "compressed_bytes": 1475
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/START_RELEASE_R1_HF87.bat",
+      "bytes": 221,
+      "compressed_bytes": 112
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/VALIDATION_PERFORMANCE_P3_1_HOTFIX27.txt",
+      "bytes": 1870,
+      "compressed_bytes": 972
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/START_RELEASE_R1_HF75.bat",
+      "bytes": 285,
+      "compressed_bytes": 167
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/HOTFIX69_RR1_SORT_SCIENCE_AUDIT.md",
+      "bytes": 2063,
+      "compressed_bytes": 1373
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/VALIDATION_HOTFIX54.txt",
+      "bytes": 1269,
+      "compressed_bytes": 720
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/TEST_CHECKLIST_STAGE1_HOTFIX1.md",
+      "bytes": 1943,
+      "compressed_bytes": 1074
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/HOTFIX57_DG2_1_UNIFIED_PERMISSION_CENTER.md",
+      "bytes": 1744,
+      "compressed_bytes": 1093
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/VALIDATION_HOTFIX100.txt",
+      "bytes": 1248,
+      "compressed_bytes": 682
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/HOTFIX89A_DIAGNOSTIC_FIX.txt",
+      "bytes": 219,
+      "compressed_bytes": 213
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/HOTFIX42_ORBIT_PAN_ZOOM.md",
+      "bytes": 644,
+      "compressed_bytes": 393
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/START_DG3_2_HF62.bat",
+      "bytes": 45,
+      "compressed_bytes": 45
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/VALIDATION_PERFORMANCE_P1_HOTFIX25.txt",
+      "bytes": 1922,
+      "compressed_bytes": 1055
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/packaging/ChromaticAnalysis.spec",
+      "bytes": 902,
+      "compressed_bytes": 447
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/HOTFIX72_RR1_BUILD_INFO_COMPAT.md",
+      "bytes": 795,
+      "compressed_bytes": 503
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/START_RELEASE_R1_HF82.bat",
+      "bytes": 126,
+      "compressed_bytes": 97
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/START_P3_6_HF54.bat",
+      "bytes": 288,
+      "compressed_bytes": 200
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/VALIDATION_HOTFIX88.txt",
+      "bytes": 950,
+      "compressed_bytes": 682
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/VALIDATION_HOTFIX76.txt",
+      "bytes": 591,
+      "compressed_bytes": 366
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/VALIDATION_HOTFIX108.txt",
+      "bytes": 776,
+      "compressed_bytes": 466
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/HOTFIX142_FORMAL_LIBRARY_DELETE_SEMANTICS.md",
+      "bytes": 905,
+      "compressed_bytes": 598
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/VALIDATION_HOTFIX97.txt",
+      "bytes": 727,
+      "compressed_bytes": 537
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/HOTFIX102_LABC_ATLAS_VIEW_SYNC.md",
+      "bytes": 984,
+      "compressed_bytes": 693
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/HOTFIX14_SCOPE.txt",
+      "bytes": 1792,
+      "compressed_bytes": 1080
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/START_P3_3_HF49.bat",
+      "bytes": 281,
+      "compressed_bytes": 195
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/HOTFIX78_RR1_VISUAL_PALETTE_V21_AUDIT.md",
+      "bytes": 529,
+      "compressed_bytes": 377
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/HOTFIX62_DG3_2_LOCAL_DATA_AUDIT_EXCEL.md",
+      "bytes": 553,
+      "compressed_bytes": 335
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/HOTFIX29_OFFICIAL_NAV_SELECTALL_SCOPE.txt",
+      "bytes": 1139,
+      "compressed_bytes": 680
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/HOTFIX124_FROZEN_PERFORMANCE_RESTORE.md",
+      "bytes": 1133,
+      "compressed_bytes": 704
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/DATA_GOVERNANCE_DG2_2_SCOPE.md",
+      "bytes": 1406,
+      "compressed_bytes": 754
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/LIBRARY_DETAIL_LAYOUT_PREVIEW1.txt",
+      "bytes": 938,
+      "compressed_bytes": 678
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/PERFORMANCE_P3_2_HOTFIX28_SCOPE.txt",
+      "bytes": 2504,
+      "compressed_bytes": 1268
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/ARCHITECTURE_v0.13.0.md",
+      "bytes": 1663,
+      "compressed_bytes": 1046
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/RUN_P3_6_BENCHMARK.bat",
+      "bytes": 315,
+      "compressed_bytes": 194
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/UI_REBUILD_NOTES_v0.14.5.txt",
+      "bytes": 1778,
+      "compressed_bytes": 980
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/START_RELEASE_R1_HF74.bat",
+      "bytes": 285,
+      "compressed_bytes": 167
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/HOTFIX123_PALETTE_MODELVIEW_FIRSTPAINT.md",
+      "bytes": 2977,
+      "compressed_bytes": 1616
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/START_RELEASE_R1_HF78.bat",
+      "bytes": 140,
+      "compressed_bytes": 103
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/HOTFIX59_DG2_2_FIND_SELECTION_QTREE_GUARD.md",
+      "bytes": 995,
+      "compressed_bytes": 708
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/HOTFIX93_PALETTE_CONTINUITY_V23_GRAPH_CLUSTER.md",
+      "bytes": 1507,
+      "compressed_bytes": 864
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/HOTFIX91_PALETTE_CONTINUITY_V21_STRUCTURAL_AUDIT.md",
+      "bytes": 1206,
+      "compressed_bytes": 779
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/HOTFIX74_RR1_VISUAL_PALETTE_V1.md",
+      "bytes": 1570,
+      "compressed_bytes": 909
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/HOTFIX94_PAC_VALIDATOR_NEUTRAL_CONFIDENCE.md",
+      "bytes": 2701,
+      "compressed_bytes": 1781
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/HOTFIX107_LABCH_SEMANTIC_RESET.md",
+      "bytes": 1123,
+      "compressed_bytes": 656
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/HOTFIX35_ADAPTIVE_3D.md",
+      "bytes": 2156,
+      "compressed_bytes": 1166
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/VALIDATION_HOTFIX111.txt",
+      "bytes": 703,
+      "compressed_bytes": 426
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/TEST_CHECKLIST_STAGE1.md",
+      "bytes": 2322,
+      "compressed_bytes": 1288
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/ARCHITECTURE_v0.13.1.md",
+      "bytes": 1663,
+      "compressed_bytes": 1046
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/VALIDATION_HOTFIX96.txt",
+      "bytes": 773,
+      "compressed_bytes": 498
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/HF141_VALIDATION.md",
+      "bytes": 1739,
+      "compressed_bytes": 1049
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/HOTFIX31_MENU_LAZYLOAD_SCOPE.txt",
+      "bytes": 1007,
+      "compressed_bytes": 581
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/START_RELEASE_R1_HF100.bat",
+      "bytes": 49,
+      "compressed_bytes": 49
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/RUN_AUTO_PERFORMANCE.bat",
+      "bytes": 354,
+      "compressed_bytes": 206
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/qtx_app/build_info.py",
+      "bytes": 211,
+      "compressed_bytes": 172
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/qtx_app/library_store.py",
+      "bytes": 89389,
+      "compressed_bytes": 19983
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/qtx_app/workfile.py",
+      "bytes": 1691,
+      "compressed_bytes": 818
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/qtx_app/labc_atlas_window.py",
+      "bytes": 49138,
+      "compressed_bytes": 12915
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/qtx_app/data_management.py",
+      "bytes": 37512,
+      "compressed_bytes": 9549
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/qtx_app/ui_perf_probe.py",
+      "bytes": 7736,
+      "compressed_bytes": 2282
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/qtx_app/release_runtime.py",
+      "bytes": 1873,
+      "compressed_bytes": 937
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/qtx_app/data_protection.py",
+      "bytes": 23109,
+      "compressed_bytes": 5956
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/qtx_app/audit_store.py",
+      "bytes": 5774,
+      "compressed_bytes": 1757
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/qtx_app/lab3d_quick.py",
+      "bytes": 52154,
+      "compressed_bytes": 14733
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/qtx_app/audit_export.py",
+      "bytes": 3805,
+      "compressed_bytes": 1586
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/qtx_app/auth_store.py",
+      "bytes": 63696,
+      "compressed_bytes": 15866
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/qtx_app/__init__.py",
+      "bytes": 58,
+      "compressed_bytes": 58
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/qtx_app/perf_monitor.py",
+      "bytes": 5364,
+      "compressed_bytes": 1829
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/qtx_app/excel_exchange.py",
+      "bytes": 29418,
+      "compressed_bytes": 9623
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/qtx_app/__pycache__/labc_atlas_window.cpython-313.pyc",
+      "bytes": 85836,
+      "compressed_bytes": 34889
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/qtx_app/__pycache__/workfile.cpython-313.pyc",
+      "bytes": 3166,
+      "compressed_bytes": 1904
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/qtx_app/__pycache__/lab3d_gl.cpython-313.pyc",
+      "bytes": 75702,
+      "compressed_bytes": 32333
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/qtx_app/__pycache__/data_governance.cpython-313.pyc",
+      "bytes": 2732,
+      "compressed_bytes": 1658
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/qtx_app/__pycache__/excel_exchange.cpython-313.pyc",
+      "bytes": 51496,
+      "compressed_bytes": 25154
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/qtx_app/__pycache__/__init__.cpython-313.pyc",
+      "bytes": 283,
+      "compressed_bytes": 243
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/qtx_app/__pycache__/release_runtime.cpython-313.pyc",
+      "bytes": 2788,
+      "compressed_bytes": 1880
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/qtx_app/__pycache__/data_protection.cpython-313.pyc",
+      "bytes": 35785,
+      "compressed_bytes": 16153
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/qtx_app/__pycache__/perf_monitor.cpython-313.pyc",
+      "bytes": 8582,
+      "compressed_bytes": 4727
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/qtx_app/__pycache__/storage_v2.cpython-313.pyc",
+      "bytes": 52712,
+      "compressed_bytes": 23317
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/qtx_app/__pycache__/audit_export.cpython-313.pyc",
+      "bytes": 6006,
+      "compressed_bytes": 3406
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/qtx_app/__pycache__/ui_perf_probe.cpython-313.pyc",
+      "bytes": 12170,
+      "compressed_bytes": 5872
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/qtx_app/__pycache__/library_store.cpython-313.pyc",
+      "bytes": 115983,
+      "compressed_bytes": 45976
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/qtx_app/__pycache__/audit_store.cpython-313.pyc",
+      "bytes": 9157,
+      "compressed_bytes": 4322
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/qtx_app/__pycache__/auth_store.cpython-313.pyc",
+      "bytes": 100618,
+      "compressed_bytes": 39875
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/qtx_app/__pycache__/build_info.cpython-313.pyc",
+      "bytes": 460,
+      "compressed_bytes": 383
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/qtx_app/__pycache__/lab3d_quick.cpython-313.pyc",
+      "bytes": 102249,
+      "compressed_bytes": 41636
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/qtx_app/__pycache__/data_management.cpython-313.pyc",
+      "bytes": 64654,
+      "compressed_bytes": 25075
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/qtx_app/__pycache__/main_window.cpython-313.pyc",
+      "bytes": 1669007,
+      "compressed_bytes": 673033
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/qtx_app/lab3d_gl.py",
+      "bytes": 42617,
+      "compressed_bytes": 12526
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/qtx_app/data_governance.py",
+      "bytes": 1348,
+      "compressed_bytes": 584
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/qtx_app/qml/Lab3DView.qml",
+      "bytes": 15570,
+      "compressed_bytes": 4453
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/qtx_app/storage_v2.py",
+      "bytes": 37038,
+      "compressed_bytes": 9354
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/qtx_app/main_window.py",
+      "bytes": 974036,
+      "compressed_bytes": 250666
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/DATA_GOVERNANCE_DG2_1_SCOPE.md",
+      "bytes": 330,
+      "compressed_bytes": 294
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/DATA_GOVERNANCE_DG2_SCOPE.md",
+      "bytes": 2415,
+      "compressed_bytes": 1282
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/VALIDATION_HOTFIX60.txt",
+      "bytes": 1658,
+      "compressed_bytes": 877
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/BUILD_WINDOWS_EXE.bat",
+      "bytes": 1022,
+      "compressed_bytes": 608
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/HF140_VALIDATION.md",
+      "bytes": 1666,
+      "compressed_bytes": 931
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/VALIDATION_HOTFIX110.txt",
+      "bytes": 1708,
+      "compressed_bytes": 945
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/HOTFIX92_PALETTE_CONTINUITY_V22_ADAPTIVE_BANDS.md",
+      "bytes": 606,
+      "compressed_bytes": 402
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/RUN_CHROMATIC_ANALYSIS.bat",
+      "bytes": 498,
+      "compressed_bytes": 332
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/HOTFIX88_SCOPE.txt",
+      "bytes": 1348,
+      "compressed_bytes": 991
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/HOTFIX22_PALETTE_SEARCH_CLIPBOARD_SCOPE.txt",
+      "bytes": 1132,
+      "compressed_bytes": 777
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/HOTFIX87_PALETTE_SLOT_SELECTION_SCOPE.txt",
+      "bytes": 1212,
+      "compressed_bytes": 718
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/HOTFIX108_PALETTE_STUDIO_P1.md",
+      "bytes": 2518,
+      "compressed_bytes": 1522
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/HOTFIX67_RR1_SMOOTH_3D_PALETTE_SORT.md",
+      "bytes": 2004,
+      "compressed_bytes": 1321
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/VALIDATION_HOTFIX123.txt",
+      "bytes": 984,
+      "compressed_bytes": 616
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/HOTFIX32_SELECTION_RESTORE.md",
+      "bytes": 1253,
+      "compressed_bytes": 833
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/README_v0.11.1.md",
+      "bytes": 1617,
+      "compressed_bytes": 1003
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/TEST_RESULTS_STAGE1_HOTFIX1.txt",
+      "bytes": 705,
+      "compressed_bytes": 420
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/HOTFIX70_RR1_MUNSELL_SCIENCE_CORRECTION.md",
+      "bytes": 1921,
+      "compressed_bytes": 1223
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/HOTFIX129_RESPONSIVE_WORKSPACE.md",
+      "bytes": 2546,
+      "compressed_bytes": 1440
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/VALIDATION_HOTFIX67.txt",
+      "bytes": 1250,
+      "compressed_bytes": 506
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/VALIDATION_HOTFIX40.txt",
+      "bytes": 918,
+      "compressed_bytes": 463
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/VALIDATION_HOTFIX109.txt",
+      "bytes": 1080,
+      "compressed_bytes": 637
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/HOTFIX122_PERFORMANCE_FINAL.md",
+      "bytes": 2437,
+      "compressed_bytes": 1566
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/REQUIREMENTS_AUDIT_v0.11.0.md",
+      "bytes": 1634,
+      "compressed_bytes": 1036
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/HOTFIX21_RECOVERY_SEARCH_SAVE_SCOPE.txt",
+      "bytes": 1222,
+      "compressed_bytes": 829
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/validation_previews/PAC_HF105_ADIDAS_CHROMA_C20.png",
+      "bytes": 41371,
+      "compressed_bytes": 36309
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/validation_previews/PAC_HF105_ADIDAS_HUE_SORT_NEW.png",
+      "bytes": 269055,
+      "compressed_bytes": 204089
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/validation_previews/PAC_HF105_ADIDAS_LIGHTNESS_L50.png",
+      "bytes": 43578,
+      "compressed_bytes": 36756
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/START_RELEASE_R1_HF65.bat",
+      "bytes": 52,
+      "compressed_bytes": 52
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/HOTFIX20_RESPONSIVE_SAVE_SCOPE.txt",
+      "bytes": 1857,
+      "compressed_bytes": 1170
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/HOTFIX109_ATLAS_CPX_FIDELITY.md",
+      "bytes": 2444,
+      "compressed_bytes": 1444
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/START_RELEASE_R1_HF69.bat",
+      "bytes": 49,
+      "compressed_bytes": 49
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/START_RELEASE_R1_HF73.bat",
+      "bytes": 285,
+      "compressed_bytes": 167
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/START_DG2_2_HF58.bat",
+      "bytes": 45,
+      "compressed_bytes": 45
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/START_RELEASE_R1_HF99.bat",
+      "bytes": 45,
+      "compressed_bytes": 45
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/HOTFIX44_SCENE_PAN_CHROMASHARE_PROFILE.md",
+      "bytes": 1196,
+      "compressed_bytes": 689
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/HOTFIX138_MDI_SHELL_STABILITY_AUDIT.md",
+      "bytes": 1768,
+      "compressed_bytes": 953
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/VERIFY_RELEASE_R1.py",
+      "bytes": 1610,
+      "compressed_bytes": 795
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/TEST_RESULTS_STAGE1.txt",
+      "bytes": 514,
+      "compressed_bytes": 328
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/START_P3_4_HF52.bat",
+      "bytes": 304,
+      "compressed_bytes": 211
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/README.md",
+      "bytes": 8472,
+      "compressed_bytes": 4125
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/HOTFIX60_DG3_PERSONAL_DATA_BACKUP_AUDIT.md",
+      "bytes": 2161,
+      "compressed_bytes": 1140
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/START_HF44.bat",
+      "bytes": 383,
+      "compressed_bytes": 177
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/HOTFIX126_FIND_ISOLATION_FAST_SEARCH.md",
+      "bytes": 2573,
+      "compressed_bytes": 1615
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/DATA_GOVERNANCE_DG3_1_SCOPE.md",
+      "bytes": 2550,
+      "compressed_bytes": 1317
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/HOTFIX104_LABCH_DE_ATLAS.md",
+      "bytes": 2542,
+      "compressed_bytes": 1462
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/TEST_RESULTS_v0.13.1.txt",
+      "bytes": 985,
+      "compressed_bytes": 567
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/HOTFIX121_UNIFORM_TOOLS_AUTO_PERFORMANCE.md",
+      "bytes": 1755,
+      "compressed_bytes": 1151
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/HOTFIX43_CHROMASHARE_RENDER_FAST3D_LIBSWITCH.md",
+      "bytes": 1567,
+      "compressed_bytes": 931
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/START_RELEASE_R1_HF94.bat",
+      "bytes": 221,
+      "compressed_bytes": 112
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/VALIDATION_HOTFIX104.txt",
+      "bytes": 2478,
+      "compressed_bytes": 1162
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/HOTFIX135_UI_RESPONSIVE_P2_COMPLETE.md",
+      "bytes": 3238,
+      "compressed_bytes": 1795
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/VALIDATION_HOTFIX114.txt",
+      "bytes": 1318,
+      "compressed_bytes": 695
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/PACKAGE_NOTES_HOTFIX96.txt",
+      "bytes": 895,
+      "compressed_bytes": 732
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/VALIDATION_HOTFIX79.txt",
+      "bytes": 1046,
+      "compressed_bytes": 769
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/DIAGNOSTICS_README.txt",
+      "bytes": 1817,
+      "compressed_bytes": 1169
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/HOTFIX89_DIAGNOSTIC_GATE_SCOPE.txt",
+      "bytes": 553,
+      "compressed_bytes": 354
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/VERIFY_HOTFIX64_UI.py",
+      "bytes": 1155,
+      "compressed_bytes": 671
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/HOTFIX97_SIMPLE_COLOR_FAMILY_SORT.md",
+      "bytes": 776,
+      "compressed_bytes": 556
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/VALIDATION_HOTFIX51.txt",
+      "bytes": 473,
+      "compressed_bytes": 245
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/HOTFIX73_RR1_PALETTE_INTEGRITY_RGB_PREVIEW.md",
+      "bytes": 1640,
+      "compressed_bytes": 918
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/VALIDATION_DG3_1_HOTFIX61.txt",
+      "bytes": 1209,
+      "compressed_bytes": 595
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/VALIDATION_v0.11.1.md",
+      "bytes": 1926,
+      "compressed_bytes": 1218
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/PAC_HF101_ADIDAS_ATLAS_VALIDATION.txt",
+      "bytes": 3007,
+      "compressed_bytes": 757
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/HOTFIX128_GRID_COLUMNS_SINGLE_IMAGE.md",
+      "bytes": 906,
+      "compressed_bytes": 683
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/TEST_RESULTS_v0.14.6.4_STUDIO_TASKBAR_DATA_BROWSER.txt",
+      "bytes": 1340,
+      "compressed_bytes": 938
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/HOTFIX82_RR1_VISUAL_PALETTE_V241_AUDIT.md",
+      "bytes": 741,
+      "compressed_bytes": 467
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/HOTFIX23_CROSS_WINDOW_TRANSFER_SCOPE.txt",
+      "bytes": 1039,
+      "compressed_bytes": 551
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/VALIDATION_HOTFIX112.txt",
+      "bytes": 1141,
+      "compressed_bytes": 602
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/VALIDATION_v0.13.0.md",
+      "bytes": 3257,
+      "compressed_bytes": 1884
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/HOTFIX19_CONTEXT_COMMANDS_SCOPE.txt",
+      "bytes": 2221,
+      "compressed_bytes": 1345
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/BUSINESS_INTEGRITY_CHECK.txt",
+      "bytes": 671,
+      "compressed_bytes": 298
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/START_RELEASE_R1_HF83.bat",
+      "bytes": 122,
+      "compressed_bytes": 94
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/HOTFIX80_VPA_V23_SCOPE.txt",
+      "bytes": 802,
+      "compressed_bytes": 507
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/HOTFIX116_WORKBENCH_FOCUS_ANALYSIS_UI.md",
+      "bytes": 3310,
+      "compressed_bytes": 1782
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/HOTFIX46_3D_NAV_SURFACE_PERF.md",
+      "bytes": 1290,
+      "compressed_bytes": 753
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/V1_RELEASE_READINESS_NEXT.md",
+      "bytes": 483,
+      "compressed_bytes": 397
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/START_RELEASE_R1_HF66.bat",
+      "bytes": 52,
+      "compressed_bytes": 52
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/START_P3_4_HF50.bat",
+      "bytes": 296,
+      "compressed_bytes": 206
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/requirements-build.txt",
+      "bytes": 38,
+      "compressed_bytes": 38
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/HOTFIX13_SCOPE.txt",
+      "bytes": 1400,
+      "compressed_bytes": 911
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/HOTFIX53_P3_5_BASELINE_COMPUTE_CACHE.md",
+      "bytes": 1632,
+      "compressed_bytes": 954
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/tools/palette_continuity_v241_science_audit.py",
+      "bytes": 10872,
+      "compressed_bytes": 4177
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/tools/visual_palette_v2_audit.py",
+      "bytes": 14538,
+      "compressed_bytes": 5160
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/tools/palette_continuity_v22_audit.py",
+      "bytes": 7621,
+      "compressed_bytes": 3565
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/tools/palette_continuity_v23_audit.py",
+      "bytes": 10678,
+      "compressed_bytes": 4393
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/tools/diagnostics_center.py",
+      "bytes": 19167,
+      "compressed_bytes": 4545
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/tools/palette_sort_benchmark.py",
+      "bytes": 10195,
+      "compressed_bytes": 3634
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/tools/pac_batch_utils.py",
+      "bytes": 5275,
+      "compressed_bytes": 1841
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/tools/visual_palette_v21_audit.py",
+      "bytes": 16524,
+      "compressed_bytes": 5792
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/tools/palette_continuity_v25_audit.py",
+      "bytes": 13747,
+      "compressed_bytes": 4783
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/tools/performance_baseline.py",
+      "bytes": 7399,
+      "compressed_bytes": 2388
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/tools/visual_palette_v241_audit.py",
+      "bytes": 24614,
+      "compressed_bytes": 8008
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/tools/visual_palette_v23_audit.py",
+      "bytes": 22716,
+      "compressed_bytes": 7655
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/tools/palette_continuity_v21_audit.py",
+      "bytes": 7329,
+      "compressed_bytes": 3469
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/tools/auto_performance_suite.py",
+      "bytes": 17250,
+      "compressed_bytes": 5900
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/tools/full_app_performance_test.py",
+      "bytes": 13133,
+      "compressed_bytes": 5292
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/tools/visual_palette_v22_audit.py",
+      "bytes": 23187,
+      "compressed_bytes": 7478
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/tools/palette_continuity_audit.py",
+      "bytes": 9711,
+      "compressed_bytes": 3634
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/tools/palette_continuity_v24_audit.py",
+      "bytes": 10490,
+      "compressed_bytes": 4055
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/tools/visual_palette_v24_audit.py",
+      "bytes": 22982,
+      "compressed_bytes": 7715
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/tools/palette_sort_correctness_audit.py",
+      "bytes": 24181,
+      "compressed_bytes": 7660
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/tools/visual_palette_v242_audit.py",
+      "bytes": 25737,
+      "compressed_bytes": 8220
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/tools/HF125_REGRESSION_CHECK.py",
+      "bytes": 865,
+      "compressed_bytes": 503
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/tools/__pycache__/palette_continuity_v22_audit.cpython-313.pyc",
+      "bytes": 16268,
+      "compressed_bytes": 9507
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/tools/__pycache__/palette_continuity_audit.cpython-313.pyc",
+      "bytes": 17526,
+      "compressed_bytes": 9432
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/tools/__pycache__/palette_continuity_v24_audit.cpython-313.pyc",
+      "bytes": 18072,
+      "compressed_bytes": 10043
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/tools/__pycache__/performance_baseline.cpython-313.pyc",
+      "bytes": 11856,
+      "compressed_bytes": 6249
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/tools/__pycache__/palette_continuity_v241_science_audit.cpython-313.pyc",
+      "bytes": 18333,
+      "compressed_bytes": 10338
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/tools/__pycache__/pac_batch_utils.cpython-313.pyc",
+      "bytes": 9561,
+      "compressed_bytes": 4739
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/tools/__pycache__/palette_continuity_v25_audit.cpython-313.pyc",
+      "bytes": 21319,
+      "compressed_bytes": 11646
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/tools/__pycache__/visual_palette_v24_audit.cpython-313.pyc",
+      "bytes": 43572,
+      "compressed_bytes": 22062
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/tools/__pycache__/palette_sort_correctness_audit.cpython-313.pyc",
+      "bytes": 34440,
+      "compressed_bytes": 17495
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/tools/__pycache__/visual_palette_v22_audit.cpython-313.pyc",
+      "bytes": 39153,
+      "compressed_bytes": 20353
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/tools/__pycache__/data_governance_audit.cpython-313.pyc",
+      "bytes": 6833,
+      "compressed_bytes": 3565
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/tools/__pycache__/munsell_production_benchmark.cpython-313.pyc",
+      "bytes": 12775,
+      "compressed_bytes": 6998
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/tools/__pycache__/visual_palette_v21_audit.cpython-313.pyc",
+      "bytes": 29091,
+      "compressed_bytes": 15368
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/tools/__pycache__/palette_sort_benchmark.cpython-313.pyc",
+      "bytes": 18639,
+      "compressed_bytes": 9402
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/tools/__pycache__/palette_continuity_v21_audit.cpython-313.pyc",
+      "bytes": 15631,
+      "compressed_bytes": 9213
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/tools/__pycache__/palette_continuity_v23_audit.cpython-313.pyc",
+      "bytes": 19716,
+      "compressed_bytes": 11176
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/tools/__pycache__/full_app_performance_test.cpython-313.pyc",
+      "bytes": 22361,
+      "compressed_bytes": 11803
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/tools/__pycache__/HF125_REGRESSION_CHECK.cpython-313.pyc",
+      "bytes": 1586,
+      "compressed_bytes": 1089
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/tools/__pycache__/visual_palette_v2_audit.cpython-313.pyc",
+      "bytes": 23047,
+      "compressed_bytes": 12532
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/tools/__pycache__/visual_palette_v242_audit.cpython-313.pyc",
+      "bytes": 48888,
+      "compressed_bytes": 24070
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/tools/__pycache__/visual_palette_v23_audit.cpython-313.pyc",
+      "bytes": 42792,
+      "compressed_bytes": 21832
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/tools/__pycache__/diagnostics_center.cpython-313.pyc",
+      "bytes": 25176,
+      "compressed_bytes": 10065
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/tools/__pycache__/auto_performance_suite.cpython-313.pyc",
+      "bytes": 27951,
+      "compressed_bytes": 14055
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/tools/__pycache__/visual_palette_v241_audit.cpython-313.pyc",
+      "bytes": 46847,
+      "compressed_bytes": 23323
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/tools/data_governance_audit.py",
+      "bytes": 4011,
+      "compressed_bytes": 1617
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/tools/munsell_production_benchmark.py",
+      "bytes": 7009,
+      "compressed_bytes": 3006
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/HOTFIX15_SCOPE.txt",
+      "bytes": 1781,
+      "compressed_bytes": 1119
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/#U542f#U52a8#U7a0b#U5e8f.bat",
+      "bytes": 233,
+      "compressed_bytes": 186
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/HOTFIX50_P3_4_WORKSPACE_VIRTUALIZATION.md",
+      "bytes": 877,
+      "compressed_bytes": 520
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/VALIDATION_HOTFIX102.txt",
+      "bytes": 637,
+      "compressed_bytes": 369
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/HOTFIX100_CHANGE_SCOPE.txt",
+      "bytes": 367,
+      "compressed_bytes": 254
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/HOTFIX111_CPX_LAYOUT_FIX.md",
+      "bytes": 1069,
+      "compressed_bytes": 679
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/CHANGELOG_UI_REFINE_PREVIEW1.txt",
+      "bytes": 1878,
+      "compressed_bytes": 1212
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/HOTFIX45_PEARL_RENDER_TASKBAR.md",
+      "bytes": 790,
+      "compressed_bytes": 480
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/START_RELEASE_R1_HF70.bat",
+      "bytes": 282,
+      "compressed_bytes": 159
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/HOTFIX83_RR1_VISUAL_PALETTE_V242_AUDIT.md",
+      "bytes": 1139,
+      "compressed_bytes": 650
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/VALIDATION_HOTFIX74.txt",
+      "bytes": 692,
+      "compressed_bytes": 471
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/validation/hotfix97/PAC_HF97_ADIDAS_SIMPLE_COLOR_FAMILY_6COL.png",
+      "bytes": 879055,
+      "compressed_bytes": 825669
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/validation/hotfix97/PAC_SimpleColorFamily_FULL208_SUMMARY.csv",
+      "bytes": 13213,
+      "compressed_bytes": 5303
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/validation/hotfix97/PAC_HF97_ADIDAS_COLOR_FAMILY_ASSIGNMENT.csv",
+      "bytes": 44455,
+      "compressed_bytes": 18670
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/PERFORMANCE_P3_3_HOTFIX47_SCOPE.txt",
+      "bytes": 1525,
+      "compressed_bytes": 952
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/HOTFIX95_SCIENCE_GUIDED_APPEARANCE_CONTINUITY.md",
+      "bytes": 4531,
+      "compressed_bytes": 2666
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/HOTFIX84_RR1_PALETTE_WORKSPACE_UX_P1.md",
+      "bytes": 1575,
+      "compressed_bytes": 842
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/VALIDATION_HOTFIX39.txt",
+      "bytes": 1226,
+      "compressed_bytes": 674
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/START_P3_5_HF53.bat",
+      "bytes": 308,
+      "compressed_bytes": 211
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/UI_STUDIO_MDI_HOTFIX1.txt",
+      "bytes": 964,
+      "compressed_bytes": 559
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/VERIFY_SCOPED_UPDATE.py",
+      "bytes": 3069,
+      "compressed_bytes": 1612
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/START_RELEASE_R1_HF77.bat",
+      "bytes": 285,
+      "compressed_bytes": 167
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/DATA_GOVERNANCE_RBAC2_AUDIT.md",
+      "bytes": 3549,
+      "compressed_bytes": 1720
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/PERFORMANCE_P3_1_HOTFIX27_SCOPE.txt",
+      "bytes": 2152,
+      "compressed_bytes": 1124
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/HOTFIX127_PREVIEW_EXPORT_UI_CONSISTENCY.md",
+      "bytes": 2270,
+      "compressed_bytes": 1261
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/VALIDATION_v0.12.0.md",
+      "bytes": 3968,
+      "compressed_bytes": 2205
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/HOTFIX77_RR1_VISUAL_PALETTE_V2_AUDIT.md",
+      "bytes": 1063,
+      "compressed_bytes": 760
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/HOTFIX40_3D_WINDOW_VISUAL_POLISH.md",
+      "bytes": 1148,
+      "compressed_bytes": 808
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/VALIDATION_DG3_2_HOTFIX62.txt",
+      "bytes": 1119,
+      "compressed_bytes": 712
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/HOTFIX114_UI_ANALYSIS_POLISH.md",
+      "bytes": 2145,
+      "compressed_bytes": 1272
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/START_RELEASE_R1_HF71.bat",
+      "bytes": 282,
+      "compressed_bytes": 159
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/VERIFY_HOTFIX94.py",
+      "bytes": 1793,
+      "compressed_bytes": 833
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/HOTFIX38_QUICK3D_OWNERSHIP_FIX.md",
+      "bytes": 807,
+      "compressed_bytes": 512
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/HOTFIX117_FULL_PERFORMANCE_VALIDATION.md",
+      "bytes": 1468,
+      "compressed_bytes": 1063
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/START_RELEASE_R1_HF63.bat",
+      "bytes": 49,
+      "compressed_bytes": 49
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/START_RELEASE_R1_HF86.bat",
+      "bytes": 126,
+      "compressed_bytes": 97
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/HOTFIX25_PERFORMANCE_P1_SCOPE.txt",
+      "bytes": 1055,
+      "compressed_bytes": 630
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/VALIDATION_PERFORMANCE_P3_3_HOTFIX47.txt",
+      "bytes": 1123,
+      "compressed_bytes": 624
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/VALIDATION_HOTFIX36.txt",
+      "bytes": 1664,
+      "compressed_bytes": 847
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/qtx_core/cpx_io.py",
+      "bytes": 14702,
+      "compressed_bytes": 4845
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/qtx_core/cpx_layout.py",
+      "bytes": 2792,
+      "compressed_bytes": 1013
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/qtx_core/colorimetry.py",
+      "bytes": 21726,
+      "compressed_bytes": 7245
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/qtx_core/palette_continuity_v24.py",
+      "bytes": 22212,
+      "compressed_bytes": 6527
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/qtx_core/palette_continuity_v21.py",
+      "bytes": 15812,
+      "compressed_bytes": 5709
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/qtx_core/palette_global_delta.py",
+      "bytes": 12526,
+      "compressed_bytes": 4180
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/qtx_core/labc_atlas.py",
+      "bytes": 22368,
+      "compressed_bytes": 6529
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/qtx_core/palette_family_sort.py",
+      "bytes": 5021,
+      "compressed_bytes": 2190
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/qtx_core/qtx_parser.py",
+      "bytes": 14572,
+      "compressed_bytes": 4323
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/qtx_core/palette_continuity_v25.py",
+      "bytes": 37101,
+      "compressed_bytes": 10958
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/qtx_core/palette_continuity_v241_science.py",
+      "bytes": 27322,
+      "compressed_bytes": 8163
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/qtx_core/shade_sort.py",
+      "bytes": 4679,
+      "compressed_bytes": 2054
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/qtx_core/analysis.py",
+      "bytes": 14170,
+      "compressed_bytes": 4204
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/qtx_core/__init__.py",
+      "bytes": 3096,
+      "compressed_bytes": 888
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/qtx_core/models.py",
+      "bytes": 1417,
+      "compressed_bytes": 677
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/qtx_core/palette_arrangement.py",
+      "bytes": 88184,
+      "compressed_bytes": 13817
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/qtx_core/palette_continuity_v22.py",
+      "bytes": 8092,
+      "compressed_bytes": 3073
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/qtx_core/palette_continuity_v23.py",
+      "bytes": 19965,
+      "compressed_bytes": 5883
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/qtx_core/palette_labch_sort.py",
+      "bytes": 6076,
+      "compressed_bytes": 2489
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/qtx_core/__pycache__/palette_continuity_v241_science.cpython-313.pyc",
+      "bytes": 41146,
+      "compressed_bytes": 19246
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/qtx_core/__pycache__/shade_sort.cpython-313.pyc",
+      "bytes": 7011,
+      "compressed_bytes": 4025
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/qtx_core/__pycache__/cpx_layout.cpython-313.pyc",
+      "bytes": 4738,
+      "compressed_bytes": 2564
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/qtx_core/__pycache__/__init__.cpython-313.pyc",
+      "bytes": 2745,
+      "compressed_bytes": 1416
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/qtx_core/__pycache__/analysis.cpython-313.pyc",
+      "bytes": 21518,
+      "compressed_bytes": 10620
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/qtx_core/__pycache__/palette_continuity_v21.cpython-313.pyc",
+      "bytes": 26556,
+      "compressed_bytes": 13404
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/qtx_core/__pycache__/palette_continuity_v25.cpython-313.pyc",
+      "bytes": 47951,
+      "compressed_bytes": 23570
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/qtx_core/__pycache__/palette_labch_sort.cpython-313.pyc",
+      "bytes": 7731,
+      "compressed_bytes": 4245
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/qtx_core/__pycache__/palette_continuity_v22.cpython-313.pyc",
+      "bytes": 17829,
+      "compressed_bytes": 9392
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/qtx_core/__pycache__/palette_family_sort.cpython-313.pyc",
+      "bytes": 5608,
+      "compressed_bytes": 3218
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/qtx_core/__pycache__/models.cpython-313.pyc",
+      "bytes": 2983,
+      "compressed_bytes": 1745
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/qtx_core/__pycache__/metamerism.cpython-313.pyc",
+      "bytes": 2416,
+      "compressed_bytes": 1436
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/qtx_core/__pycache__/palette_continuity_v23.cpython-313.pyc",
+      "bytes": 31183,
+      "compressed_bytes": 14845
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/qtx_core/__pycache__/cpx_io.cpython-313.pyc",
+      "bytes": 26745,
+      "compressed_bytes": 13162
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/qtx_core/__pycache__/qtx_parser.cpython-313.pyc",
+      "bytes": 18016,
+      "compressed_bytes": 9199
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/qtx_core/__pycache__/palette_continuity_v24.cpython-313.pyc",
+      "bytes": 35165,
+      "compressed_bytes": 16517
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/qtx_core/__pycache__/palette_arrangement.cpython-313.pyc",
+      "bytes": 88892,
+      "compressed_bytes": 31143
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/qtx_core/__pycache__/labc_atlas.cpython-313.pyc",
+      "bytes": 32365,
+      "compressed_bytes": 14938
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/qtx_core/__pycache__/palette_global_delta.cpython-313.pyc",
+      "bytes": 16446,
+      "compressed_bytes": 8599
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/qtx_core/__pycache__/colorimetry.cpython-313.pyc",
+      "bytes": 28254,
+      "compressed_bytes": 13539
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/qtx_core/metamerism.py",
+      "bytes": 1724,
+      "compressed_bytes": 664
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/VALIDATION_HOTFIX57.txt",
+      "bytes": 1413,
+      "compressed_bytes": 771
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/HOTFIX96_PAC_V25_HVC_SURFACE_NEUTRAL_AXIS.md",
+      "bytes": 2797,
+      "compressed_bytes": 1802
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/HOTFIX71_RR1_MUNSELL_CACHE_REUSE.md",
+      "bytes": 867,
+      "compressed_bytes": 536
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/HOTFIX30_UI_OFFICIAL_TREE_LARGE_IMPORT_SCOPE.txt",
+      "bytes": 2056,
+      "compressed_bytes": 1104
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/START_HF45.bat",
+      "bytes": 364,
+      "compressed_bytes": 172
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/HOTFIX137_MDI_LAYOUT_TASKBAR_STABILITY.md",
+      "bytes": 1250,
+      "compressed_bytes": 731
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/VALIDATION_v0.13.1.md",
+      "bytes": 1777,
+      "compressed_bytes": 1101
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/PERFORMANCE_P3_5_BASELINE.md",
+      "bytes": 1892,
+      "compressed_bytes": 1065
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/HOTFIX37_RUNTIME_PATH_GUARD.md",
+      "bytes": 652,
+      "compressed_bytes": 403
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/PACKAGE_NOTES_HOTFIX95.txt",
+      "bytes": 661,
+      "compressed_bytes": 550
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/VALIDATION_HOTFIX94.txt",
+      "bytes": 651,
+      "compressed_bytes": 515
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/HOTFIX51_P3_4_DRAG_DETAIL_PARSE.md",
+      "bytes": 959,
+      "compressed_bytes": 728
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/VALIDATION_HOTFIX59.txt",
+      "bytes": 612,
+      "compressed_bytes": 360
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/START_RELEASE_R1_HF72.bat",
+      "bytes": 282,
+      "compressed_bytes": 159
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/README_v0.8.3.md",
+      "bytes": 602,
+      "compressed_bytes": 418
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/HOTFIX112_CPX_ACTIVE_VIEW.md",
+      "bytes": 1479,
+      "compressed_bytes": 938
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/HOTFIX132_FIND_RESULT_CARD_LAB_FIT.md",
+      "bytes": 450,
+      "compressed_bytes": 309
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/VALIDATION_HOTFIX87.txt",
+      "bytes": 1127,
+      "compressed_bytes": 674
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/DATA_GOVERNANCE_DG3_SCOPE.md",
+      "bytes": 760,
+      "compressed_bytes": 450
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/VALIDATION_HOTFIX90.txt",
+      "bytes": 451,
+      "compressed_bytes": 244
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/HOTFIX33_3D_ADAPTIVE.md",
+      "bytes": 1434,
+      "compressed_bytes": 961
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/START_RELEASE_R1_HF76.bat",
+      "bytes": 285,
+      "compressed_bytes": 167
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/HOTFIX61_DG3_1_ORG_INSTALL_PORTABLE_PRIVACY.md",
+      "bytes": 1553,
+      "compressed_bytes": 846
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/HOTFIX141_DG4_1_OWNERSHIP_PUBLISHING.md",
+      "bytes": 4030,
+      "compressed_bytes": 1998
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/VALIDATION_HOTFIX53.txt",
+      "bytes": 1422,
+      "compressed_bytes": 696
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/HOTFIX86_PALETTE_CONTINUITY_CORRECTION_SCOPE.txt",
+      "bytes": 994,
+      "compressed_bytes": 751
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/VALIDATION_HOTFIX50.txt",
+      "bytes": 981,
+      "compressed_bytes": 493
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/VALIDATION_HOTFIX106.txt",
+      "bytes": 619,
+      "compressed_bytes": 412
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/START_HF43.bat",
+      "bytes": 856,
+      "compressed_bytes": 365
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/VALIDATION_HOTFIX95.txt",
+      "bytes": 1757,
+      "compressed_bytes": 1158
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/VALIDATION_HOTFIX105.txt",
+      "bytes": 1100,
+      "compressed_bytes": 583
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/PERFORMANCE_P2_HOTFIX26_SCOPE.txt",
+      "bytes": 1783,
+      "compressed_bytes": 927
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/VALIDATION_HOTFIX129.txt",
+      "bytes": 800,
+      "compressed_bytes": 504
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/START_P3_3_HF47.bat",
+      "bytes": 577,
+      "compressed_bytes": 234
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/VALIDATION_HOTFIX126.txt",
+      "bytes": 877,
+      "compressed_bytes": 487
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/START_HF40.bat",
+      "bytes": 703,
+      "compressed_bytes": 296
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/VALIDATION_v0.11.0.md",
+      "bytes": 2788,
+      "compressed_bytes": 1626
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/REQUIREMENTS_AUDIT_v0.9.4.md",
+      "bytes": 2260,
+      "compressed_bytes": 1370
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/VALIDATION_HOTFIX86.txt",
+      "bytes": 762,
+      "compressed_bytes": 545
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/main.py",
+      "bytes": 1758,
+      "compressed_bytes": 814
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/__pycache__/VERIFY_RELEASE_R1.cpython-313.pyc",
+      "bytes": 2945,
+      "compressed_bytes": 1836
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/__pycache__/VERIFY_SCOPED_UPDATE.cpython-313.pyc",
+      "bytes": 4740,
+      "compressed_bytes": 2982
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/__pycache__/VERIFY_HOTFIX94.cpython-313.pyc",
+      "bytes": 2880,
+      "compressed_bytes": 1846
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/__pycache__/VERIFY_HOTFIX64_UI.cpython-313.pyc",
+      "bytes": 1899,
+      "compressed_bytes": 1272
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/__pycache__/main.cpython-313.pyc",
+      "bytes": 2918,
+      "compressed_bytes": 1736
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/RELEASE_NOTES_v0.14.0_STAGE1.txt",
+      "bytes": 1358,
+      "compressed_bytes": 979
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/design_reference/LABC_Atlas_approved_mockup.png",
+      "bytes": 1139669,
+      "compressed_bytes": 1126098
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/TEST_RESULTS_v0.14.6.3_LIBRARY_DETAIL_LAYOUT_UI.txt",
+      "bytes": 1304,
+      "compressed_bytes": 878
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/HOTFIX118_STABILITY_ROUNDTRIP_PERFORMANCE.md",
+      "bytes": 3401,
+      "compressed_bytes": 1978
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/START_RELEASE_R1_HF81.bat",
+      "bytes": 285,
+      "compressed_bytes": 167
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/diagnostics_reports/README_HOTFIX95.txt",
+      "bytes": 489,
+      "compressed_bytes": 358
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/diagnostics_reports/README_HOTFIX94.txt",
+      "bytes": 244,
+      "compressed_bytes": 179
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/#U5b89#U88c5#U4f9d#U8d56.bat",
+      "bytes": 495,
+      "compressed_bytes": 345
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/HOTFIX18_SCOPE.txt",
+      "bytes": 1813,
+      "compressed_bytes": 1202
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/HOTFIX39_3D_INTERACTION_VISUAL_SPEC.md",
+      "bytes": 1645,
+      "compressed_bytes": 929
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/HOTFIX105_LABCH_ATLAS_COMPLETE.md",
+      "bytes": 3020,
+      "compressed_bytes": 1720
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/TEST_RESULTS_v0.14.6.2_WORKBENCH_DETAIL_UI.txt",
+      "bytes": 1080,
+      "compressed_bytes": 777
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/VALIDATION_HOTFIX84.txt",
+      "bytes": 1817,
+      "compressed_bytes": 1043
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/HOTFIX140_DG4_FINALIZATION.md",
+      "bytes": 2497,
+      "compressed_bytes": 1460
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/VALIDATION_HOTFIX58.txt",
+      "bytes": 1058,
+      "compressed_bytes": 618
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/HOTFIX139_DG4_DATA_STORAGE_IDENTITY_SEPARATION.md",
+      "bytes": 4997,
+      "compressed_bytes": 2261
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/HOTFIX68_RR1_INTEGRATED_DIAGNOSTICS.md",
+      "bytes": 620,
+      "compressed_bytes": 494
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/VALIDATION_HOTFIX113.txt",
+      "bytes": 924,
+      "compressed_bytes": 491
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/VALIDATION_HOTFIX107.txt",
+      "bytes": 424,
+      "compressed_bytes": 285
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/HOTFIX54_P3_6_QTX_BATCH_PARSER.md",
+      "bytes": 1702,
+      "compressed_bytes": 964
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/VALIDATION_HOTFIX130.txt",
+      "bytes": 698,
+      "compressed_bytes": 431
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/VALIDATION_HOTFIX34.txt",
+      "bytes": 738,
+      "compressed_bytes": 418
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/HOTFIX64_RR1_UI_STABILITY.md",
+      "bytes": 1492,
+      "compressed_bytes": 956
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/HOTFIX16_SCOPE.txt",
+      "bytes": 1809,
+      "compressed_bytes": 1177
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/RUN_PALETTE_SORT_BENCHMARK.bat",
+      "bytes": 1418,
+      "compressed_bytes": 740
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/HOTFIX58_DG2_2_PERMISSION_UX_FIND_SCOPE.md",
+      "bytes": 783,
+      "compressed_bytes": 469
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/START_RELEASE_R1_HF98.bat",
+      "bytes": 221,
+      "compressed_bytes": 112
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/HOTFIX12_SCOPE.txt",
+      "bytes": 837,
+      "compressed_bytes": 472
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/CHANGE_SCOPE_STAGE1.txt",
+      "bytes": 416,
+      "compressed_bytes": 338
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/HOTFIX65_RR1_QT_LIFECYCLE_GUARD.md",
+      "bytes": 784,
+      "compressed_bytes": 619
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/HOTFIX130_ADAPTIVE_SIDEBAR_RESPONSIVE_WORKSPACE.md",
+      "bytes": 3347,
+      "compressed_bytes": 1806
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/requirements.txt",
+      "bytes": 80,
+      "compressed_bytes": 79
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/HOTFIX101_LABC_ATLAS_VALIDATION_MODE.md",
+      "bytes": 1475,
+      "compressed_bytes": 907
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/HOTFIX36_QUICK3D_RHI.md",
+      "bytes": 2053,
+      "compressed_bytes": 1326
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/START_RELEASE_R1_HF64.bat",
+      "bytes": 51,
+      "compressed_bytes": 51
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/WORKBENCH_DRAG_DETAIL_UI_PREVIEW1.txt",
+      "bytes": 1129,
+      "compressed_bytes": 763
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/HOTFIX119_QTX_EXPORT_PALETTE_PERFORMANCE.md",
+      "bytes": 2192,
+      "compressed_bytes": 1352
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/performance_reports/README_HOTFIX94.txt",
+      "bytes": 44,
+      "compressed_bytes": 44
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/HOTFIX49_P3_3_SORT_WORKBENCH_FAST_HUE.md",
+      "bytes": 1311,
+      "compressed_bytes": 830
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/VALIDATION_v0.12.1.md",
+      "bytes": 2613,
+      "compressed_bytes": 1454
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/RUN_P3_6_BENCHMARK_PYCHARM.txt",
+      "bytes": 512,
+      "compressed_bytes": 356
+    },
+    {
+      "path": "Chromatic_Analysis_v0.14.6.4_Release_Readiness_R1_Hotfix142_Formal_Library_Delete_Semantics/RUN_DIAGNOSTICS.bat",
+      "bytes": 350,
+      "compressed_bytes": 202
+    }
+  ]
+}

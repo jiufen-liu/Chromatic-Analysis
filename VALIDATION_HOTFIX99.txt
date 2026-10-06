@@ -1,0 +1,21 @@
+Hotfix99 · LABC Atlas V1 static validation
+===========================================
+PASS  qtx_app/main_window.py py_compile
+PASS  qtx_app/labc_atlas_window.py py_compile
+PASS  qtx_core/labc_atlas.py py_compile
+PASS  full qtx_app/qtx_core compileall
+PASS  original L* / a* / b* / C* sort menu retained
+PASS  import/save/save-as/copy/paste/undo/redo method anchors retained
+PASS  new Atlas module is read-only over palette records
+PASS  Atlas has no QTX/CPX/SQLite write path
+PASS  D65/10° Lab coordinates are frozen for Atlas V1
+PASS  actual Adidas spot checks:
+      4PMRD487-2 YARN/SOCK -> Neutral
+      Team Light Grey -> Neutral
+      095A Black -> Neutral
+      135A Night Navy -> Blue
+      4PMBL648R-2 deep blues -> Blue / Blue-Violet boundary
+
+Environment note:
+PySide6 / colour are not installed in this sandbox, so full GUI runtime launch is not executed here.
+The package is intended for the user's existing Windows environment where the main application dependencies are installed.

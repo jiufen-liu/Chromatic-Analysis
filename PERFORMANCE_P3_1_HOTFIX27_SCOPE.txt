@@ -1,0 +1,40 @@
+Chromatic Analysis v0.14.6.4 - Performance P3-1 Hotfix27
+
+Baseline:
+- Chromatic_Analysis_v0.14.6.4_Performance_P2_Hotfix26.zip
+- Hotfix26 was user-validated as smooth for formal-library page switching and Comparison Workbench.
+
+Scope: database paging / responsiveness only. No colour-science formula or parser changes.
+
+P3-1 goal:
+Replace UI-only pagination with true SQLite paging for the normal formal-library browsing path.
+
+Changes:
+1) LibraryStore adds SQLite-side formal-library paging:
+   - COUNT(*) for result size.
+   - LIMIT/OFFSET for current page.
+   - Full saved_samples.payload is selected/deserialised only for rows on the requested page.
+2) Search / STD-BAT filter / D65-10 Lab family filter / name and L sorting can be applied before LIMIT/OFFSET.
+   - P3-1 still reads scalar values from JSON when those filters/sorts need them.
+   - P3-2 will replace that scalar JSON extraction with a dedicated lightweight sample index.
+3) Cross-page Select All / Copy obtains ordered sample_key values without loading spectral payloads.
+4) Context-menu operations load only explicitly selected formal-library samples rather than the complete filtered library.
+5) The existing Hotfix26 page-sized ColorTile widget pool remains unchanged.
+6) Compatibility fallback is retained:
+   - Munsell hue sorting still uses the mature legacy path because it depends on spectral C-illuminant calculations.
+   - Lab-derived filters/sorts under non-D65/10 conditions still use the mature legacy path.
+   This prevents P3-1 from changing colour behaviour before spectral lazy loading/index work is ready.
+
+Untouched business/science areas:
+- qtx_core/* colour science and parsers
+- QTX / CPX / Excel import/export behaviour
+- delta-E formulas, MI, 555
+- Comparison Workbench science logic
+- colour-card layout/business behaviour
+- RBAC and save permissions
+- drag/drop and cross-window transfer semantics
+
+Expected user-visible behaviour:
+- Normal formal-library page switching remains visually identical.
+- With large libraries, page changes no longer require Python json.loads of every matching saved sample.
+- Search/filter/sort results should match Hotfix26.

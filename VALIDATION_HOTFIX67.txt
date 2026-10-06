@@ -1,0 +1,23 @@
+Hotfix67 validation (dependency-free/static)
+Date: 2026-09-27
+
+PASS - Python AST/compile syntax: qtx_app/main_window.py
+PASS - Python AST/compile syntax: qtx_app/lab3d_quick.py
+PASS - qtx_core/__init__.py unchanged from Hotfix66
+PASS - qtx_core/analysis.py unchanged from Hotfix66 (spectral_order algorithm frozen)
+PASS - qtx_core/colorimetry.py unchanged from Hotfix66
+PASS - qtx_core/cpx_io.py unchanged from Hotfix66
+PASS - qtx_core/metamerism.py unchanged from Hotfix66
+PASS - qtx_core/models.py unchanged from Hotfix66
+PASS - qtx_core/qtx_parser.py unchanged from Hotfix66
+PASS - qtx_core/shade_sort.py unchanged from Hotfix66 (555 frozen)
+PASS - qtx_app/library_store.py unchanged from Hotfix66
+PASS - qtx_app/excel_exchange.py unchanged from Hotfix66
+PASS - qtx_app/qml/Lab3DView.qml unchanged from Hotfix66
+PASS - qtx_app/auth_store.py unchanged from Hotfix66
+
+Runtime GUI validation still required on Windows/PySide6:
+1. 3D point-size drag should feel continuous from 2.0 to 10.0.
+2. A 300+ palette should remain responsive while spectral/Munsell sort computes.
+3. On sort completion the palette should reorder without full blank/repaint flash.
+4. Rapidly choose another sort or close the palette during a heavy sort; no crash should occur.

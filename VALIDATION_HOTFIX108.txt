@@ -1,0 +1,16 @@
+Hotfix108 · Palette Studio P1 Validation
+
+1. Python compileall: PASS
+2. CPX synthetic exact round-trip: PASS
+   - unmodified imported CPX exported byte-for-byte identical
+3. CPX structure-preserving rewrite: PASS
+   - unknown root element preserved
+   - unknown sample element preserved
+   - unknown attributes preserved
+4. Atlas single-window lifecycle code path: PRESENT
+5. Dirty/save/close prompt code path: PRESENT
+6. Search keeps original slot layout and dims non-matches: PRESENT
+7. View zoom is separated from saved slot coordinates: PRESENT
+8. Atlas similar-colour callback follows active ΔE formula: PRESENT
+9. Excel presentation/data sheet polish: PRESENT
+10. Full Windows GUI launch: NOT EXECUTED in container (PySide6/colour-science desktop runtime unavailable)

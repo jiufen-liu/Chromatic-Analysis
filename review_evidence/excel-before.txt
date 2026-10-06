@@ -1,0 +1,39 @@
+FFF                                                                      [100%]
+=================================== FAILURES ===================================
+_________________ test_mpc_excel_import_and_safe_client_export _________________
+tests/test_excel_exchange.py:38: in test_mpc_excel_import_and_safe_client_export
+    assert "SECRET" not in joined
+E   AssertionError: assert 'SECRET' not in 'Client card...l D65 / 10° '
+E     
+E     'SECRET' is contained here:
+E       -1 sample SECRET 9.5 Test color 1-1 名称 来源文件 Viewing Instrument Model Instrument Serial Instrument Settings Measured/DateTime TEST-1 sample mpc.xlsx Excel D65 / 10°   Excel D65 / 10° 
+E     ?           ++++++
+_______________ test_excel_preview_rgb_agrees_with_explicit_hex ________________
+tests/test_science_integrity_review.py:87: in test_excel_preview_rgb_agrees_with_explicit_hex
+    assert tuple(ws.cell(2,col).value for col in (14,15,16)) == (18,52,86)
+E   assert (129, 116, 111) == (18, 52, 86)
+E     
+E     At index 0 diff: 129 != 18
+E     Use -v to get more diff
+____________ test_excel_internal_metadata_requires_explicit_opt_in _____________
+tests/test_science_integrity_review.py:95: in test_excel_internal_metadata_requires_explicit_opt_in
+    out=tmp_path/'internal.xlsx'; export_client_card(str(out),'test',[sm],include_internal_metadata=True)
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   TypeError: export_client_card() got an unexpected keyword argument 'include_internal_metadata'
+=============================== warnings summary ===============================
+../../../chromatic-venv/lib/python3.12/site-packages/colour/utilities/verbose.py:340
+  /workspace/chromatic-venv/lib/python3.12/site-packages/colour/utilities/verbose.py:340: ColourUsageWarning: "SciPy" related API features are not available: "No module named 'scipy'".
+  See the installation guide for more information: https://www.colour-science.org/installation-guide/
+    warn(*args, **kwargs)
+
+../../../chromatic-venv/lib/python3.12/site-packages/colour/utilities/verbose.py:340
+  /workspace/chromatic-venv/lib/python3.12/site-packages/colour/utilities/verbose.py:340: ColourUsageWarning: "Matplotlib" related API features are not available: "No module named 'matplotlib'".
+  See the installation guide for more information: https://www.colour-science.org/installation-guide/
+    warn(*args, **kwargs)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+FAILED tests/test_excel_exchange.py::test_mpc_excel_import_and_safe_client_export
+FAILED tests/test_science_integrity_review.py::test_excel_preview_rgb_agrees_with_explicit_hex
+FAILED tests/test_science_integrity_review.py::test_excel_internal_metadata_requires_explicit_opt_in
+3 failed, 17 deselected, 2 warnings in 1.34s

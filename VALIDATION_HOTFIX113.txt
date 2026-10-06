@@ -1,0 +1,16 @@
+Hotfix113 Validation
+
+Scope: CPX view / layout / visual export only. Sorting algorithms were not changed.
+
+1. Python compileall: PASS
+2. Reference CPX source geometry: 14 x 67: PASS
+3. Reference CPX occupied samples: 80: PASS
+4. Non-destructive active presentation geometry: 10 x 10: PASS
+5. Projected presentation retains all 80 samples: PASS
+6. Expand presentation back to source 14 x 67: exact slot positions PASS
+7. Sorted 80-sample 10-column presentation expands back to 14 x 67 source canvas: PASS
+8. Rightmost source-only empty columns are absent from the editor presentation: PASS
+9. Internal blanks are preserved; no left-shift caused by CPX blank deletion: implemented
+10. 75/100/125% use fixed column geometry; zoom changes pixel size only: implemented
+11. Visual export crops only trailing empty right columns / bottom rows and hides blank guides by default for CPX: implemented
+12. Excel export path: unchanged

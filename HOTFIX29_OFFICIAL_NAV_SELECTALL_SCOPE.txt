@@ -1,0 +1,26 @@
+Chromatic Analysis v0.14.6.4 - Hotfix29
+
+Scope
+1. Large unsaved QTX/CPX workspace Ctrl+A
+   - Replace per-item selection loop with one bulk QListWidget.selectAll transaction.
+   - Suppress intermediate selection signals and repaint; refresh selection count once.
+   - No change to card data, spectra, calculations, or save semantics.
+
+2. Official library save/customer flow
+   - Official library now uses the same customer/sub-customer chooser pattern as formal library.
+   - Formal and official customer namespaces are separated in the chooser.
+   - New official customer/category is stored under 官方色库/<name>.
+
+3. Left navigation
+   - Remove hard-coded Pantone/RAL/NCS/中国传统色 placeholders.
+   - Show only official libraries that actually have saved QTX records.
+   - Refresh immediately after library save/delete/refresh.
+   - Up to six real official libraries are direct shortcuts; extras appear under 更多….
+
+Not changed
+- qtx_app/library_store.py / P3-1 / P3-2 database architecture
+- qtx_core color algorithms
+- QTX/CPX parsing and export
+- CMC/DE2000/MI/555
+- RBAC behavior
+- workbench/color-card business logic

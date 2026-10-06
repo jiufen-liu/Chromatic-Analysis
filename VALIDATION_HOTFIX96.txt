@@ -1,0 +1,12 @@
+Hotfix96 validation target
+==========================
+1. Python static compilation: all .py files must compile.
+2. V25 order integrity: no missing/duplicate samples.
+3. Low-C* grey angles around Red/Violet/Blue route to one Neutral Axis when neutral-distance supports it.
+4. Khaki/olive cannot be stolen by Blue; Blue-grey/Navy cannot be neutralised merely for low C*.
+5. Near-white boundary island may migrate only to a supported adjacent hue family; deep body stays native.
+6. Neutral Axis must be monotonic by L* in either chosen direction.
+7. Software main button uses V25.
+8. RUN_DIAGNOSTICS option 21 uses the exact same V25 core.
+9. Batch outputs use short filenames and real PASS/FAIL checks.
+10. User regression target: 91 QTX plus new multi-colour QTX/Excel set.

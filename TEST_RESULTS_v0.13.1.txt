@@ -1,0 +1,26 @@
+Chromatic Analysis v0.13.1 validation performed in build environment
+
+PASS  Python syntax compilation:
+      qtx_app/main_window.py
+      qtx_app/excel_exchange.py
+
+PASS  Datacolor CHECK II 555 example (standalone shade_sort test):
+      DL*=+0.13, Da*=-0.47, Db*=+0.18
+      L tolerance ±1.80, a/b tolerance ±0.90, 9 boxes
+      result = 536
+
+PASS  New preview gamut mapping smoke samples:
+      Lab(50,0,0) -> #777777
+      Lab(75,100,100) -> #FDA282
+      Lab(40,-80,80) -> #156E05
+      Lab(20,10,-60) -> #05315D
+      No independent hard RGB channel clipping used for out-of-gamut previews.
+
+PASS  Excel Color Card smoke export:
+      sheets = Color Card / Color Data / Reflectance Data / Attributes / Measurement Info
+      Attributes retained.
+
+BLOCKED full pytest/GUI launch in build environment:
+      PySide6 is not installed here.
+      colour-science is not installed here.
+      Therefore final GUI behaviour must be verified on Windows with requirements.txt installed.

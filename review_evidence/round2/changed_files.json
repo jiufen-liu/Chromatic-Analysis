@@ -1,0 +1,16 @@
+[
+  "DEVELOPMENT_REVIEW_ZH.md",
+  "REVIEW_BUILD.json",
+  "qtx_app/atomic_json.py",
+  "qtx_app/condition_status.py",
+  "qtx_app/excel_exchange.py",
+  "qtx_app/main_window.py",
+  "qtx_app/storage_v2.py",
+  "qtx_app/workfile.py",
+  "qtx_core/analysis.py",
+  "qtx_core/cpx_io.py",
+  "qtx_core/models.py",
+  "qtx_core/preview.py",
+  "tests/test_development_quality.py",
+  "tools/review_smoke.py"
+]

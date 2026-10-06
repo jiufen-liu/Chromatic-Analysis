@@ -1,0 +1,19 @@
+Chromatic Analysis v0.14.6.4 - QTX D65 Datacolor Hotfix24
+
+SCOPE (ONLY):
+1. QTX STANDARD_DATA: when complete STD_TX/TY/TZ exists, use it as the authoritative D65/10 XYZ target.
+2. Indexed STANDARD_DATA variants with no STD_X/Y/Z: when ILLNAME identifies D65/10 and complete BAT_X/Y/Z exists, use BAT_X/Y/Z; when BAT_CIEL/CIEa/CIEb also exists, preserve those Datacolor Lab values exactly.
+3. Added Sun Way.qtx as a regression fixture and dedicated parser tests.
+
+UNCHANGED:
+- UI/layout/QSS
+- drag/drop, copy/move, MDI windows
+- database/library/RBAC
+- colour-difference formulas
+- alternate-illuminant spectral calculations
+- 555/shade sorting
+- CPX/Excel/export behaviour
+- section classification (STANDARD_DATA remains kind=STD)
+
+RATIONALE:
+Sun Way.qtx contains STD_X/Y/Z=(2.274947,2.236854,1.469276) but Datacolor comparison deltas prove the active target is STD_TX/TY/TZ=(2.162688,2.251873,2.530830). The six following indexed STANDARD_DATA records carry their authoritative D65/10 measured values in BAT_X/Y/Z and BAT_CIEL/CIEa/CIEb.

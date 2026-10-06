@@ -1,0 +1,8 @@
+Hotfix98 LABC Reset validation
+
+PASS: qtx_app/main_window.py compiles.
+PASS: Color-card toolbar exposes only L*, a*, b*, C* sorting.
+PASS: Color-card context menu exposes only L*, a*, b*, C* sorting.
+PASS: Munsell / spectral-hybrid / appearance / family sort commands are removed from ColorCardPlanWindow.
+PASS: Name sort removed from color-card sorting.
+PASS: Existing non-color-card Munsell/library science code is preserved for compatibility.

@@ -1,0 +1,24 @@
+Hotfix109 Validation
+
+1. Python compileall: PASS
+2. main_window.py AST: PASS
+3. labc_atlas_window.py AST: PASS
+4. cpx_io.py AST: PASS
+5. User reference CPX parse: PASS
+   - TileCount = 14 x 67
+   - total slots = 938
+   - occupied samples = 80
+   - blank slots = 858
+6. Unchanged CPX Save As byte-for-byte fidelity: PASS
+7. Edited CPX template export preserves source sample Attributes / Ingredient metadata: PASS
+8. Edited sample Rank follows new slot: PASS
+9. Original blank CPX Sample nodes are reused when possible: PASS
+10. CPX source overwrite guard: PRESENT
+11. CPX open path now routes to Palette Studio child window: PRESENT
+12. CPX selected through Palette Studio “添加色样” opens as separate layout-preserving child palette: PRESENT
+13. Atlas validation button removed: PASS
+14. Atlas right detail panel is scrollable and family labels localized: PASS (static/compile validation)
+
+Environment note:
+The build container does not provide the full Windows PySide6/colour-science GUI runtime.
+Full visual launch still requires the user's normal Windows environment.

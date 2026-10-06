@@ -1,0 +1,10 @@
+Stage 1 Hotfix 1 automated/static checks
+========================================
+PASS - all Python files compile with py_compile
+PASS - QFontMetrics is explicitly imported from PySide6.QtGui
+PASS - compatibility light/observer widgets are explicitly hidden
+PASS - formal library action is preserved and assigned Ctrl+5
+PASS - workspace folder implementation now parses QTX/CPX/Excel into colour-card items
+PASS - workspace document and folder items receive full-card sizeHint hitboxes
+PASS - current-folder Open routing is present
+LIMITATION - PySide6 and colour-science are not installed in this build environment, so final Windows GUI interaction must be verified with TEST_CHECKLIST_STAGE1_HOTFIX1.md

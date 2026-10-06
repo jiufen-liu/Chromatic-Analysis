@@ -1,0 +1,29 @@
+Hotfix39 validation summary
+===========================
+
+Scope
+- Modified: qtx_app/lab3d_quick.py
+- Modified: qtx_app/qml/Lab3DView.qml
+- Modified: qtx_app/build_info.py
+- Modified: qtx_app/main_window.py (Hotfix label/error text only)
+- Added: START_HF39.bat
+- Added: HOTFIX39_3D_INTERACTION_VISUAL_SPEC.md
+
+Static validation
+- Python py_compile: PASS
+- Protected-source SHA comparison vs Hotfix38: PASS
+  qtx_core/*.py unchanged
+  qtx_app/library_store.py unchanged
+  qtx_app/auth_store.py unchanged
+  qtx_app/excel_exchange.py unchanged
+
+Implemented interaction checks (static code path)
+- left SampleCard -> bridge.selectInstance(index)
+- 3D instance pick -> bridge.selectInstance(instanceIndex)
+- bridge.selectedChanged -> left card highlight + right Lab/LCh values + 2D analytical views
+- selected 3D marker uses measured a*, L*-50, b* coordinate
+- top coordinate tabs switch real pages: CIELAB 3D / Lab Cartesian / LCh polar
+
+Runtime limitation of build environment
+- Full automated GUI/core pytest suite could not be executed because this container does not include PySide6 or colour-science.
+- Final Qt Quick 3D/RHI visual verification must therefore be performed in the user's Windows environment, as with Hotfix38.

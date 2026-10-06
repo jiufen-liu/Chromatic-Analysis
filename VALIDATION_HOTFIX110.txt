@@ -1,0 +1,39 @@
+Hotfix110 Validation
+====================
+
+A. Static / source validation
+- Python compileall: PASS
+- h° menu label = 环形排序: PASS
+- 连续色差 no longer calls selected-start requirement: PASS
+- 连续色差 still runs in background executor: PASS
+- Build metadata updated to HF110: PASS
+
+B. Automated pure tests
+- 359° and 1° red remain adjacent after circular cut: PASS
+- Largest hue-gap midpoint cut: PASS
+- Global path contains every sample exactly once: PASS
+- Global optimisation score never worse than chosen initial candidate: PASS
+- Same input -> same output: PASS
+- Existing HF106 hue helper regression tests: PASS
+- Current palette sort contract tests: PASS
+Total selected test run: 12 PASS
+
+C. Adidas 309 exact Lab algorithm validation
+Independent validation used skimage CIEDE2000 because this container does not ship the project's colour-science package.
+Runtime application still uses the project's active colour-difference formula.
+
+Global Running ΔE (309 samples, CIEDE2000):
+- candidate starts: 9
+- 2-opt accepted moves: 20
+- max adjacent ΔE: 32.8510 -> 24.6691
+- P95 adjacent ΔE: 9.2764 -> 8.5436
+- total adjacent ΔE: 812.8519 -> 760.6455
+- mean adjacent ΔE: 2.6391 -> 2.4696
+- validation runtime in this container: ~5.4 s
+
+For comparison, old single-start greedy on the same 309 Lab set produced max jumps that depended strongly on start position (examples observed: ~34.48, ~40.43, ~65.29 CIEDE2000).
+
+D. Environment limitation
+- Full Windows PySide6 GUI was not launched in this container.
+- The project colour-science dependency is also absent here.
+- Therefore final UI/runtime formula integration should still be smoke-tested in the user's normal Windows environment.

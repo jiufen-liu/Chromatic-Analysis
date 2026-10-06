@@ -1,0 +1,24 @@
+Hotfix112 CPX Active View Validation
+
+Reference: reference.cpx
+Source Fixed Layout: 14 x 67 = 938 slots
+Occupied samples: 80
+Last occupied source row: 10
+Interactive active view: 14 x 10 = 140 slots
+Completely empty tail rows folded in UI: 57
+Compact rows after sorting 80 samples at 14 columns: 6
+
+Checks:
+1. Source XML Sample count == TileCount capacity: PASS
+2. Active view contains every occupied sample: PASS
+3. Tail after active view is completely empty: PASS
+4. Re-padding active source view to source capacity restores slot count: PASS
+5. Python compileall: PASS
+6. CPX blank display: quiet white slot; no plus marker unless selected: CODE CHECK PASS
+7. CPX layout button locked to source Fixed Layout: CODE CHECK PASS
+8. Visual image export uses active UI slot array, so fully empty CPX tail rows are not rendered: CODE CHECK PASS
+
+Interpretation:
+The CPX file reserves a 14x67 source canvas, but its actual 80 samples occupy only the first 10 rows.
+Hotfix112 keeps all 67 source rows for CPX re-export while showing only the meaningful first 10 rows in the editor.
+Internal blank coordinates inside those 10 rows remain preserved.

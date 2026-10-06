@@ -1,0 +1,41 @@
+Chromatic Analysis v0.14.6.4 — Hotfix30
+UI / Official Library Tree / Large Import Performance
+
+Baseline
+- Directly based on Hotfix29.
+- P3-1 SQLite true pagination preserved.
+- P3-2 lightweight sample indexes preserved.
+- qtx_core colour algorithms/parsers were NOT modified.
+- qtx_app/library_store.py was NOT modified.
+
+Changes
+1. Save-to-library dialogs redesigned
+   - Unified two-section design for Formal Library and Official Library.
+   - Section 1 chooses an existing customer/library/category.
+   - Section 2 optionally creates a new top-level customer/library or child category.
+   - Live destination preview and explicit Chinese Save/Cancel buttons.
+
+2. Official Library hierarchy corrected
+   - "官方色库" is now a pure parent folder/root.
+   - The root never displays a sample count.
+   - The root cannot open as an independent customer/data tab.
+   - Coloro/Pantone/etc. appear underneath as real child libraries and show counts.
+   - Nested official categories continue to use folder semantics.
+   - Official tabs display relative names instead of the redundant "官方色库/..." prefix.
+
+3. Large QTX/CPX/Excel import responsiveness
+   - Files >= 512 KB (or batches >= 8 files) parse in a dedicated single worker thread.
+   - A progress dialog is shown immediately, with filename, size, elapsed time,
+     parsed sample count, stage text and cancel control.
+   - Main Qt UI remains responsive during parsing.
+   - Workspace card list uses uniform item sizes and Qt Batched layout mode.
+   - Bulk QListWidget population blocks per-item repaint/signals.
+   - Empty-search reload skips a redundant full item scan.
+   - Large Ctrl+A and Shift-range selection remain bulk UI transactions.
+
+Non-goals / untouched behaviour
+- No changes to QTX/CPX colour values, reflectance, XYZ/Lab calculations.
+- No changes to CMC, DE2000, MI, 555, spectral analysis or display colour maths.
+- No changes to RBAC semantics.
+- No changes to SQLite schema or P3-1/P3-2 queries/indexes.
+- Existing source files are still never modified by Save to Library.

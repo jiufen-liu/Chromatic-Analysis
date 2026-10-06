@@ -1,0 +1,14 @@
+Stage 1 改动范围审计
+
+相对 v0.13.1，仅业务源码修改：
+- qtx_app/main_window.py    （UI/主工作台/状态栏）
+- qtx_app/auth_store.py     （登录账号下拉与登录视觉）
+- VERSION
+
+未修改：
+- qtx_core/*
+- qtx_app/library_store.py
+- qtx_app/excel_exchange.py
+- tests/*
+
+因此本阶段没有有意修改颜色计算、555、文件解析、正式色库持久化或导出数据逻辑。

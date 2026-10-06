@@ -1,0 +1,30 @@
+Hotfix105 validation
+====================
+
+Static Python compile: PASS
+Startup metadata PRODUCT_VERSION: PASS
+LABCH professional hue helper: PASS
+- Adidas exact Lab: Neutral samples = 67
+- old raw-hue Neutral runs = 34
+- new professional-hue Neutral runs = 1
+- Red circular cut moved to 345° boundary
+
+Color Difference contract: PASS
+- selected reference explicitly pinned first
+- remaining samples strict reference-ΔE ascending
+- deterministic stable tie-break
+- tooltip exposes exact reference ΔE for inspection
+
+Running ΔE: UNCHANGED from Hotfix104 by design
+
+LABC Atlas Lightness cross-section: PASS
+- Adidas 309 samples assigned exactly once across L* pages: 309/309
+- fixed-L page = Chroma rows × Neutral+Hue columns
+
+LABC Atlas Chroma cross-section: PASS
+- Adidas 309 samples assigned exactly once across C* pages: 309/309
+- fixed-C page = Lightness rows × Neutral+Hue columns
+
+Existing Hue / Opponent / validation modes: retained
+Full GUI launch: not executed in this Linux build container because PySide6/colour-science are unavailable here.
+Windows source tree compiles successfully.

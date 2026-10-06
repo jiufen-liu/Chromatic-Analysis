@@ -1,0 +1,15 @@
+Hotfix130 validation
+====================
+Scope: adaptive Studio sidebar + HF129 responsive workspace integration only.
+
+Static checks to run before packaging:
+- compileall for main.py / qtx_app / qtx_core / tests
+- BUILD_ID / BUILD_LABEL import contract
+- Sidebar toggle does not replace or reconnect navigation business actions
+- Responsive breakpoint is based on stable Studio-home geometry
+- Manual sidebar preference is persisted only after explicit user action
+- Auto mode remains default when no sidebar preference exists
+- No parser/database/sort/export/formula source is intentionally modified
+
+Runtime note:
+Windows/PySide6 visual behaviour must still be confirmed on the user's machine.

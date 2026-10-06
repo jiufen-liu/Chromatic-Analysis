@@ -1,0 +1,34 @@
+Hotfix56 · Data Governance DG-2 validation
+==========================================
+
+Static / smoke validation performed in build environment:
+
+1. Python compile checks
+   - qtx_app/auth_store.py: PASS
+   - qtx_app/library_store.py: PASS
+   - qtx_app/main_window.py: PASS
+   - whole Python source tree: PASS
+
+2. ACL policy smoke
+   - new operator defaults to official-view / formal-hidden: PASS
+   - customer parent grant covers descendants: PASS
+   - customer export may differ from view: PASS
+   - unrelated customer denied: PASS
+
+3. LibraryStore SQL-scope smoke
+   - customer_counts excludes unauthorized customers: PASS
+   - direct sample-key hydration rejects unauthorized customer rows: PASS
+   - official-only mode returns only official rows: PASS
+   - empty scope returns no rows: PASS
+   - security metadata lookup can identify stale embedded unauthorized source without exposing sample payload: PASS
+
+4. Regression boundary
+   DG-2 does not intentionally modify qtx_core color science/parser modules,
+   Quick3D/QML, Excel exchange, P3-6 batch parser, MI or 555 algorithms.
+
+Windows GUI validation still required by user:
+- Administrator opens 用户与权限 → 数据范围… and saves an operator policy.
+- Re-login as that operator; unauthorized customers must disappear from library,
+  find source, palette source, favorites and direct key hydration.
+- A visible but non-exportable customer must be viewable but blocked on export.
+- Admin remains unrestricted.

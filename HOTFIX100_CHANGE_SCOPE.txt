@@ -1,0 +1,17 @@
+Hotfix100 change scope
+
+Changed from Hotfix99:
+- VERSION
+- qtx_app/labc_atlas_window.py
+- qtx_app/main_window.py
+- qtx_core/labc_atlas.py
+
+Added:
+- START_RELEASE_R1_HF100.bat
+- HOTFIX100_LABC_ATLAS_OPPONENT_SLICE.md
+- tests/test_labc_atlas_hotfix100.py
+
+Removed:
+(none)
+
+Existing business modules outside the files listed above were byte-identical at packaging time.

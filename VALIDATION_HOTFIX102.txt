@@ -1,0 +1,13 @@
+Hotfix102 validation
+====================
+PASS - qtx_app/labc_atlas_window.py syntax compile
+PASS - single-Hue view hides hue wheel host
+PASS - opponent slice shows hue wheel host
+PASS - hue-family switch clears stale current detail
+PASS - opponent wheel retains selected/opposite diameter semantics
+PASS - no production sort / file I/O / RBAC / 3D modules changed by this hotfix
+
+Manual GUI focus:
+1. Single Hue Blue/Orange/etc: no wheel should appear in right panel.
+2. Switch Blue -> Orange: right-side sample must no longer remain Blue.
+3. Opponent Slice: wheel appears with fine segments, ticks, labels, selected/opposite diameter.

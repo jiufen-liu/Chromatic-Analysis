@@ -1,0 +1,28 @@
+........................................................................ [ 41%]
+........................................................................ [ 83%]
+.............................                                            [100%]
+=============================== warnings summary ===============================
+../chromatic-venv/lib/python3.12/site-packages/colour/utilities/verbose.py:340
+  /workspace/chromatic-venv/lib/python3.12/site-packages/colour/utilities/verbose.py:340: ColourUsageWarning: "Matplotlib" related API features are not available: "No module named 'matplotlib'".
+  See the installation guide for more information: https://www.colour-science.org/installation-guide/
+    warn(*args, **kwargs)
+
+tests/test_core_rules.py::test_every_advertised_illuminant_can_be_calculated[U30]
+tests/test_development_quality.py::test_computed_results_keep_observer_and_commercial_spd_provenance
+  /workspace/chromatic-venv/lib/python3.12/site-packages/colour/utilities/verbose.py:340: ColourRuntimeWarning: Aligning "F32T8/TL830 (Triphosphor)" spectral data shape to "(360.0, 830.0, 1.0)".
+    warn(*args, **kwargs)
+
+tests/test_core_rules.py::test_every_advertised_illuminant_can_be_calculated[U35]
+  /workspace/chromatic-venv/lib/python3.12/site-packages/colour/utilities/verbose.py:340: ColourRuntimeWarning: Aligning "F32T8/TL835 (Triphosphor)" spectral data shape to "(360.0, 830.0, 1.0)".
+    warn(*args, **kwargs)
+
+tests/test_core_rules.py::test_every_advertised_illuminant_can_be_calculated[Horizon]
+  /workspace/chromatic-venv/lib/python3.12/site-packages/colour/utilities/verbose.py:340: ColourRuntimeWarning: Aligning "2300K Blackbody" spectral data shape to "(360.0, 830.0, 1.0)".
+    warn(*args, **kwargs)
+
+tests/test_core_rules.py::test_every_advertised_illuminant_can_be_calculated[LEDT8G]
+  /workspace/chromatic-venv/lib/python3.12/site-packages/colour/utilities/verbose.py:340: ColourRuntimeWarning: Aligning "LED-B3" spectral data shape to "(360.0, 830.0, 1.0)".
+    warn(*args, **kwargs)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+173 passed, 6 warnings in 2.15s

@@ -1,0 +1,25 @@
+Chromatic Analysis v0.14.0 · Stage 1 UI Foundation
+
+本阶段目标：只优化 UI 基础、登录选择和状态栏，不修改颜色计算、QTX/CPX/Excel 解析、555、3D、色库、比色、查色、Attributes 等业务逻辑。
+
+本次修改
+1. 主界面隐藏传统“文件 / 工作 / 账户”常驻菜单栏。
+2. 顶部收敛为：品牌 + 一个“打开”入口 + 一个“•••”应用菜单。
+3. 所有原快捷键继续保留：Ctrl+O、Ctrl+Shift+P、Ctrl+Shift+O、Ctrl+1~4 等。
+4. 首页去掉重复按钮和大段说明，改为轻量拖拽工作台。
+5. 整体 Design System 改为中性高级灰/白 + 深石墨 + 少量暖金强调；不影响真实色彩数据。
+6. “管理者/使用者”从顶部移到底部状态栏，并显示当前时间。
+7. 登录账号由手工输入改为本机账号下拉选择；角色仍由账号本身决定。
+8. 用户、色库、QTX/CPX/Excel、555、3D、Attributes、导出等底层逻辑不变。
+
+未修改
+- qtx_core 全部核心颜色与文件逻辑
+- LibraryStore 正式色库逻辑
+- Excel 导入导出逻辑
+- Datacolor 555 规则
+- 色卡编排行为
+- 3D 参考云逻辑
+- 权限判定逻辑
+
+注意
+当前测试环境未安装 PySide6 / colour-science，因此完成了 Python 语法/AST 和改动范围检查；Windows GUI 行为请按 TEST_CHECKLIST_STAGE1.md 验证。

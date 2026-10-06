@@ -1,0 +1,8 @@
+Hotfix51 validation
+- Python syntax compile: PASS (main_window.py, build_info.py, main.py)
+- qtx_core/qtx_parser.py unchanged vs Hotfix50: PASS
+- qtx_core/colorimetry.py unchanged vs Hotfix50: PASS
+- qtx_app/library_store.py unchanged vs Hotfix50: PASS
+- qtx_app/lab3d_quick.py unchanged vs Hotfix50: PASS
+- qtx_app/qml/Lab3DView.qml unchanged vs Hotfix50: PASS
+- Scope: workspace drag gesture, detail key/value table layout, import timing + same-session parse cache only.

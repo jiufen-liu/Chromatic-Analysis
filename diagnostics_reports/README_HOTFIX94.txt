@@ -1,0 +1,1 @@
+Hotfix94 clean package: historical generated diagnostics were intentionally omitted to avoid stale results and long-path extraction failures. New reports will be generated here (or LOCALAPPDATA/TEMP fallback when the install path is too long).

@@ -1,0 +1,14 @@
+Hotfix106 Validation
+
+1. Python compileall: PASS
+2. HF106 hue-specific pure tests: 4/4 PASS
+3. LABCH/Color Difference/Running ΔE menu contract tests: 4/4 PASS
+4. Regression case: same Blue family no longer restarts lightness at every 5° hue slice: PASS
+5. Neutral light-to-dark block: PASS
+6. Color Difference monotonic self-audit code path: PRESENT
+7. Running ΔE algorithm: unchanged from HF105
+8. LABC Atlas Hue/Lightness/Chroma views: retained
+
+Important:
+Current container does not provide the full PySide6/colour-science desktop runtime,
+so full Windows GUI launch still requires the user's normal environment.
