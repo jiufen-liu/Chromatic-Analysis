@@ -8,10 +8,10 @@ GitHub 仓库选择 **main → Code → Download ZIP**，解压后在包含 `mai
 
 ## Windows 开发运行
 
-建议 Python 3.12。在 PowerShell 中执行：
+使用标准 CPython 3.14（64 位，非 free-threaded 版本）。在 PyCharm 中选择 Python 3.14 解释器，或在 PowerShell 中执行：
 
 ```powershell
-python -m venv .venv
+py -3.14 -m venv .venv
 .\.venv\Scripts\python.exe -m pip install -r requirements.txt
 .\.venv\Scripts\python.exe main.py
 ```
@@ -24,7 +24,7 @@ python -m venv .venv
 .\.venv\Scripts\python.exe -m pytest
 ```
 
-Linux 无桌面环境可使用 `QT_QPA_PLATFORM=offscreen` 执行 UI 测试。`requirements-review-lock.txt` 记录 Python 3.12/Linux 验证版本；跨平台开发按 `requirements.txt` 安装。
+Linux 无桌面环境可使用 `QT_QPA_PLATFORM=offscreen` 执行 UI 测试。`requirements.txt` 固定本次 Python 3.14 验证的依赖版本；`requirements-review-lock.txt` 记录完整依赖。升级时请重新创建 `.venv`，不要继续使用旧的 Python 3.12 虚拟环境。历史 ZIP 是旧快照，Python 3.14 请使用仓库根目录的最新源码。
 
 ## 本次整改
 
@@ -34,8 +34,10 @@ Linux 无桌面环境可使用 `QT_QPA_PLATFORM=offscreen` 执行 UI 测试。`r
 - 统一预览转换，显示光源、观察者、兼容光谱及回退提示。
 - 保留计算来源和条件信息；完善测试与依赖。
 
-当前自动回归：173 项通过；Linux/offscreen 实际窗口、D65/U30 切换及数据库读写已验证。Windows 显示缩放、真实仪器、ICC 和生产数据迁移尚需专项验证。
+当前 Python 3.14.7 自动回归：173 项通过；Linux/offscreen 实际窗口、D65/U30 切换及数据库读写已验证。Windows 显示缩放、真实仪器、ICC 和生产数据迁移尚需专项验证。
 
 详见 [第二轮开发审查](DEVELOPMENT_REVIEW_ZH.md)、[第一轮项目审查](PROJECT_REVIEW_ZH.md) 和 [验证证据](review_evidence/round2/)。报告中的 `review_working/` 是整改期间的历史工作目录；GitHub 下载后的当前源码位置为仓库根目录。
 
 原始 HF142 ZIP 保留。历史包 README 与启动说明见 [历史文档](docs/LEGACY_PACKAGE_README.md)；当前开发运行以本 README 为准。
+
+Python 3.14 的运行输出、UI 截图和验证限制见 [验证记录](review_evidence/python314/README.md)。GitHub Actions 自动执行 Windows/Linux Python 3.14 回归。

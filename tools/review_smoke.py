@@ -1,4 +1,4 @@
-import os, sys, time, json
+import os, sys, time, json, tempfile
 from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT))
@@ -6,7 +6,9 @@ from PySide6.QtWidgets import QApplication
 from PySide6.QtCore import QTimer
 from qtx_app.storage_v2 import _write_config
 app=QApplication([]); app.setApplicationName('ChromaticReviewSmoke')
-_write_config({'system_root':'/workspace/chromatic-runtime/ui-system','business_root':'/workspace/chromatic-runtime/ui-business'})
+runtime = Path(os.environ.get('CHROMATIC_SMOKE_DIR') or tempfile.mkdtemp(prefix='chromatic-smoke-'))
+runtime.mkdir(parents=True, exist_ok=True)
+_write_config({'system_root':str(runtime/'ui-system'),'business_root':str(runtime/'ui-business')})
 from qtx_app.auth_store import AuthStore, AuthUser
 from qtx_app.main_window import MainWindow
 from qtx_core.qtx_parser import parse_qtx_file
@@ -23,13 +25,13 @@ def validate():
   window._switch_library_scope_and_open('正式色库','审查测试')
   app.processEvents()
   assert 'D65 / 10°' in window.library_condition_label.text()
-  window.grab().save('/workspace/chromatic-runtime/ui-1366.png')
+  window.grab().save(str(runtime/'ui-1366.png'))
   window.light.setCurrentText('U30')
   window.conditions_changed()
   app.processEvents()
   assert '兼容光谱' in window.library_condition_label.text()
   assert not window._preview_condition_failures, 'Complete reference spectra must not fall back'
-  window.grab().save('/workspace/chromatic-runtime/ui-commercial-1366.png')
+  window.grab().save(str(runtime/'ui-commercial-1366.png'))
   window.light.setCurrentText('D65')
   window.conditions_changed()
   app.processEvents()

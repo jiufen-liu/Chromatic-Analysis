@@ -1,6 +1,7 @@
+# Python 3.14 development environment; versions verified on CPython 3.14.7.
 colour-science==0.4.7
-numpy>=1.24,<3
-scipy>=1.10,<2
-PySide6>=6.7,<7
-openpyxl>=3.1,<4
-pytest>=8
+numpy==2.5.3
+scipy==1.18.1
+PySide6==6.11.2
+openpyxl==3.1.5
+pytest==9.1.1
