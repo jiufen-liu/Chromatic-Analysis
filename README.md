@@ -34,7 +34,7 @@ Linux 无桌面环境可使用 `QT_QPA_PLATFORM=offscreen` 执行 UI 测试。`r
 - 统一预览转换，显示光源、观察者、兼容光谱及回退提示。
 - 保留计算来源和条件信息；完善测试与依赖。
 
-当前 Python 3.14.7 自动回归：173 项通过；Linux/offscreen 实际窗口、D65/U30 切换及数据库读写已验证。Windows 显示缩放、真实仪器、ICC 和生产数据迁移尚需专项验证。
+当前 Python 3.14.7 自动回归：174 项通过；Linux/offscreen 实际窗口、D65/U30 切换及数据库读写已验证。Windows 显示缩放、真实仪器、ICC 和生产数据迁移尚需专项验证。
 
 详见 [第二轮开发审查](DEVELOPMENT_REVIEW_ZH.md)、[第一轮项目审查](PROJECT_REVIEW_ZH.md) 和 [验证证据](review_evidence/round2/)。报告中的 `review_working/` 是整改期间的历史工作目录；GitHub 下载后的当前源码位置为仓库根目录。
 

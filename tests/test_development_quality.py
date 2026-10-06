@@ -183,3 +183,24 @@ def test_nondefault_condition_hydrates_only_requested_lightweight_sample(compone
     assert actual==pytest.approx(expected[1 if component=='lab' else 0])
     assert call(obj,light)==actual and len(requested)==1
     assert not getattr(obj,'_preview_condition_failures',{})
+
+
+def test_workbench_mirror_saves_after_runtime_samples_are_loaded(tmp_path, monkeypatch):
+    import json
+    monkeypatch.setattr(storage_v2, 'user_workbench_snapshot_root',
+                        lambda *args, **kwargs: tmp_path)
+    obj = SimpleNamespace()
+    obj._deserialize_sample = MainWindow._deserialize_sample.__get__(obj)
+    wb = {'workbench_id': 'cached-workbench', 'name': '缓存工作台',
+          'samples_data': [asdict(sample())]}
+    cached = MainWindow._workbench_samples(obj, wb)
+    signature = wb['_runtime_samples_sig']
+    path = storage_v2.write_workbench_snapshot(wb, 1, 'test')
+    assert path is not None
+    restored = json.loads(path.read_text(encoding='utf-8'))
+    assert '_runtime_samples' not in restored
+    assert '_runtime_samples_sig' not in restored
+    assert restored['owner_user_id'] == 1
+    assert MainWindow._workbench_samples(obj, restored) == cached
+    assert wb['_runtime_samples'] is cached
+    assert wb['_runtime_samples_sig'] == signature

@@ -10,3 +10,7 @@
 测试警告是光源光谱采样对齐提示。启动提示 Matplotlib 未安装（colour-science 可选绘图接口不可用）及 offscreen 插件不支持 propagateSizeHints；均未影响本次验证。
 
 截图与原始输出见本目录。Windows Python 3.14 自动测试已配置，当前云端未执行 Windows 实机检查；EXE 打包及自由线程 Python 未验证。
+
+## 工作台运行缓存保存修复
+
+用户实机触发 `TypeError: Object of type Sample is not JSON serializable`。工作台快照误包含 `_runtime_samples` 和 `_runtime_samples_sig`，现从快照排除这两个可重建缓存字段，保留 `samples_data` 和当前 UI 缓存。增加真实工作台缓存加载、快照写入、样本恢复回归。Python 3.14.7 完整测试：174 passed，6 warnings，exit 0；UI smoke 通过，exit 0。原始输出见 `workbench-cache-tests.txt`、`workbench-cache-smoke.txt`。

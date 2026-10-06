@@ -535,7 +535,10 @@ def write_workbench_snapshot(workbench: dict, user_id: int, username: str = "") 
         root = user_workbench_snapshot_root(user_id, username)
         name = safe_component(workbench.get("name") or "比色工作台")
         path = root / f"{name}__{short_id}.chromaticworkbench.json"
-        payload = dict(workbench)
+        # Runtime Sample objects are reconstructed from samples_data on load.
+        # Persist only durable fields; do not mutate the live UI cache.
+        payload = {key: value for key, value in workbench.items()
+                   if key not in {"_runtime_samples", "_runtime_samples_sig"}}
         payload["format"] = "chromatic-workbench"
         payload["format_version"] = 1
         payload["owner_user_id"] = int(user_id or 0)
